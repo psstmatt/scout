@@ -1,0 +1,4382 @@
+[
+  {
+    "id": "turo",
+    "company": "Turo",
+    "role": "Senior Product Designer, Host",
+    "status": "waiting",
+    "stage": "portfolio",
+    "lastTouch": "2026-08-31",
+    "lastTouchLabel": "Portfolio panel completed",
+    "people": [
+      {
+        "name": "Nelson Ramirez",
+        "role": "Lead Technical Recruiter",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Shaina Castelo",
+        "role": "Team interviewer",
+        "relationship": "interviewer"
+      },
+      {
+        "name": "Calyn Hosea",
+        "role": "Scheduling contact",
+        "relationship": "coordinator"
+      },
+      {
+        "name": "Denise Sauerteig",
+        "role": "Portfolio panel",
+        "relationship": "panel"
+      },
+      {
+        "name": "Carlos Baez",
+        "role": "Portfolio panel",
+        "relationship": "panel"
+      },
+      {
+        "name": "Robert Hays",
+        "role": "Portfolio panel",
+        "relationship": "panel"
+      },
+      {
+        "name": "Kiran Delneuville",
+        "role": "Portfolio panel",
+        "relationship": "panel"
+      },
+      {
+        "name": "Irving Yip",
+        "role": "Portfolio panel",
+        "relationship": "panel"
+      },
+      {
+        "name": "Matt Fukuda",
+        "role": "Portfolio panel",
+        "relationship": "panel"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Recruiter screen",
+        "detail": "Twenty-minute phone screen with Nelson."
+      },
+      {
+        "date": "Aug 20",
+        "sortDate": "2026-08-20",
+        "title": "Team interview",
+        "detail": "Forty-five-minute conversation with Shaina."
+      },
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Advanced",
+        "detail": "Invited to a one-hour case-study presentation.",
+        "href": "https://mail.google.com/mail/#all/1a034e68d972ab62"
+      },
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Stories aligned",
+        "detail": "Fleet Match and Meta Consent selected and approved for the Host audience."
+      },
+      {
+        "date": "Aug 31",
+        "sortDate": "2026-08-31",
+        "title": "Portfolio panel",
+        "detail": "One-hour Zoom from 4:00–5:00 PM Pacific.",
+        "href": "https://mail.google.com/mail/#all/1a036c3314bb5051"
+      }
+    ],
+    "next": {
+      "action": "Wait for the panel decision; send Nelson one concise status check if no update arrives by Sep 3.",
+      "owner": "Nelson",
+      "due": "Sep 3",
+      "evidence": "inference"
+    },
+    "signal": "The full portfolio panel is complete. The loop is now waiting on an outcome rather than preparation from Matt.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "marketplace",
+      "mobile",
+      "portfolio"
+    ]
+  },
+  {
+    "id": "zocdoc",
+    "company": "Zocdoc",
+    "role": "Lead / Principal Product Designer",
+    "status": "waiting",
+    "stage": "interview",
+    "lastTouch": "2026-08-28",
+    "lastTouchLabel": "Hiring-manager screen completed",
+    "people": [
+      {
+        "name": "Crystal Yim",
+        "role": "Lead Technical Recruiter",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Mollye Sheron",
+        "role": "Scheduling coordinator",
+        "relationship": "coordinator"
+      },
+      {
+        "name": "Veronica Borges",
+        "role": "Product Design Director",
+        "relationship": "hiring manager"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 19",
+        "sortDate": "2026-08-19",
+        "title": "Inbound recruiting",
+        "detail": "Crystal reached out about senior design opportunities."
+      },
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Recruiter screen",
+        "detail": "Initial conversation with Crystal."
+      },
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Advanced",
+        "detail": "Hiring-manager case-study conversation scheduled; presentation deck sent.",
+        "href": "https://mail.google.com/mail/#all/1a03a2fb5ec5b7c2"
+      },
+      {
+        "date": "Aug 28",
+        "sortDate": "2026-08-28",
+        "title": "Hiring-manager screen",
+        "detail": "Thirty minutes with Veronica at 7:00 AM Pacific.",
+        "href": "https://mail.google.com/mail/#all/1a03ae7638d3f0b4"
+      }
+    ],
+    "next": {
+      "action": "Wait for the team decision; ask Crystal for the next step if no update arrives by Sep 3.",
+      "owner": "Crystal",
+      "due": "Sep 3",
+      "evidence": "inference"
+    },
+    "signal": "The hiring-manager screen is complete and no later outcome is visible. The loop is active but waiting on Zocdoc.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "healthtech",
+      "lead",
+      "case study"
+    ]
+  },
+  {
+    "id": "affirm",
+    "company": "Affirm",
+    "role": "Staff Product Designer, Agentic Experiences",
+    "status": "scheduled",
+    "stage": "interview",
+    "lastTouch": "2026-08-27",
+    "lastTouchLabel": "Design-leader interview booked",
+    "people": [
+      {
+        "name": "Jessica He",
+        "role": "Recruiter",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Lucas Saule",
+        "role": "Director, Product Design",
+        "relationship": "hiring manager"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Recruiter outreach",
+        "detail": "Jessica requested a thirty-minute introductory call."
+      },
+      {
+        "date": "Aug 26",
+        "sortDate": "2026-08-26",
+        "title": "Recruiter screen",
+        "detail": "Audio-only Zoom at 11:30 AM Pacific.",
+        "href": "https://mail.google.com/mail/#all/1a0368b296fb999a"
+      },
+      {
+        "date": "Aug 27",
+        "sortDate": "2026-08-27",
+        "title": "Advanced",
+        "detail": "Jessica moved Matt into a department conversation with Lucas.",
+        "href": "https://mail.google.com/mail/#all/1a0411fdb5020fcf"
+      },
+      {
+        "date": "Sep 2",
+        "sortDate": "2026-09-02",
+        "title": "Design-leader interview",
+        "detail": "Thirty minutes with Lucas at 4:00 PM Pacific.",
+        "href": "https://mail.google.com/mail/#all/1a04530e8912d4f6"
+      }
+    ],
+    "next": {
+      "action": "Prepare one shipped agentic-product story and use Lucas to test mandate, ownership, and success metrics.",
+      "owner": "Matt",
+      "due": "Sep 2 · 4:00 PM",
+      "evidence": "fact"
+    },
+    "signal": "The recruiter screen converted into a named design-director interview. Product maturity and decision criteria are the next questions.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "fintech",
+      "agentic AI",
+      "staff"
+    ]
+  },
+  {
+    "id": "harvey",
+    "company": "Harvey",
+    "role": "Staff Product Designer",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Closed after recruiter screen",
+    "people": [
+      {
+        "name": "Nate Bliss",
+        "role": "Referral and company perspective",
+        "relationship": "referral"
+      },
+      {
+        "name": "Jordan Cardoza",
+        "role": "Senior Technical Recruiter",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 21",
+        "sortDate": "2026-08-21",
+        "title": "Application",
+        "detail": "Staff Product Designer application received."
+      },
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Warm referral",
+        "detail": "Nate referred Matt and offered a Harvey-versus-Uber perspective.",
+        "href": "https://mail.google.com/mail/#all/1a039a88fdb88c0e"
+      },
+      {
+        "date": "Aug 26",
+        "sortDate": "2026-08-26",
+        "title": "Recruiter screen",
+        "detail": "Thirty-minute conversation with Jordan.",
+        "href": "https://mail.google.com/mail/#all/1a03a44b573dfe27"
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Closed",
+        "detail": "Harvey chose candidates whose experience more closely matched the team’s immediate needs.",
+        "href": "https://mail.google.com/mail/#all/1a05df679aa0fb7e",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No follow-up required beyond the stay-in-touch reply already sent.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed after the recruiter screen on immediate-needs alignment, not through a broad portfolio or panel evaluation.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "legal AI",
+      "staff",
+      "referral"
+    ]
+  },
+  {
+    "id": "owner",
+    "company": "Owner.com",
+    "role": "Founding design team · Growth or Buyer Engagement",
+    "status": "scheduled",
+    "stage": "portfolio",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Portfolio review scheduled",
+    "people": [
+      {
+        "name": "Christabel Asuncion",
+        "role": "Initial recruiting contact",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Darrin Henein",
+        "role": "Design leader",
+        "relationship": "hiring manager"
+      },
+      {
+        "name": "Lindsey McFee",
+        "role": "Talent coordinator",
+        "relationship": "coordinator"
+      },
+      {
+        "name": "Adam Whitcroft",
+        "role": "Senior Staff Product Designer",
+        "relationship": "interviewer"
+      },
+      {
+        "name": "Jonathan Minori",
+        "role": "Senior Staff Product Designer",
+        "relationship": "panel"
+      },
+      {
+        "name": "Amber Appleby",
+        "role": "Staff Talent Partner",
+        "relationship": "panel"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Intro call",
+        "detail": "Thirty-minute introduction with Christabel.",
+        "href": "https://mail.google.com/mail/#all/1a017a4afcfa0e48"
+      },
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Advanced",
+        "detail": "Conversation with Adam confirmed; Culture Deck requested as prep.",
+        "href": "https://mail.google.com/mail/#all/1a03a26c83ae0a62"
+      },
+      {
+        "date": "Aug 28",
+        "sortDate": "2026-08-28",
+        "title": "Design conversation",
+        "detail": "Thirty minutes with Adam at 9:30 AM Pacific."
+      },
+      {
+        "date": "Sep 11",
+        "sortDate": "2026-09-11",
+        "title": "Portfolio review",
+        "detail": "One-hour review with Adam, Darrin, Jonathan, and Amber at 11:30 AM Pacific."
+      }
+    ],
+    "next": {
+      "action": "Shape the portfolio story for a four-person design panel and connect operator pain to Owner’s product mandate.",
+      "owner": "Matt",
+      "due": "Sep 11 · 11:30 AM",
+      "evidence": "fact"
+    },
+    "signal": "The design conversation advanced into a full portfolio review with the chief design officer and senior design staff.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "SMB",
+      "growth",
+      "operator"
+    ]
+  },
+  {
+    "id": "anduril",
+    "company": "Anduril",
+    "role": "Senior Product Designer · Software Platform / ArsenalOS / Design Systems",
+    "status": "waiting",
+    "stage": "interview",
+    "lastTouch": "2026-08-24",
+    "lastTouchLabel": "Direct status question sent",
+    "people": [
+      {
+        "name": "Maureen McCormick",
+        "role": "Recruiter",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Melinda Wang",
+        "role": "Design / team screen",
+        "relationship": "interviewer"
+      },
+      {
+        "name": "Derek",
+        "role": "Director; described as main hiring manager",
+        "relationship": "hiring manager"
+      },
+      {
+        "name": "Charmaine Reyes",
+        "role": "Senior Recruiting Coordinator",
+        "relationship": "coordinator"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Jun 26–29",
+        "sortDate": "2026-06-29",
+        "title": "Applications",
+        "detail": "Applied to two Senior Product Designer openings."
+      },
+      {
+        "date": "Jul 20",
+        "sortDate": "2026-07-20",
+        "title": "Recruiter screen",
+        "detail": "Maureen outlined operator research, autonomy, and safety-critical work."
+      },
+      {
+        "date": "Aug 6",
+        "sortDate": "2026-08-06",
+        "title": "Team screen",
+        "detail": "Ambiguous-problem case study with Melinda.",
+        "href": "https://mail.google.com/mail/#all/19fcee7f0743ee67"
+      },
+      {
+        "date": "Aug 20",
+        "sortDate": "2026-08-20",
+        "title": "Headcount blocker",
+        "detail": "Maureen said headcount was being finalized with the VP on Aug 21."
+      },
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Direct diagnosis",
+        "detail": "Matt asked whether Melinda recommended advancing him and whether an approved role exists.",
+        "href": "https://mail.google.com/mail/#all/1a0350264bedb288"
+      },
+      {
+        "date": "Next",
+        "sortDate": "2026-12-30",
+        "title": "Portfolio review",
+        "detail": "Two projects with a distributed product-design panel.",
+        "evidence": "fact"
+      },
+      {
+        "date": "Later",
+        "sortDate": "2026-12-31",
+        "title": "Final loop",
+        "detail": "Roughly four hours across VP, PM, design, engineering, and critique conversations.",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "Wait through Aug 27, then send one close-loop note if Maureen has not answered the headcount question.",
+      "owner": "Maureen",
+      "due": "Aug 27",
+      "evidence": "inference"
+    },
+    "signal": "Blocked on approved headcount, not rejected. The remaining question is whether positive evaluation is attached to any live requisition.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Transcript",
+      "Prior chats"
+    ],
+    "tags": [
+      "defense",
+      "hardware",
+      "safety-critical"
+    ]
+  },
+  {
+    "id": "amazon",
+    "company": "Amazon",
+    "role": "Principal UX Designer · AWS Marketplace (Vault 76 closed)",
+    "status": "scheduled",
+    "stage": "interview",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "AWS hiring-manager interview confirmed",
+    "people": [
+      {
+        "name": "Michelle Thomas",
+        "role": "Senior Strategic Recruiter",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Alex McGhee",
+        "role": "Recruiter; Autos / Alexa path",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Jason Blythe",
+        "role": "Prime Video Vault 76 hiring manager",
+        "relationship": "hiring manager"
+      },
+      {
+        "name": "Elizabeth Miller",
+        "role": "Amazon Ads DSP hiring manager",
+        "relationship": "hiring manager"
+      },
+      {
+        "name": "Nick Kovacevich",
+        "role": "AWS Marketplace hiring manager",
+        "relationship": "hiring manager"
+      },
+      {
+        "name": "Fabrice Rousseau",
+        "role": "Creative X hiring manager",
+        "relationship": "hiring manager"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 12",
+        "sortDate": "2026-08-12",
+        "title": "Recruiter screen",
+        "detail": "Discussed Autos, Alexa/Devices, level, location, and L6/L7 scope."
+      },
+      {
+        "date": "Aug 19–20",
+        "sortDate": "2026-08-20",
+        "title": "Four teams routed",
+        "detail": "Michelle shared four Principal opportunities; Matt approved her stack rank and team outreach.",
+        "href": "https://mail.google.com/mail/#all/1a01bd9e1a85c001"
+      },
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Open house",
+        "detail": "Accepted an invitation to the Oct 1 Seattle Design Open House."
+      },
+      {
+        "date": "Aug 31",
+        "sortDate": "2026-08-31",
+        "title": "AWS interest",
+        "detail": "Michelle said the AWS Marketplace team wants Matt to meet hiring manager Nick.",
+        "href": "https://mail.google.com/mail/#all/1a05e5c0c3d91d48"
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Paths separated",
+        "detail": "Prime Video formally closed while AWS Marketplace confirmed a hiring-manager conversation.",
+        "href": "https://mail.google.com/mail/#all/1a05f4f6105c60db",
+        "evidence": "fact"
+      },
+      {
+        "date": "Sep 8",
+        "sortDate": "2026-09-08",
+        "title": "AWS hiring-manager interview",
+        "detail": "One hour with Nick at 11:00 AM Pacific.",
+        "href": "https://mail.google.com/mail/#all/1a05f19ee898bb8b",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "Prepare principal-level stories for Ownership, Deliver Results, and Earn Trust with measurable outcomes.",
+      "owner": "Matt",
+      "due": "Sep 8 · 11:00 AM",
+      "evidence": "fact"
+    },
+    "signal": "Recruiter sponsorship has converted into a confirmed AWS hiring-manager interview. Vault 76 is now a separate closed branch.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Transcript",
+      "Prior chats"
+    ],
+    "tags": [
+      "principal",
+      "AI",
+      "ads",
+      "marketplace"
+    ]
+  },
+  {
+    "id": "axon",
+    "company": "Axon",
+    "role": "Staff Product Designer, Axon 911",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-11",
+    "lastTouchLabel": "Rejected after panel",
+    "people": [
+      {
+        "name": "Katy Gasperoni",
+        "role": "Senior Recruiter II",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Naama Peleg",
+        "role": "Director, Product Design",
+        "relationship": "hiring manager"
+      },
+      {
+        "name": "Joe Berger",
+        "role": "VP Product, Axon 911",
+        "relationship": "interviewer"
+      },
+      {
+        "name": "Daniel Campanile",
+        "role": "Engineering Manager, Prepared",
+        "relationship": "interviewer"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Jul 28",
+        "sortDate": "2026-07-28",
+        "title": "Recruiter screen",
+        "detail": "Katy discussed Axon 911 and the design organization."
+      },
+      {
+        "date": "Aug 5",
+        "sortDate": "2026-08-05",
+        "title": "Design-leader interview",
+        "detail": "Forty-five minutes with Naama."
+      },
+      {
+        "date": "Aug 7",
+        "sortDate": "2026-08-07",
+        "title": "Leadership interview",
+        "detail": "One hour with Joe and Daniel."
+      },
+      {
+        "date": "Aug 11",
+        "sortDate": "2026-08-11",
+        "title": "Closed",
+        "detail": "Katy sent the rejection after the panel stage.",
+        "evidence": "fact",
+        "href": "https://mail.google.com/mail/#all/19ff113c64d5c6ac"
+      }
+    ],
+    "next": {
+      "action": "Archive the panel lessons; re-open only for a materially different team or role.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "The loop reached recruiter, design director, and cross-functional leadership before a clear rejection on Aug 11.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Transcript",
+      "Prior chats"
+    ],
+    "tags": [
+      "public safety",
+      "911",
+      "AI"
+    ]
+  },
+  {
+    "id": "highlight",
+    "company": "Highlight",
+    "role": "Senior / Principal Product Designer",
+    "status": "waiting",
+    "stage": "interview",
+    "lastTouch": "2026-08-25",
+    "lastTouchLabel": "Craft conversation",
+    "people": [
+      {
+        "name": "Sergei Sorokin",
+        "role": "CEO",
+        "relationship": "hiring manager"
+      },
+      {
+        "name": "Bobby Novoa",
+        "role": "Design advisor",
+        "relationship": "interviewer"
+      },
+      {
+        "name": "Dan",
+        "role": "Talent partner",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 12",
+        "sortDate": "2026-08-12",
+        "title": "First CEO slot",
+        "detail": "Calendar entry with Sergei and Dan; completion is not confirmed."
+      },
+      {
+        "date": "Aug 18",
+        "sortDate": "2026-08-18",
+        "title": "CEO screen",
+        "detail": "Rescheduled conversation with Sergei."
+      },
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Craft + portfolio",
+        "detail": "Conversation with Bobby.",
+        "href": "https://mail.google.com/mail/#all/1a025feef01ed5cc"
+      }
+    ],
+    "next": {
+      "action": "Thank Bobby and ask whether the promised second Sergei conversation is now the next stage.",
+      "owner": "Sergei",
+      "due": "Aug 26–27",
+      "evidence": "inference"
+    },
+    "signal": "CEO access and a craft evaluator are positive; the role shape and decision path remain less formal than the larger-company loops.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Transcript",
+      "Prior chats"
+    ],
+    "tags": [
+      "startup",
+      "AI",
+      "craft"
+    ]
+  },
+  {
+    "id": "dialpad",
+    "company": "Dialpad",
+    "role": "Staff Product Designer",
+    "status": "scheduled",
+    "stage": "interview",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Hiring-manager interview confirmed",
+    "people": [
+      {
+        "name": "Pablo Delfino",
+        "role": "Senior Talent Business Partner",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Gianna Carusillo",
+        "role": "Interview coordinator",
+        "relationship": "coordinator"
+      },
+      {
+        "name": "Joshua Hynes",
+        "role": "Senior Director, Product Design",
+        "relationship": "hiring manager"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 21",
+        "sortDate": "2026-08-21",
+        "title": "Inbound outreach",
+        "detail": "Pablo invited a Staff Product Design conversation."
+      },
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Recruiter conversation",
+        "detail": "Thirty-minute introductory conversation with Pablo."
+      },
+      {
+        "date": "Aug 26",
+        "sortDate": "2026-08-26",
+        "title": "Advanced",
+        "detail": "Invited to a forty-five-minute video interview with Joshua; availability submitted and confirmation pending.",
+        "href": "https://mail.google.com/mail/#all/1a03ebc7c591ff1b"
+      },
+      {
+        "date": "Sep 4",
+        "sortDate": "2026-09-04",
+        "title": "Hiring-manager interview",
+        "detail": "Forty-five minutes with Joshua at 6:00 AM Pacific.",
+        "href": "https://mail.google.com/mail/#all/1a05dc20188d816a"
+      }
+    ],
+    "next": {
+      "action": "Prepare one staff-level product story and sharp questions about mandate, influence, and success criteria for Joshua.",
+      "owner": "Matt",
+      "due": "Sep 4 · 6:00 AM",
+      "evidence": "fact"
+    },
+    "signal": "The recruiter handoff is now a confirmed interview with Dialpad’s senior design leader.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "B2B",
+      "communications",
+      "staff",
+      "design leader"
+    ]
+  },
+  {
+    "id": "hpiq",
+    "company": "HP IQ",
+    "role": "Lead AI Product Designer",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-21",
+    "lastTouchLabel": "Matt withdrew",
+    "people": [
+      {
+        "name": "Lori Bongiorno",
+        "role": "Lead Talent Partner",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 18",
+        "sortDate": "2026-08-18",
+        "title": "First attempt",
+        "detail": "Interrupted by childcare and moved to a second conversation."
+      },
+      {
+        "date": "Aug 21",
+        "sortDate": "2026-08-21",
+        "title": "Second attempt",
+        "detail": "Teams audio failed and the conversation ended early."
+      },
+      {
+        "date": "Aug 21",
+        "sortDate": "2026-08-21",
+        "title": "Withdrew",
+        "detail": "Matt withdrew; Lori left the door open.",
+        "evidence": "fact",
+        "href": "https://mail.google.com/mail/#all/1a025f528dcb29fa"
+      }
+    ],
+    "next": {
+      "action": "No action. Re-open only if the role or circumstances materially change.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "This closed because of two disrupted recruiter attempts and Matt’s withdrawal—not a recorded negative candidate decision.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "AI",
+      "lead",
+      "hardware"
+    ]
+  },
+  {
+    "id": "rippling",
+    "company": "Rippling",
+    "role": "Product Design Lead, Design Systems · Pebble",
+    "status": "action",
+    "stage": "screen",
+    "lastTouch": "2026-08-10",
+    "lastTouchLabel": "Re-opened; no reply",
+    "people": [
+      {
+        "name": "Will Rubin",
+        "role": "Senior Technical Recruiter",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Julia",
+        "role": "Referral; Will’s manager",
+        "relationship": "referral"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Jun 30",
+        "sortDate": "2026-06-30",
+        "title": "Warm introduction",
+        "detail": "Julia connected Matt and Will."
+      },
+      {
+        "date": "Jul 6",
+        "sortDate": "2026-07-06",
+        "title": "Recruiter conversation",
+        "detail": "Discussed Pebble ownership, motivation, recent work, compensation, and process."
+      },
+      {
+        "date": "Jul 14",
+        "sortDate": "2026-07-14",
+        "title": "Matt withdrew",
+        "detail": "Matt said he had accepted another role."
+      },
+      {
+        "date": "Aug 10",
+        "sortDate": "2026-08-10",
+        "title": "Re-opened",
+        "detail": "Matt said plans changed and shared the refreshed portfolio; no reply is in Gmail.",
+        "href": "https://mail.google.com/mail/#all/19f1f0a52e25a5bc"
+      }
+    ],
+    "next": {
+      "action": "Send one final reactivation note asking whether the role is still open and the refreshed work was reviewed.",
+      "owner": "Matt",
+      "due": "Now",
+      "evidence": "inference"
+    },
+    "signal": "The original warm path was interrupted by Matt’s withdrawal. Re-opening is possible, but the burden is now on a crisp final nudge.",
+    "sources": [
+      "Calendar",
+      "Transcript",
+      "Prior chats"
+    ],
+    "tags": [
+      "design systems",
+      "lead",
+      "remote"
+    ]
+  },
+  {
+    "id": "bellevue",
+    "company": "City of Bellevue",
+    "role": "Business Transformation Technical Lead",
+    "status": "scheduled",
+    "stage": "screen",
+    "lastTouch": "2026-08-28",
+    "lastTouchLabel": "Formal video interview scheduled",
+    "people": [
+      {
+        "name": "Joe Todd",
+        "role": "City IT portfolio contact",
+        "relationship": "referral"
+      },
+      {
+        "name": "Suzanne Tamayo",
+        "role": "Interview coordinator",
+        "relationship": "coordinator"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 18",
+        "sortDate": "2026-08-18",
+        "title": "Coffee with Joe",
+        "detail": "Discussed the IT portfolio, team, and limited-term role at Café Hagen."
+      },
+      {
+        "date": "Aug 19",
+        "sortDate": "2026-08-19",
+        "title": "Thank-you",
+        "detail": "Follow-up emphasized public-sector impact and why Bellevue."
+      },
+      {
+        "date": "Sep 8",
+        "sortDate": "2026-09-08",
+        "title": "Formal interview",
+        "detail": "Twenty-five-minute video interview at 8:00 AM Pacific.",
+        "href": "https://mail.google.com/mail/#all/1a04954f08faa943"
+      }
+    ],
+    "next": {
+      "action": "Prepare a concise transformation-leadership story for the formal city interview.",
+      "owner": "Matt",
+      "due": "Sep 8 · 8:00 AM",
+      "evidence": "fact"
+    },
+    "signal": "The warm city contact has converted into a formal interview with an owned schedule.",
+    "sources": [
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "public sector",
+      "transformation",
+      "networking"
+    ]
+  },
+  {
+    "id": "creative-people",
+    "company": "Creative People",
+    "role": "External recruiter slate · Arena AI and future roles",
+    "status": "waiting",
+    "stage": "screen",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Two direct interviews created",
+    "people": [
+      {
+        "name": "Rachel Albert",
+        "role": "External recruiter",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Rachel Feinbloom",
+        "role": "Recruiting contact",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Ashley Brown",
+        "role": "Arena and Eight Sleep follow-up",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Sourced",
+        "detail": "Rachel shared a broad slate of senior design openings.",
+        "href": "https://mail.google.com/mail/#all/1a03a0b5aa244ff9"
+      },
+      {
+        "date": "Aug 26",
+        "sortDate": "2026-08-26",
+        "title": "Slate ranked",
+        "detail": "After the intro call, Matt ranked Applied Intuition first, Arena second, and Eight Sleep third. Rachel will share his background with Applied."
+      },
+      {
+        "date": "Aug 27",
+        "sortDate": "2026-08-27",
+        "title": "Follow-up",
+        "detail": "Thirty minutes with Ashley to qualify the Arena and Eight Sleep openings.",
+        "href": "https://mail.google.com/mail/#all/1a03ea08f5a99bec"
+      },
+      {
+        "date": "Aug 30",
+        "sortDate": "2026-08-30",
+        "title": "Applied Intuition advanced",
+        "detail": "Rachel reported that the company wants a first-round conversation.",
+        "href": "https://mail.google.com/mail/#all/1a05337ee6145a84"
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Direct loops live",
+        "detail": "Applied Intuition and Eight Sleep now have company-owned interviews and are tracked separately."
+      }
+    ],
+    "next": {
+      "action": "Keep Rachel and Ashley aligned on Arena while the Applied Intuition and Eight Sleep loops run directly.",
+      "owner": "Rachel / Ashley",
+      "due": "This week",
+      "evidence": "inference"
+    },
+    "signal": "The agency relationship has produced two direct-company interviews. Arena remains the main unresolved slate item.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "external recruiter",
+      "Applied Intuition",
+      "Arena AI",
+      "Eight Sleep"
+    ]
+  },
+  {
+    "id": "hinge-health",
+    "company": "Hinge Health",
+    "role": "Staff Product Designer · GI / Cylinder",
+    "status": "scheduled",
+    "stage": "interview",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "CV deep dive confirmed",
+    "people": [
+      {
+        "name": "Danielle Cwirko-Godycki",
+        "role": "Recruiter",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Olivia Brown",
+        "role": "Interview coordinator",
+        "relationship": "coordinator"
+      },
+      {
+        "name": "Nima",
+        "role": "CV deep-dive interviewer",
+        "relationship": "hiring manager"
+      },
+      {
+        "name": "Jordan Joseph",
+        "role": "Design leader",
+        "relationship": "interviewer"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Recruiter screen",
+        "detail": "Danielle described a zero-to-one role tied to the Cylinder acquisition and the broader design organization."
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Advanced",
+        "detail": "The next step is a CV deep dive with Nima; Olivia requested availability.",
+        "href": "https://mail.google.com/mail/#all/1a05e08dc626f751",
+        "evidence": "fact"
+      },
+      {
+        "date": "Sep 4",
+        "sortDate": "2026-09-04",
+        "title": "CV deep dive",
+        "detail": "One-hour interview with Nima at 2:00 PM Pacific.",
+        "href": "https://mail.google.com/mail/#all/1a05f1b5b8b29d6c",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "Prepare a chronological CV story that connects zero-to-one work, health complexity, and measurable outcomes.",
+      "owner": "Matt",
+      "due": "Sep 4 · 2:00 PM",
+      "evidence": "fact"
+    },
+    "signal": "The recruiter screen converted into a confirmed one-hour team interview. Exact product ownership still needs testing with Nima.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "healthtech",
+      "0→1",
+      "acquisition",
+      "product design"
+    ]
+  },
+  {
+    "id": "applied-intuition",
+    "company": "Applied Intuition",
+    "role": "Senior Product Designer opportunity",
+    "status": "waiting",
+    "stage": "interview",
+    "lastTouch": "2026-09-03",
+    "lastTouchLabel": "First round completed; samples sent",
+    "people": [
+      {
+        "name": "Rachel Feinbloom",
+        "role": "Recruiting contact",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Marc Shillum",
+        "role": "First-round interviewer",
+        "relationship": "interviewer"
+      },
+      {
+        "name": "Hye-Jin Oh",
+        "role": "Interview team",
+        "relationship": "panel"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 30",
+        "sortDate": "2026-08-30",
+        "title": "Advanced",
+        "detail": "The company asked for a first-round conversation after the external recruiter introduction.",
+        "href": "https://mail.google.com/mail/#all/1a05337ee6145a84"
+      },
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "First-round interview",
+        "detail": "Thirty-minute design conversation with Marc at noon Pacific."
+      },
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Follow-up sent",
+        "detail": "Matt thanked Marc, confirmed interest, and sent two relevant work samples after the conversation.",
+        "href": "https://mail.google.com/mail/#all/1a068d1f7d5d266f",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "Wait for the team response; follow up through Rachel if no next-step signal arrives after three business days.",
+      "owner": "Applied Intuition",
+      "due": "Sep 9",
+      "evidence": "inference"
+    },
+    "signal": "The first round is complete and the interviewer has fresh, relevant work samples. The team decision and exact next stage remain open.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "autonomy",
+      "mobility",
+      "AI",
+      "physical systems"
+    ]
+  },
+  {
+    "id": "eight-sleep",
+    "company": "Eight Sleep",
+    "role": "Senior Product Designer opportunity",
+    "status": "scheduled",
+    "stage": "interview",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Direct interview scheduled",
+    "people": [
+      {
+        "name": "Ashley Brown",
+        "role": "External recruiting contact",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Khoi Phan",
+        "role": "Company interviewer",
+        "relationship": "interviewer"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 27",
+        "sortDate": "2026-08-27",
+        "title": "Role qualified",
+        "detail": "Creative People introduced and qualified the Eight Sleep opportunity."
+      },
+      {
+        "date": "Sep 4",
+        "sortDate": "2026-09-04",
+        "title": "Direct interview",
+        "detail": "Thirty-minute conversation with Khoi at 10:30 AM Pacific.",
+        "href": "https://mail.google.com/mail/#all/1a05defcd2837d85"
+      }
+    ],
+    "next": {
+      "action": "Prepare a current-user perspective plus a hardware, data, and AI product story for Khoi.",
+      "owner": "Matt",
+      "due": "Sep 4 · 10:30 AM",
+      "evidence": "fact"
+    },
+    "signal": "The agency path has converted into a direct company conversation. Team scope and decision path remain to be clarified.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "consumer",
+      "health",
+      "hardware",
+      "AI"
+    ]
+  },
+  {
+    "id": "openai",
+    "company": "OpenAI",
+    "role": "Product design opportunities",
+    "status": "waiting",
+    "stage": "screen",
+    "lastTouch": "2026-09-03",
+    "lastTouchLabel": "Recruiter introduction completed",
+    "people": [
+      {
+        "name": "Katie Manning",
+        "role": "Design Recruiting",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Recruiter invitation",
+        "detail": "Katie invited an introductory conversation about product design opportunities.",
+        "href": "https://mail.google.com/mail/#all/1a05d1ef25c0957b"
+      },
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Recruiter introduction",
+        "detail": "Thirty-minute conversation with Katie at 1:00 PM Pacific."
+      },
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Follow-up sent",
+        "detail": "Matt thanked Katie, confirmed interest in continuing, and shared two work samples.",
+        "href": "https://mail.google.com/mail/#all/1a068f0fbfebd16b",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "Wait for Katie to identify a matching team or next conversation; send one concise check-in after three business days if needed.",
+      "owner": "Katie",
+      "due": "Sep 9",
+      "evidence": "inference"
+    },
+    "signal": "The recruiter introduction is complete and current work is in hand. Team, mandate, and next-stage ownership are still unconfirmed.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "AI",
+      "product design",
+      "recruiter intro"
+    ]
+  },
+  {
+    "id": "bol-agency",
+    "company": "BOL Agency",
+    "role": "Product Design Engineer",
+    "status": "action",
+    "stage": "decision",
+    "lastTouch": "2026-09-03",
+    "lastTouchLabel": "Advanced to paid trial project",
+    "people": [
+      {
+        "name": "Anne Finch",
+        "role": "Recruiting contact",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Cody Miles",
+        "role": "Chief AI Officer",
+        "relationship": "hiring manager"
+      },
+      {
+        "name": "Trevor Hanes",
+        "role": "Team contact",
+        "relationship": "panel"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 31",
+        "sortDate": "2026-08-31",
+        "title": "Culture assessment",
+        "detail": "Completed the requested Culture Index survey."
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Direct outreach",
+        "detail": "Anne introduced a Product Design Engineer role and requested work samples."
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Samples sent",
+        "detail": "Two relevant product and process examples are now with the team for review.",
+        "href": "https://mail.google.com/mail/#all/1a05e67e9cc38c07"
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Interview requested",
+        "detail": "Cody asked to discuss the Product Design Engineer role; Matt sent availability and is waiting for a confirmed slot.",
+        "href": "https://mail.google.com/mail/#all/1a05ea0e4539e61d",
+        "evidence": "fact"
+      },
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Chief AI Officer interview",
+        "detail": "Thirty-minute conversation with Cody at 2:30 PM Pacific.",
+        "href": "https://mail.google.com/mail/#all/1a063576fdc8624a",
+        "evidence": "fact"
+      },
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Paid trial offered",
+        "detail": "Cody advanced Matt to a small paid contractor trial and shared the project brief; contractor setup is pending.",
+        "href": "https://mail.google.com/mail/#all/1a06965d84549bff",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "Review the trial brief, surface any scope questions, and complete contractor onboarding so the paid project can start.",
+      "owner": "Matt / Trevor",
+      "due": "Now",
+      "evidence": "fact"
+    },
+    "signal": "The Chief AI Officer interview converted immediately into a paid trial project—a concrete evaluation step with strong sponsor intent.",
+    "sources": [
+      "Gmail",
+      "Prior chats"
+    ],
+    "tags": [
+      "design engineering",
+      "AI",
+      "agency"
+    ]
+  },
+  {
+    "id": "cisco",
+    "company": "Cisco",
+    "role": "Senior UX Designer · 2020978",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Application closed",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Closed",
+        "detail": "Cisco decided not to move forward with the application.",
+        "href": "https://mail.google.com/mail/#all/1a05e1be0fecc8de",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only through a materially different role or warm path.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review; no human interview or specific feedback is visible.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "enterprise",
+      "senior",
+      "UX"
+    ]
+  },
+  {
+    "id": "walmart",
+    "company": "Walmart",
+    "role": "Principal UX Designer · Homepage, Navigation & Events",
+    "status": "scheduled",
+    "stage": "interview",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Hiring-leader interview rescheduled",
+    "people": [
+      {
+        "name": "Chanda Mulchandani",
+        "role": "Senior Talent Advisor",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Jonathan Smiley",
+        "role": "Director, UX Design",
+        "relationship": "hiring manager"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 18",
+        "sortDate": "2026-08-18",
+        "title": "Applied",
+        "detail": "Applied via referral for requisition R-2583028."
+      },
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Screening answers",
+        "detail": "Chanda requested and received resume, answers, and relocation openness.",
+        "href": "https://mail.google.com/mail/#all/1a03552b59b78d1f"
+      },
+      {
+        "date": "Aug 28",
+        "sortDate": "2026-08-28",
+        "title": "Recruiter screen",
+        "detail": "Chanda advanced Matt to the hiring leader after a live conversation."
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Rescheduled",
+        "detail": "Walmart replaced the original slot and confirmed the new interview time.",
+        "href": "https://mail.google.com/mail/#all/1a05eacc08715545",
+        "evidence": "fact"
+      },
+      {
+        "date": "Sep 4",
+        "sortDate": "2026-09-04",
+        "title": "Hiring-leader interview",
+        "detail": "Forty-five minutes with Jonathan at 7:00 AM Pacific."
+      }
+    ],
+    "next": {
+      "action": "Prepare a principal-level commerce story for Jonathan and correct the current-employment answer before the conversation.",
+      "owner": "Matt",
+      "due": "Sep 4 · 7:00 AM",
+      "evidence": "fact"
+    },
+    "signal": "The recruiter screen advanced to a named design director and the replacement time is confirmed.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "principal",
+      "commerce",
+      "relocation"
+    ]
+  },
+  {
+    "id": "disney",
+    "company": "Disney",
+    "role": "Sr UX Product Designer · Studio Technology",
+    "status": "waiting",
+    "stage": "interview",
+    "lastTouch": "2026-09-02",
+    "lastTouchLabel": "Team interview requested; availability sent",
+    "people": [
+      {
+        "name": "Mike Liam",
+        "role": "Referral",
+        "relationship": "referral"
+      },
+      {
+        "name": "Luciana Albuquerque Gissing",
+        "role": "Design reviewer / hiring-manager path",
+        "relationship": "hiring manager"
+      },
+      {
+        "name": "Carlos Martinez",
+        "role": "Recruiter",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Referral routed",
+        "detail": "Mike offered to refer and route the resume."
+      },
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Direct portfolio feedback",
+        "detail": "Luciana said the portfolio reads too mobile/consumer for complex desktop tooling, but would still ask recruiting to talk.",
+        "href": "https://mail.google.com/mail/#all/1a03560279491830"
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Recruiter interview",
+        "detail": "Thirty-minute conversation with Carlos at 1:00 PM Pacific for requisition 10156613.",
+        "href": "https://mail.google.com/mail/#all/1a05e58552a3f758"
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Post-call follow-up",
+        "detail": "Carlos sent role materials and guidance for next steps; Matt confirmed interest in continuing.",
+        "href": "https://mail.google.com/mail/#all/1a05ef584acf5c4d",
+        "evidence": "fact"
+      },
+      {
+        "date": "Sep 2",
+        "sortDate": "2026-09-02",
+        "title": "Team interview requested",
+        "detail": "Disney selected Matt for a forty-five-minute virtual interview with the team; availability was sent.",
+        "href": "https://mail.google.com/mail/#all/1a062fe48f1d4960",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "Wait for Disney to confirm the team-interview slot; keep enterprise and complex desktop-system proof ready.",
+      "owner": "Megan",
+      "due": "This week",
+      "evidence": "fact"
+    },
+    "signal": "The recruiter screen converted into a team interview request. Date and panel are still pending.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Shared files",
+      "Prior chats"
+    ],
+    "tags": [
+      "enterprise",
+      "desktop",
+      "referral"
+    ]
+  },
+  {
+    "id": "a1",
+    "company": "A1",
+    "role": "Product Designer",
+    "status": "action",
+    "stage": "screen",
+    "lastTouch": "2026-08-25",
+    "lastTouchLabel": "New sourcing message",
+    "people": [
+      {
+        "name": "Candy Chong",
+        "role": "Lead Talent Acquisition",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Inbound outreach",
+        "detail": "Candy asked whether Matt wants to connect; company and scope need qualification.",
+        "href": "https://mail.google.com/mail/#all/1a038c1c360467c2"
+      }
+    ],
+    "next": {
+      "action": "Reply and ask for the company context, product scope, level, location, and hiring manager before booking.",
+      "owner": "Matt",
+      "due": "Now",
+      "evidence": "fact"
+    },
+    "signal": "A live person, but not yet a defined opportunity. The first move is qualification, not selling.",
+    "sources": [
+      "Gmail",
+      "Prior chats"
+    ],
+    "tags": [
+      "inbound",
+      "unqualified"
+    ]
+  },
+  {
+    "id": "linkedin",
+    "company": "LinkedIn",
+    "role": "Staff Product Designer · consumer AI / conversational search",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Closed before recruiter screen",
+    "people": [
+      {
+        "name": "Ashley Crutison",
+        "role": "Talent",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 20",
+        "sortDate": "2026-08-20",
+        "title": "Inbound outreach",
+        "detail": "Ashley sourced Matt for a Staff role spanning consumer AI, agentic work, and conversational search.",
+        "href": "https://mail.google.com/mail/#all/1a0219517a8357a7"
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Closed",
+        "detail": "Design leadership reviewed the work and decided not to move forward to a recruiter screen.",
+        "href": "https://mail.google.com/mail/#all/1a05e738fd9521d2",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No immediate action; preserve the relationship for a materially different team or future opening.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "A strong domain match received design-leadership review but closed before the recruiter screen.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consumer AI",
+      "search",
+      "staff"
+    ]
+  },
+  {
+    "id": "netic",
+    "company": "Netic.ai",
+    "role": "Founding forward-deployed engineer",
+    "status": "action",
+    "stage": "screen",
+    "lastTouch": "2026-08-09",
+    "lastTouchLabel": "Call with engineering",
+    "people": [
+      {
+        "name": "Shail Patel",
+        "role": "Engineering contact",
+        "relationship": "interviewer"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 8",
+        "sortDate": "2026-08-08",
+        "title": "Sourced",
+        "detail": "Shail reached out about a founding FDE opportunity.",
+        "href": "https://mail.google.com/mail/#all/19fe3c8cdd6ed245"
+      },
+      {
+        "date": "Aug 9",
+        "sortDate": "2026-08-09",
+        "title": "Phone call",
+        "detail": "Calendar confirms a thirty-minute call; no post-call record was found."
+      }
+    ],
+    "next": {
+      "action": "Close the loop: ask whether the nontraditional role is moving forward and what design-versus-engineering ownership it expects.",
+      "owner": "Matt",
+      "due": "Overdue",
+      "evidence": "inference"
+    },
+    "signal": "A real conversation happened, but the role’s fit and outcome are both unresolved.",
+    "sources": [
+      "Gmail",
+      "Calendar"
+    ],
+    "tags": [
+      "startup",
+      "FDE",
+      "founding"
+    ]
+  },
+  {
+    "id": "doordash",
+    "company": "DoorDash",
+    "role": "Product Design team · AI interest",
+    "status": "action",
+    "stage": "screen",
+    "lastTouch": "2026-01-22",
+    "lastTouchLabel": "Scheduling link received",
+    "people": [
+      {
+        "name": "Nicole Courtney",
+        "role": "Product Design Recruiting",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Jan 21–22",
+        "sortDate": "2026-01-22",
+        "title": "Reconnection",
+        "detail": "Nicole reconnected and sent a scheduling link; no booking or later email is visible.",
+        "href": "https://mail.google.com/mail/#all/19be69af9166a99d"
+      }
+    ],
+    "next": {
+      "action": "If the team is still compelling, recontact Nicole with the current AI portfolio and ask what is actually open.",
+      "owner": "Matt",
+      "due": "Overdue",
+      "evidence": "inference"
+    },
+    "signal": "Warm recruiter access went unused. Re-open only with a concrete ask and current proof, not a generic catch-up.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "marketplace",
+      "AI",
+      "reconnection"
+    ]
+  },
+  {
+    "id": "summation",
+    "company": "Summation",
+    "role": "Early Product Designer",
+    "status": "action",
+    "stage": "screen",
+    "lastTouch": "2026-03-09",
+    "lastTouchLabel": "Recruiter asked about relocation",
+    "people": [
+      {
+        "name": "Erin Perozzi",
+        "role": "Technical Recruiter, GOAT Recruit",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Ian Wong",
+        "role": "Founder",
+        "relationship": "hiring manager"
+      },
+      {
+        "name": "Emin",
+        "role": "Hiring manager",
+        "relationship": "hiring manager"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Mar 9",
+        "sortDate": "2026-03-09",
+        "title": "Delayed process resurfaced",
+        "detail": "Erin said hiring-manager paternity leave caused the delay and asked whether Matt was still open to moving.",
+        "href": "https://mail.google.com/mail/#all/19cd44800cc44b77"
+      }
+    ],
+    "next": {
+      "action": "Reply only if still interested, with a direct yes/no on relocation and a question about whether headcount remains approved.",
+      "owner": "Matt",
+      "due": "Overdue",
+      "evidence": "fact"
+    },
+    "signal": "The delay had a credible cause, but months of silence mean the role itself must be revalidated before investing more effort.",
+    "sources": [
+      "Gmail",
+      "Prior chats"
+    ],
+    "tags": [
+      "startup",
+      "early design",
+      "relocation"
+    ]
+  },
+  {
+    "id": "usajobs",
+    "company": "U.S. Department of Education",
+    "role": "Management Program Analyst · UX/UI Designer, GS-13",
+    "status": "action",
+    "stage": "applied",
+    "lastTouch": "2026-07-06",
+    "lastTouchLabel": "Application + direct outreach",
+    "people": [
+      {
+        "name": "Tyra Hunter",
+        "role": "Outreach / HR contact",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Jul 6",
+        "sortDate": "2026-07-06",
+        "title": "Applied and introduced",
+        "detail": "First federal application, announcement 873673300; no response is in Gmail.",
+        "href": "https://mail.google.com/mail/#all/19f398cbf43fdace"
+      }
+    ],
+    "next": {
+      "action": "Check USAJobs status, then send one follow-up to Tyra only if the announcement remains active.",
+      "owner": "Matt",
+      "due": "Now",
+      "evidence": "inference"
+    },
+    "signal": "A formal application plus a named contact, but federal status lives primarily in the portal and is missing here.",
+    "sources": [
+      "Gmail",
+      "Prior chats"
+    ],
+    "tags": [
+      "federal",
+      "public sector",
+      "GS-13"
+    ]
+  },
+  {
+    "id": "coupang",
+    "company": "Coupang",
+    "role": "Senior Staff / Principal Product Design · Marketplace",
+    "status": "action",
+    "stage": "screen",
+    "lastTouch": "2026-08-13",
+    "lastTouchLabel": "Location question unanswered in Gmail",
+    "people": [
+      {
+        "name": "Ginny Kim",
+        "role": "Global Tech Recruiting",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 13",
+        "sortDate": "2026-08-13",
+        "title": "Reconnection",
+        "detail": "Ginny welcomed reconnecting and asked whether Matt would consider Korea before scheduling.",
+        "href": "https://mail.google.com/mail/#all/19ff9ae52c9eb559"
+      }
+    ],
+    "next": {
+      "action": "Answer the Korea question and ask which concrete requisitions and hiring managers she has in mind.",
+      "owner": "Matt",
+      "due": "Now",
+      "evidence": "fact"
+    },
+    "signal": "The recruiter is open, but geography is the gate. A clear answer is required before this becomes a loop.",
+    "sources": [
+      "Gmail",
+      "Shared files",
+      "Prior chats"
+    ],
+    "tags": [
+      "marketplace",
+      "Korea",
+      "principal"
+    ]
+  },
+  {
+    "id": "design-engineer",
+    "company": "Mixpanel? · company unverified",
+    "role": "Staff Design Engineer",
+    "status": "action",
+    "stage": "screen",
+    "lastTouch": "2026-08-04",
+    "lastTouchLabel": "Role-fit questions answered",
+    "people": [
+      {
+        "name": "Connor Fehmel",
+        "role": "Recruiting contact",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 4",
+        "sortDate": "2026-08-04",
+        "title": "Qualification exchange",
+        "detail": "Connor requested resume/portfolio and screened for production coding plus components, tokens, and documentation ownership."
+      }
+    ],
+    "next": {
+      "action": "Confirm the company and requisition, then ask whether the technical answers cleared role alignment.",
+      "owner": "Matt",
+      "due": "Now",
+      "evidence": "inference"
+    },
+    "signal": "More than networking, but the company identity and actual hiring owner are not verified in the shared evidence.",
+    "sources": [
+      "Shared files",
+      "Prior chats"
+    ],
+    "tags": [
+      "design engineering",
+      "coding",
+      "unverified"
+    ]
+  },
+  {
+    "id": "mrbeast",
+    "company": "Beast Industries / MrBeast",
+    "role": "Lead Product Designer · membership app",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-03",
+    "lastTouchLabel": "Rejected after two interviews",
+    "people": [
+      {
+        "name": "Jeremiah Leeper",
+        "role": "Recruiter",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Alexander Mayes",
+        "role": "Hiring manager",
+        "relationship": "hiring manager"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Jul 29",
+        "sortDate": "2026-07-29",
+        "title": "Recruiter interview",
+        "detail": "Founding design role for a gamified consumer membership product."
+      },
+      {
+        "date": "Jul 30",
+        "sortDate": "2026-07-30",
+        "title": "Hiring-manager interview",
+        "detail": "Forty-five minutes with Alexander."
+      },
+      {
+        "date": "Aug 3",
+        "sortDate": "2026-08-03",
+        "title": "Rejected",
+        "detail": "Loop closed after two sequential interviews.",
+        "evidence": "fact",
+        "href": "https://mail.google.com/mail/#all/19fc9ad726856dd9"
+      }
+    ],
+    "next": {
+      "action": "No external action. Preserve the founding-design and location lessons for similar roles.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Real progression and a clear decision. No further stage or feedback was offered.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Transcript"
+    ],
+    "tags": [
+      "consumer",
+      "founding design",
+      "membership"
+    ]
+  },
+  {
+    "id": "superhuman",
+    "company": "Superhuman",
+    "role": "Staff Growth Designer",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-13",
+    "lastTouchLabel": "Rejected after recruiter screen",
+    "people": [
+      {
+        "name": "Jordan Abernathy",
+        "role": "Senior Technical Recruiter",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 3",
+        "sortDate": "2026-08-03",
+        "title": "Recruiter screen",
+        "detail": "Role was autonomous paid-media/performance creative ownership, not product growth."
+      },
+      {
+        "date": "Aug 10",
+        "sortDate": "2026-08-10",
+        "title": "Follow-up",
+        "detail": "Matt sent the Expedia experimentation deck."
+      },
+      {
+        "date": "Aug 13",
+        "sortDate": "2026-08-13",
+        "title": "Rejected",
+        "detail": "Team declined after recruiter review.",
+        "evidence": "fact",
+        "href": "https://mail.google.com/mail/#all/19ffbf9def584b83"
+      }
+    ],
+    "next": {
+      "action": "No action. Treat future performance-creative roles as a separate job family from product design.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "The mismatch was ownership of paid-media performance creative, not general craft or AI-product credibility.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Transcript"
+    ],
+    "tags": [
+      "growth",
+      "performance marketing",
+      "staff"
+    ]
+  },
+  {
+    "id": "servicenow",
+    "company": "ServiceNow",
+    "role": "Sr Staff Product Designer · Identity Security Platform & Systems",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-11",
+    "lastTouchLabel": "Rejected after sourcing conversation",
+    "people": [
+      {
+        "name": "Jessica Campbell",
+        "role": "Technical Talent Sourcer",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 3",
+        "sortDate": "2026-08-03",
+        "title": "Exploratory call",
+        "detail": "Jessica discussed workflows, customer service, Moveworks, and matching roles."
+      },
+      {
+        "date": "Aug 10",
+        "sortDate": "2026-08-10",
+        "title": "Application flagged",
+        "detail": "Jessica routed the Identity Security application to the hiring manager."
+      },
+      {
+        "date": "Aug 11",
+        "sortDate": "2026-08-11",
+        "title": "Rejected",
+        "detail": "Application closed after the human referral path.",
+        "evidence": "fact",
+        "href": "https://mail.google.com/mail/#all/19ff1f448acc9792"
+      }
+    ],
+    "next": {
+      "action": "No follow-up required. Keep Jessica as a broader talent-network contact.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Recruiter access did not convert into hiring-manager interest for this specific identity-security role.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Shared files"
+    ],
+    "tags": [
+      "enterprise",
+      "identity",
+      "staff"
+    ]
+  },
+  {
+    "id": "wbd",
+    "company": "CNN / Warner Bros. Discovery",
+    "role": "Principal Product Designer · AI",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-07-27",
+    "lastTouchLabel": "Matt canceled hiring-manager interview",
+    "people": [
+      {
+        "name": "Lena Mills",
+        "role": "Recruiter",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Karen Van Every",
+        "role": "Senior Director, Product Design",
+        "relationship": "hiring manager"
+      },
+      {
+        "name": "Mariana Martinez",
+        "role": "Coordinator",
+        "relationship": "coordinator"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Jul 20",
+        "sortDate": "2026-07-20",
+        "title": "Recruiter screen",
+        "detail": "Discussed a new CNN AI squad and a Principal role."
+      },
+      {
+        "date": "Jul 27",
+        "sortDate": "2026-07-27",
+        "title": "Withdrew",
+        "detail": "Matt canceled the scheduled Karen interview, saying he would stay put and reconnect later.",
+        "evidence": "fact",
+        "href": "https://mail.google.com/mail/#all/19f905ce83b10457"
+      }
+    ],
+    "next": {
+      "action": "No action until the planned 6–9 month reconnection window or a materially new role.",
+      "owner": "Closed",
+      "due": "2027",
+      "evidence": "fact"
+    },
+    "signal": "Closed by Matt before the hiring-manager evaluation, not by WBD.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Transcript",
+      "Prior chats"
+    ],
+    "tags": [
+      "media",
+      "AI",
+      "principal"
+    ]
+  },
+  {
+    "id": "dropbox",
+    "company": "Dropbox",
+    "role": "Staff Product Designer · several teams",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-03-31",
+    "lastTouchLabel": "Matt declined and referred others",
+    "people": [
+      {
+        "name": "Tracey Heiman",
+        "role": "Staff Design Recruiting Lead",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Mar 30",
+        "sortDate": "2026-03-30",
+        "title": "Re-opened",
+        "detail": "Tracey resurfaced several Staff opportunities after a 2025 screen."
+      },
+      {
+        "date": "Mar 31",
+        "sortDate": "2026-03-31",
+        "title": "Declined",
+        "detail": "Matt declined and referred Lauren LoPrete, Lee Ladke, and Jecho Ricafrente.",
+        "evidence": "fact",
+        "href": "https://mail.google.com/mail/#all/19d45a9c833d6b62"
+      }
+    ],
+    "next": {
+      "action": "No action. Relationship remains warm for a future role.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "A deliberate decline with helpful referrals; this is a preserved relationship, not a failed process.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "staff",
+      "referral",
+      "relationship"
+    ]
+  },
+  {
+    "id": "openai-application",
+    "company": "OpenAI",
+    "role": "Product Designer · People Innovation Labs + earlier application",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-07-26",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jul 26",
+        "sortDate": "2026-07-26",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/19f9c36e5e9e6a41"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "AI",
+      "people products"
+    ]
+  },
+  {
+    "id": "tesla",
+    "company": "Tesla",
+    "role": "Staff Designer, UI Design · Vehicle Software",
+    "status": "waiting",
+    "stage": "screen",
+    "lastTouch": "2026-09-02",
+    "lastTouchLabel": "Recruiter call held; outcome pending",
+    "people": [
+      {
+        "name": "Chris Haener",
+        "role": "Engineering Recruiter",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Applications",
+        "detail": "Applied to UX and Staff UI opportunities in Tesla’s product organization.",
+        "href": "https://mail.google.com/mail/#all/1a0362573a87c156"
+      },
+      {
+        "date": "Aug 28",
+        "sortDate": "2026-08-28",
+        "title": "Recruiter interest",
+        "detail": "Chris reviewed the Staff Designer application and requested a phone conversation about Vehicle Software.",
+        "href": "https://mail.google.com/mail/#all/1a04ae9ddd407792",
+        "evidence": "fact"
+      },
+      {
+        "date": "Sep 2",
+        "sortDate": "2026-09-02",
+        "title": "Recruiter call",
+        "detail": "Thirty-minute phone conversation with Chris was on the calendar; no post-call outcome is recorded yet.",
+        "evidence": "unknown"
+      }
+    ],
+    "next": {
+      "action": "Wait briefly for Chris’s follow-up, then send a concise note asking about team fit and the next decision point.",
+      "owner": "Chris / Matt",
+      "due": "Sep 4",
+      "evidence": "inference"
+    },
+    "signal": "The Staff UI application reached a recruiter conversation. The call occurred, but the next stage is not yet documented.",
+    "sources": [
+      "Gmail",
+      "Calendar"
+    ],
+    "tags": [
+      "automotive",
+      "vehicle software",
+      "staff",
+      "UI"
+    ]
+  },
+  {
+    "id": "red-bull",
+    "company": "Red Bull",
+    "role": "Sr Product Designer · Digital Products Studio",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-07-15",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jul 15",
+        "sortDate": "2026-07-15",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/19f67b08924e693e"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consumer",
+      "studio"
+    ]
+  },
+  {
+    "id": "tomo",
+    "company": "Tomo",
+    "role": "Principal Product Designer",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-07-07",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jul 7",
+        "sortDate": "2026-07-07",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/19f3e6c462c8206f"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "principal",
+      "fintech"
+    ]
+  },
+  {
+    "id": "mistral",
+    "company": "Mistral",
+    "role": "Product Designer",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-07-18",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jul 18",
+        "sortDate": "2026-07-18",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/19f7792f19e19cfd"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "AI"
+    ]
+  },
+  {
+    "id": "databricks",
+    "company": "Databricks",
+    "role": "Sr Product Designer · AI/BI",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-07-18",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jul 18",
+        "sortDate": "2026-07-18",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/19f77a5ef3eb032b"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "AI",
+      "enterprise",
+      "data"
+    ]
+  },
+  {
+    "id": "netflix",
+    "company": "Netflix",
+    "role": "Senior Product Designer · AI Enablement",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-07-31",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jul 31",
+        "sortDate": "2026-07-31",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/19fba49784e48c1f"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "AI",
+      "enablement"
+    ]
+  },
+  {
+    "id": "deepmind",
+    "company": "Google DeepMind",
+    "role": "Role not named in receipt",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-07-31",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jul 31",
+        "sortDate": "2026-07-31",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/19fba88fd580627d"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "AI",
+      "research"
+    ]
+  },
+  {
+    "id": "base-power",
+    "company": "Base Power",
+    "role": "Senior Product Designer · Internal Tools",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-03",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 3",
+        "sortDate": "2026-08-03",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/19fc84f2b39aada8"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "internal tools",
+      "energy"
+    ]
+  },
+  {
+    "id": "anthropic",
+    "company": "Anthropic",
+    "role": "Product Designer · People Products",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-12",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 12",
+        "sortDate": "2026-08-12",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/19ff391d9064e84e"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "AI",
+      "people products"
+    ]
+  },
+  {
+    "id": "palantir",
+    "company": "Palantir",
+    "role": "Product Designer",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-13",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 13",
+        "sortDate": "2026-08-13",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/19ff9b66402be256"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "enterprise",
+      "data"
+    ]
+  },
+  {
+    "id": "nourish",
+    "company": "Nourish",
+    "role": "Staff Product Designer",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-17",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a00e242574e38ab"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "healthtech",
+      "staff"
+    ]
+  },
+  {
+    "id": "maven",
+    "company": "Maven Clinic",
+    "role": "Senior Staff Product Designer · Care Delivery",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-17",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a00e25f35a37c7b"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "healthtech",
+      "staff"
+    ]
+  },
+  {
+    "id": "samsung",
+    "company": "Samsung",
+    "role": "Designer II (M) · Interaction Design",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-17",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a00e41e038e6b4b"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "hardware",
+      "interaction"
+    ]
+  },
+  {
+    "id": "coreweave",
+    "company": "CoreWeave",
+    "role": "Product Designer",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-17",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a00e660e642f60e"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "AI infrastructure"
+    ]
+  },
+  {
+    "id": "rei",
+    "company": "REI",
+    "role": "Digital Product Designer Principal",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-17",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a0114afcde62a0b"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "principal",
+      "commerce",
+      "Seattle"
+    ]
+  },
+  {
+    "id": "nike",
+    "company": "Nike",
+    "role": "Lead, Digital Product Design",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-17",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a01140438331b33"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "lead",
+      "commerce"
+    ]
+  },
+  {
+    "id": "bank-of-america",
+    "company": "Bank of America",
+    "role": "Experience Design IV · Product Design",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-17",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a01172668a98862"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "fintech",
+      "enterprise"
+    ]
+  },
+  {
+    "id": "saronic",
+    "company": "Saronic",
+    "role": "Product Designer · UI/UX",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-17",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a010b1d31a39dd9"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "defense",
+      "hardware"
+    ]
+  },
+  {
+    "id": "microsoft",
+    "company": "Microsoft",
+    "role": "Member of Technical Staff · Human-Robot-AI Interaction",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-17",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a010c5f9b0f025f"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "robotics",
+      "AI",
+      "research"
+    ]
+  },
+  {
+    "id": "atoms",
+    "company": "Atoms",
+    "role": "Role not named in receipt",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-18",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 18",
+        "sortDate": "2026-08-18",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a013969b5f9fbbd"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consumer"
+    ]
+  },
+  {
+    "id": "turbineone",
+    "company": "TurbineOne",
+    "role": "Role not named in receipt",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-18",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 18",
+        "sortDate": "2026-08-18",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a015966323a2d36"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "defense",
+      "AI"
+    ]
+  },
+  {
+    "id": "instacart",
+    "company": "Instacart",
+    "role": "Staff Experience Designer",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-20",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 20",
+        "sortDate": "2026-08-20",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a01d25bcb8b2554"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "marketplace",
+      "staff"
+    ]
+  },
+  {
+    "id": "nvidia",
+    "company": "NVIDIA",
+    "role": "Senior UX Designer · JR2023633",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-20",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 20",
+        "sortDate": "2026-08-20",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a01d3a7b50a8c41"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "AI",
+      "hardware"
+    ]
+  },
+  {
+    "id": "google",
+    "company": "Google",
+    "role": "Role not named in receipt",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-24",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a031ac75a54d350"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consumer",
+      "AI"
+    ]
+  },
+  {
+    "id": "bcg-x",
+    "company": "BCG X",
+    "role": "AI Experience Designer · Japan",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-09-03",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/1a069b7409e81e04",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consulting",
+      "AI",
+      "experience design"
+    ]
+  },
+  {
+    "id": "chewy",
+    "company": "Chewy",
+    "role": "Role not named in receipt",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a0600a983a850fa"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consumer",
+      "commerce"
+    ]
+  },
+  {
+    "id": "plaid",
+    "company": "Plaid",
+    "role": "Product Designer",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a05ffce6017eefd"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "fintech",
+      "product design"
+    ]
+  },
+  {
+    "id": "onx",
+    "company": "onX",
+    "role": "Senior Product Designer · Fish",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a05ffa322312046"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consumer",
+      "outdoors",
+      "senior"
+    ]
+  },
+  {
+    "id": "sofi",
+    "company": "SoFi",
+    "role": "Staff Product Designer · Home Loans",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a05ff782a5a5878"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "fintech",
+      "staff",
+      "home loans"
+    ]
+  },
+  {
+    "id": "stripe",
+    "company": "Stripe",
+    "role": "Senior Staff Product Designer · Data & AI",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a05fec7423028ce"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "fintech",
+      "AI",
+      "data",
+      "staff"
+    ]
+  },
+  {
+    "id": "aquent-skill",
+    "company": "Aquent · Skill",
+    "role": "Lead Product Designer",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-09-03",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/1a06802e36d0866f",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "lead",
+      "product design"
+    ]
+  },
+  {
+    "id": "apple-business",
+    "company": "Apple",
+    "role": "Product Designer · Apple Business · 200624613",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-09-03",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a06b31e51d82214"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consumer",
+      "commerce",
+      "product design"
+    ]
+  },
+  {
+    "id": "apple-health",
+    "company": "Apple",
+    "role": "Senior UX Designer · Health · 200626115",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-09-03",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a06b35bcefa8f4c"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "health",
+      "senior",
+      "UX"
+    ]
+  },
+  {
+    "id": "atlas-gate",
+    "company": "Atlas Gate",
+    "role": "Art commission",
+    "status": "waiting",
+    "stage": "screen",
+    "lastTouch": "2026-09-03",
+    "lastTouchLabel": "Commission interview completed",
+    "people": [
+      {
+        "name": "David Branson",
+        "role": "Commission contact",
+        "relationship": "interviewer"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 31",
+        "sortDate": "2026-08-31",
+        "title": "Interview scheduled",
+        "detail": "A forty-minute commission conversation and shared interview document were arranged.",
+        "href": "https://mail.google.com/mail/#all/1a058c4b65344a60",
+        "evidence": "fact"
+      },
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Commission interview",
+        "detail": "The scheduled art-commission conversation took place at 9:00 AM Pacific.",
+        "evidence": "inference"
+      }
+    ],
+    "next": {
+      "action": "Wait for the commission decision or requested follow-up materials.",
+      "owner": "Atlas Gate",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "A live commission interview is complete; no written decision or next step is visible yet.",
+    "sources": [
+      "Gmail",
+      "Calendar"
+    ],
+    "tags": [
+      "commission",
+      "art",
+      "contract"
+    ]
+  },
+  {
+    "id": "salesforce-qualified-ai",
+    "company": "Salesforce",
+    "role": "Lead Product Designer (LMTS) · Qualified AI Products",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a05fddab90ffebf"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "AI",
+      "lead",
+      "enterprise"
+    ]
+  },
+  {
+    "id": "salesforce-agentexchange",
+    "company": "Salesforce",
+    "role": "Principal UI/UX · AgentExchange",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-09-01",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a05fd70b6d3db8f"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "AI",
+      "principal",
+      "enterprise"
+    ]
+  },
+  {
+    "id": "netjets",
+    "company": "NetJets",
+    "role": "UX Product Designer, Lead · 17309",
+    "status": "scheduled",
+    "stage": "interview",
+    "lastTouch": "2026-09-03",
+    "lastTouchLabel": "Work samples requested and sent",
+    "people": [
+      {
+        "name": "Emily Bishop",
+        "role": "Senior Recruiter",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Neil Sanders",
+        "role": "Design interviewer",
+        "relationship": "hiring manager"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Applied",
+        "detail": "Application submitted for the Lead UX Product Designer opening.",
+        "href": "https://mail.google.com/mail/#all/1a035014324d77d5"
+      },
+      {
+        "date": "Aug 26",
+        "sortDate": "2026-08-26",
+        "title": "Screen confirmed",
+        "detail": "Selected a time for the initial recruiter conversation.",
+        "href": "https://mail.google.com/mail/#all/1a03ec6cf8fb3d3c"
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Recruiter screen",
+        "detail": "Emily advanced Matt after the initial conversation; Neil had already reviewed the materials."
+      },
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Samples requested",
+        "detail": "Neil asked for visual work and access to protected case studies; Matt sent two relevant examples before the interview.",
+        "href": "https://mail.google.com/mail/#all/1a068d2935102f31",
+        "evidence": "fact"
+      },
+      {
+        "date": "Sep 4",
+        "sortDate": "2026-09-04",
+        "title": "Design interview",
+        "detail": "Forty-five-minute conversation with Neil at 11:30 AM Pacific.",
+        "href": "https://mail.google.com/mail/#all/1a05e6c4a7589117"
+      }
+    ],
+    "next": {
+      "action": "Prepare an aviation and operational-complexity story, including a crisp answer to Neil’s question about the Uber candidate.",
+      "owner": "Matt",
+      "due": "Sep 4 · 11:30 AM",
+      "evidence": "fact"
+    },
+    "signal": "Emily’s recruiter advocacy converted into a named design interview, and Neil reviewed the work before the handoff.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "lead",
+      "aviation",
+      "operations"
+    ]
+  },
+  {
+    "id": "boston-dynamics",
+    "company": "Boston Dynamics",
+    "role": "Senior Staff UX Designer · Human-Robot Interaction",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-09-03",
+    "lastTouchLabel": "Application closed after recruiter screen",
+    "people": [
+      {
+        "name": "Matthew Durkin",
+        "role": "Staff Talent Acquisition Partner",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Mario",
+        "role": "Director, Human-Robot Interaction",
+        "relationship": "hiring manager"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Applied",
+        "detail": "Application submitted for the Human-Robot Interaction opening.",
+        "href": "https://mail.google.com/mail/#all/1a0352d22e5af8d1"
+      },
+      {
+        "date": "Aug 26",
+        "sortDate": "2026-08-26",
+        "title": "Screen confirmed",
+        "detail": "Matthew scheduled an initial phone conversation.",
+        "href": "https://mail.google.com/mail/#all/1a03ebe40814411c"
+      },
+      {
+        "date": "Aug 31",
+        "sortDate": "2026-08-31",
+        "title": "Recruiter screen",
+        "detail": "Matthew said Mario reviewed the résumé and expressed interest, but no headcount is approved through the end of 2026."
+      },
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Closed",
+        "detail": "Boston Dynamics decided not to move forward after the recruiter conversation.",
+        "href": "https://mail.google.com/mail/#all/1a06abf45e069a1c",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit if approved headcount or a materially different robotics role appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "The loop closed after a recruiter screen that had surfaced director interest but no approved 2026 headcount.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "robotics",
+      "staff",
+      "HRI",
+      "safety-critical"
+    ]
+  },
+  {
+    "id": "rivian",
+    "company": "Rivian",
+    "role": "Lead Product Designer · Design System Frameworks",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-24",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a0362bd5f559acf"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "automotive",
+      "design systems",
+      "lead"
+    ]
+  },
+  {
+    "id": "gm-advanced-ux",
+    "company": "General Motors",
+    "role": "Senior Designer, Advanced UX",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-25",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/1a03c63dcf35bdc5",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "automotive",
+      "advanced UX"
+    ]
+  },
+  {
+    "id": "gm-in-vehicle",
+    "company": "General Motors",
+    "role": "In-Vehicle Designer · JR-202615347",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-24",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a03637851b3078d"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "automotive",
+      "in-vehicle"
+    ]
+  },
+  {
+    "id": "gm-ux-insight",
+    "company": "General Motors",
+    "role": "Advanced UX Insight Designer · JR-202613990",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-24",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a036390e0cf942b"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "automotive",
+      "research"
+    ]
+  },
+  {
+    "id": "shield-ai",
+    "company": "Shield AI",
+    "role": "Senior Product Designer · R4854",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-25",
+    "lastTouchLabel": "Application received",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Application receipt",
+        "detail": "No human conversation or later decision found in Gmail.",
+        "href": "https://mail.google.com/mail/#all/1a039906288efd93"
+      }
+    ],
+    "next": {
+      "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "unknown"
+    },
+    "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "defense",
+      "AI"
+    ]
+  },
+  {
+    "id": "paypal",
+    "company": "PayPal",
+    "role": "Principal Experience Designer + Staff Risk Intelligence",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-17",
+    "lastTouchLabel": "One role open; one rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 10",
+        "sortDate": "2026-08-10",
+        "title": "Two applications",
+        "detail": "Applied to Principal Experience Designer and Staff Experience Designer, Risk Intelligence Platform."
+      },
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Staff role rejected",
+        "detail": "The Risk Intelligence application closed; no rejection was found for Principal Experience Designer.",
+        "evidence": "fact",
+        "href": "https://mail.google.com/mail/#all/1a010db14b518839"
+      }
+    ],
+    "next": {
+      "action": "Treat only the Principal Experience Designer application as open; wait for human contact.",
+      "owner": "Recruiting",
+      "due": "No date",
+      "evidence": "fact"
+    },
+    "signal": "Mixed company status: one closed application and one receipt-only application.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "fintech",
+      "principal",
+      "risk"
+    ]
+  },
+  {
+    "id": "nintendo",
+    "company": "Nintendo",
+    "role": "New role under review + Contract Associate Game Designer",
+    "status": "applied",
+    "stage": "applied",
+    "lastTouch": "2026-08-24",
+    "lastTouchLabel": "New application under review",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 14",
+        "sortDate": "2026-08-14",
+        "title": "Sr UX Writer rejected",
+        "detail": "An earlier application closed."
+      },
+      {
+        "date": "Aug 24",
+        "sortDate": "2026-08-24",
+        "title": "Mixed update",
+        "detail": "Contract Associate Game Designer was rejected, while a separate new receipt says under review.",
+        "href": "https://mail.google.com/mail/#all/1a036227e921fa68"
+      }
+    ],
+    "next": {
+      "action": "Treat the Aug 24 receipt as a separate open application; verify the exact role in the portal.",
+      "owner": "Matt",
+      "due": "When useful",
+      "evidence": "inference"
+    },
+    "signal": "The new receipt is likely a different application, not a reversal of either rejection.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "gaming",
+      "mixed status"
+    ]
+  },
+  {
+    "id": "notion",
+    "company": "Notion",
+    "role": "Product Designer",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-07-03",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jun 21",
+        "sortDate": "2026-06-21",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Jul 3",
+        "sortDate": "2026-07-03",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/19f28b9410b8fa72",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "accenture",
+    "company": "Accenture",
+    "role": "Digital Product Design Senior Manager",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-07-07",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jun 29",
+        "sortDate": "2026-06-29",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Jul 7",
+        "sortDate": "2026-07-07",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/19f3db89b6e8af47",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consulting",
+      "senior manager"
+    ]
+  },
+  {
+    "id": "accenture-design-lead",
+    "company": "Accenture",
+    "role": "Design Lead · R00337068",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-09-03",
+    "lastTouchLabel": "Application closed",
+    "people": [],
+    "moments": [
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Closed",
+        "detail": "Accenture decided not to move forward with the Design Lead application; no human interview is recorded.",
+        "href": "https://mail.google.com/mail/#all/1a0662a634dffb21",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only through a different role or warm path.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review with no interview or specific feedback.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consulting",
+      "design lead"
+    ]
+  },
+  {
+    "id": "indeed",
+    "company": "Indeed",
+    "role": "Senior UX Designer · Ref 47056",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-07-10",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jul 7",
+        "sortDate": "2026-07-07",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Jul 10",
+        "sortDate": "2026-07-10",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/19f4c632f732bf58",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "employment",
+      "senior"
+    ]
+  },
+  {
+    "id": "boeing",
+    "company": "Boeing",
+    "role": "Senior Manager · Privacy Enablement",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-07",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jul 1",
+        "sortDate": "2026-07-01",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Aug 7",
+        "sortDate": "2026-08-07",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/19fdd04de1567edc",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "privacy",
+      "enterprise",
+      "manager"
+    ]
+  },
+  {
+    "id": "duolingo",
+    "company": "Duolingo",
+    "role": "Staff Product Designer + Senior Product Designer",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-20",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jun 21",
+        "sortDate": "2026-06-21",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Aug 20",
+        "sortDate": "2026-08-20",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/1a01f78c2987f5b4",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consumer",
+      "education"
+    ]
+  },
+  {
+    "id": "elevenlabs",
+    "company": "ElevenLabs",
+    "role": "Product Designer",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-17",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 13",
+        "sortDate": "2026-08-13",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/1a00f6a43ebb17f9",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "AI",
+      "audio"
+    ]
+  },
+  {
+    "id": "deloitte",
+    "company": "Deloitte",
+    "role": "Senior UX PD · AI Design Facilitator · FDE II",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-18",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 15",
+        "sortDate": "2026-08-15",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Aug 18",
+        "sortDate": "2026-08-18",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/1a004384c3ff45e8",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consulting",
+      "AI"
+    ]
+  },
+  {
+    "id": "pwc",
+    "company": "PwC",
+    "role": "Conversational AI and Agentic AI · Manager",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-18",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 10",
+        "sortDate": "2026-08-10",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Aug 18",
+        "sortDate": "2026-08-18",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/1a01729d5ea2ce5c",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "consulting",
+      "agentic AI"
+    ]
+  },
+  {
+    "id": "ashby",
+    "company": "Ashby",
+    "role": "Staff Product Designer",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-19",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Aug 19",
+        "sortDate": "2026-08-19",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/1a01ad7f335dc14c",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "staff",
+      "enterprise"
+    ]
+  },
+  {
+    "id": "runway",
+    "company": "Runway",
+    "role": "Role not named in receipt",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-21",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Aug 17",
+        "sortDate": "2026-08-17",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Aug 21",
+        "sortDate": "2026-08-21",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/1a024b68ce46adf",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "AI",
+      "video"
+    ]
+  },
+  {
+    "id": "adobe",
+    "company": "Adobe",
+    "role": "Senior Product Designer · Document Cloud Mobile Growth",
+    "status": "closed",
+    "stage": "closed",
+    "lastTouch": "2026-08-22",
+    "lastTouchLabel": "Rejected",
+    "people": [],
+    "moments": [
+      {
+        "date": "Jun 21",
+        "sortDate": "2026-06-21",
+        "title": "Applied",
+        "detail": "Application submitted."
+      },
+      {
+        "date": "Aug 22",
+        "sortDate": "2026-08-22",
+        "title": "Closed",
+        "detail": "Application rejected without a human interview in the record.",
+        "href": "https://mail.google.com/mail/#all/1a0286a740b98799",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "No external follow-up required. Revisit only if a materially different role or warm path appears.",
+      "owner": "Closed",
+      "due": "Closed",
+      "evidence": "fact"
+    },
+    "signal": "Closed at application review. No interview feedback was provided.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "growth",
+      "documents",
+      "mobile"
+    ]
+  }
+]
