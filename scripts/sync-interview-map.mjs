@@ -8,10 +8,11 @@ for (const name of ['page.tsx', 'globe.tsx', 'globe-geometry.ts', 'globe-fallbac
 writeFileSync(new URL('src/styles.css', root), readFileSync(resolve(source, 'app/globals.css'), 'utf8').replace('@import "tailwindcss";', ''));
 mkdirSync(new URL('public', root), { recursive: true });
 cpSync(resolve(source, 'public/fonts'), new URL('public/fonts', root), { recursive: true });
+cpSync(resolve(source, 'public/og.jpg'), new URL('public/og.jpg', root));
 for (const name of ['data-integrity.test.mjs', 'globe-focus.test.mjs']) {
   writeFileSync(new URL('tests/' + name, root), readFileSync(resolve(source, 'tests', name), 'utf8').replaceAll('../app/', '../src/'));
 }
-console.log('Synced public interview UI, data, fonts, and validation.');
+console.log('Synced public interview UI, data, fonts, share image, and validation.');
 
 const pageUrl = new URL('src/page.tsx', root);
 let page = readFileSync(pageUrl, 'utf8');
