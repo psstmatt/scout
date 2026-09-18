@@ -127,15 +127,16 @@ export const opportunities: Opportunity[] = [
   applicationOnly("snap-interface-designer", "Snap", "Interface Designer", "2026-09-13", "https://mail.google.com/mail/#all/1a09d7f4b8d327d0", ["consumer", "interface design"]),
   rejectedApplication("tesla-enterprise-250270", "Tesla", "UX Designer, Enterprise · 250270", "2026-08-18", "2026-09-13", "https://mail.google.com/mail/#all/1a09c925fb8c13ed", ["enterprise", "UX"]),
   {
-    id: "atoms-otter-platform-designer", company: "Atoms · Otter", role: "Senior / Staff Platform Designer", status: "scheduled", stage: "screen",
-    lastTouch: "2026-09-15", lastTouchLabel: "Sep 17 · 10:15 AM PT",
+    id: "atoms-otter-platform-designer", company: "Atoms · Otter", role: "Senior / Staff Platform Designer", status: "waiting", stage: "interview",
+    lastTouch: "2026-09-17", lastTouchLabel: "Recruiter screen complete",
     people: [{ name: "Evelyn Wong", role: "Senior Technical Recruiter", relationship: "recruiter" }],
     moments: [
+      { date: "Sep 17", sortDate: "2026-09-17", title: "Recruiter screen completed", detail: "Matt met Evelyn, discussed the platform-design mandate, and sent relevant work afterward. Evelyn confirmed receipt and will follow up.", href: "https://mail.google.com/mail/#all/1a0b11ba8d7d711b", evidence: "fact" },
       { date: "Sep 15", sortDate: "2026-09-15", title: "Recruiter conversation moved earlier", detail: "The initial September 24 booking was replaced by September 17 at 10:15 AM Pacific with Evelyn.", href: "https://mail.google.com/mail/#all/1a0a7835b26373ed", evidence: "fact" },
       { date: "Sep 14", sortDate: "2026-09-14", title: "Inbound opportunity", detail: "Evelyn invited Matt to discuss an end-to-end platform design role supporting Otter and related operating businesses. The role is based in Los Angeles with a five-day office expectation.", href: "https://mail.google.com/mail/#all/1a0a254179ee1bbb", evidence: "fact" },
     ],
-    next: { action: "Discuss platform scope, senior/staff level, and the Los Angeles office requirement with Evelyn.", owner: "Matt", due: "Sep 17 · 10:15–10:45 AM PT", evidence: "fact" },
-    signal: "Direct recruiter outreach for a senior/staff platform mandate; location fit is the first gating question.",
+    next: { action: "Wait for Evelyn’s follow-up on fit, level, and the next interview step.", owner: "Evelyn", due: "No date", evidence: "fact" },
+    signal: "The inbound conversation is complete and work samples were shared; the Los Angeles office requirement remains a fit consideration.",
     sources: ["Gmail"], tags: ["inbound", "platform", "restaurant technology", "Los Angeles"],
   },
   {
@@ -271,7 +272,7 @@ export const opportunities: Opportunity[] = [
     sources: ["Gmail", "Calendar", "Prior chats"], tags: ["SMB", "growth", "operator"],
   },
   {
-    id: "anduril", company: "Anduril", role: "Senior Product Designer · Software Platform / ArsenalOS / Design Systems", status: "paused", stage: "interview",
+    id: "anduril", company: "Anduril", role: "Senior Product Designer · Software Platform / Design Systems", status: "paused", stage: "interview",
     lastTouch: "2026-09-08", lastTouchLabel: "Team hiring paused",
     people: [
       { name: "Maureen McCormick", role: "Recruiter", relationship: "recruiter" },
@@ -292,8 +293,8 @@ export const opportunities: Opportunity[] = [
     sources: ["Gmail", "Calendar", "Transcript", "Prior chats"], tags: ["defense", "hardware", "safety-critical"],
   },
   {
-    id: "amazon", company: "Amazon", role: "Principal UX Designer · AWS Marketplace & Partner Services · L7", status: "waiting", stage: "portfolio",
-    lastTouch: "2026-09-15", lastTouchLabel: "Deep dive complete; feedback pending",
+    id: "amazon", company: "Amazon", role: "Principal UX Designer · AWS Marketplace & Partner Services · L7", status: "scheduled", stage: "interview",
+    lastTouch: "2026-09-16", lastTouchLabel: "Final-loop prep · Sep 18 at 11:30 AM PT",
     people: [
       { name: "Michelle Thomas", role: "Senior Strategic Recruiter", relationship: "recruiter" },
       { name: "Alex McGhee", role: "Recruiter; Autos / Alexa path", relationship: "recruiter" },
@@ -305,6 +306,7 @@ export const opportunities: Opportunity[] = [
       { name: "Anna Stein", role: "Global Specialty Recruiting Coordinator", relationship: "coordinator" },
     ],
     moments: [
+      { date: "Sep 16", sortDate: "2026-09-16", title: "Advanced to final loop", detail: "Michelle confirmed positive deep-dive feedback and moved Matt to the final interview loop. A one-hour loop-prep conversation is scheduled for September 18 at 11:30 AM Pacific.", href: "https://mail.google.com/mail/#all/1a0abf079f5cefc6", evidence: "fact" },
       { date: "Sep 15", sortDate: "2026-09-15", title: "Deep dive completed", detail: "Matt completed the conversation with Doug. Michelle is awaiting feedback and expects loop preparation to be the next step; advancement is not yet confirmed.", href: "https://mail.google.com/mail/#all/1a0a76820c679246", evidence: "fact" },
       { date: "Aug 12", sortDate: "2026-08-12", title: "Recruiter screen", detail: "Discussed Autos, Alexa/Devices, level, location, and L6/L7 scope." },
       { date: "Aug 19–20", sortDate: "2026-08-20", title: "Four teams routed", detail: "Michelle shared four Principal opportunities; Matt approved her stack rank and team outreach.", href: "https://mail.google.com/mail/#all/1a01bd9e1a85c001" },
@@ -317,8 +319,8 @@ export const opportunities: Opportunity[] = [
       { date: "Sep 11", sortDate: "2026-09-11", title: "Design deep dive scheduled", detail: "Anna tentatively scheduled the one-hour PS2 conversation with Doug Sandlin for September 15 at 9:30 AM Pacific. Matt confirmed; Anna will flag any Monday change.", href: "https://mail.google.com/mail/#all/1a0928a8896956d3", evidence: "fact" },
       { date: "Sep 14", sortDate: "2026-09-14", title: "Design deep dive confirmed", detail: "Anna issued the final confirmation for the one-hour PS2 conversation with Doug Sandlin.", href: "https://mail.google.com/mail/#all/1a0a11fec0128897", evidence: "fact" },
     ],
-    next: { action: "Wait for Michelle’s feedback and confirmation of the full loop before preparing its final format.", owner: "Michelle", due: "Sep 16 update expected", evidence: "fact" },
-    signal: "Deep dive completed. Michelle expects loop preparation next, subject to interviewer feedback.",
+    next: { action: "Use the loop-prep call to confirm the interview slate, writing exercise, portfolio format, and preparation priorities.", owner: "Matt / Michelle", due: "Sep 18 · 11:30 AM–12:30 PM PT", evidence: "fact" },
+    signal: "Positive deep-dive feedback moved the AWS Marketplace path into Amazon’s final interview loop.",
     sources: ["Gmail", "Calendar", "Transcript", "Prior chats"], tags: ["principal", "AI", "ads", "marketplace"],
   },
   {
@@ -358,8 +360,8 @@ export const opportunities: Opportunity[] = [
     sources: ["Gmail", "Calendar", "Transcript", "Prior chats"], tags: ["startup", "AI", "craft"],
   },
   {
-    id: "dialpad", company: "Dialpad", role: "Staff Product Designer", status: "scheduled", stage: "interview",
-    lastTouch: "2026-09-11", lastTouchLabel: "Sep 15 · 2 PM PT",
+    id: "dialpad", company: "Dialpad", role: "Staff Product Designer", status: "waiting", stage: "decision",
+    lastTouch: "2026-09-17", lastTouchLabel: "Final approvals and references",
     people: [
       { name: "Pablo Delfino", role: "Senior Talent Business Partner", relationship: "recruiter" },
       { name: "Gianna Carusillo", role: "Interview coordinator", relationship: "coordinator" },
@@ -377,10 +379,12 @@ export const opportunities: Opportunity[] = [
       { date: "Sep 10", sortDate: "2026-09-10", title: "Team design loop", detail: "Matt completed the design-team conversation and debriefed the interview afterward.", evidence: "fact" },
       { date: "Sep 10", sortDate: "2026-09-10", title: "Advanced", detail: "Pablo asked to introduce Matt to Dialpad’s chief design officer for a 30–45 minute values-and-motivation conversation; the time is not yet confirmed.", evidence: "fact" },
       { date: "Sep 11", sortDate: "2026-09-11", title: "CDO conversation confirmed", detail: "Fini confirmed a one-hour conversation with Austen Ezzell for September 15 at 2:00 PM Pacific.", href: "https://mail.google.com/mail/#all/1a091f69a8901aaa", evidence: "fact" },
+      { date: "Sep 16", sortDate: "2026-09-16", title: "References requested", detail: "Dialpad initiated work-reference checks through Crosschq.", href: "https://mail.google.com/mail/#all/1a0ab5b684d2d70e", evidence: "fact" },
+      { date: "Sep 17", sortDate: "2026-09-17", title: "Final-stage check-in", detail: "Pablo confirmed the process is in final approvals, with design-leadership and finance sign-off still pending. Reference checks are in progress; no offer or final decision is confirmed.", href: "https://mail.google.com/mail/#all/1a0b0922849d7630", evidence: "fact" },
     ],
-    next: { action: "Prepare concise values, motivation, and leadership stories for Austen.", owner: "Matt", due: "Sep 15 · 2–3 PM PT", evidence: "fact" },
-    signal: "The team loop advanced directly to a confirmed conversation with Dialpad’s chief design officer.",
-    sources: ["Gmail", "Calendar", "Prior chats"], tags: ["B2B", "communications", "staff", "design leader"],
+    next: { action: "Complete any outstanding reference requests and wait for Pablo’s approval update.", owner: "Matt / Pablo", due: "No date", evidence: "fact" },
+    signal: "Dialpad is in final-stage approvals and reference checks; the outcome remains pending.",
+    sources: ["Gmail", "Calendar", "Transcript", "Prior chats"], tags: ["B2B", "communications", "staff", "design leader"],
   },
   {
     id: "hpiq", company: "HP IQ", role: "Lead AI Product Designer", status: "closed", stage: "closed",
@@ -487,8 +491,8 @@ export const opportunities: Opportunity[] = [
     sources: ["Gmail", "Calendar", "Prior chats"], tags: ["autonomy", "mobility", "AI", "physical systems"],
   },
   {
-    id: "eight-sleep", company: "Eight Sleep", role: "Senior Product Designer opportunity", status: "scheduled", stage: "interview",
-    lastTouch: "2026-09-15", lastTouchLabel: "Alanah · Sep 16 at 1 PM PT",
+    id: "eight-sleep", company: "Eight Sleep", role: "Senior Product Designer opportunity", status: "waiting", stage: "decision",
+    lastTouch: "2026-09-16", lastTouchLabel: "Follow-up conversations complete",
     people: [
       { name: "Alanah Anderson", role: "Company contact; meeting purpose unconfirmed", relationship: "interviewer" },
       { name: "Ashley Brown", role: "External recruiting contact", relationship: "recruiter" },
@@ -496,6 +500,7 @@ export const opportunities: Opportunity[] = [
       { name: "Alexandra Zatarain", role: "Company leader", relationship: "interviewer" },
     ],
     moments: [
+      { date: "Sep 16", sortDate: "2026-09-16", title: "Follow-up conversations completed", detail: "Matt completed the scheduled conversations with Alanah and Khoi. Khoi indicated that follow-up materials would be sent; no decision or next interview is confirmed.", href: "https://mail.google.com/mail/#all/1a0ab713cb87bb30", evidence: "fact" },
       { date: "Sep 15", sortDate: "2026-09-15", title: "Next conversation booked", detail: "A 30-minute Eight Sleep conversation with Alanah Anderson is confirmed for September 16 at 1 PM Pacific.", href: "https://mail.google.com/mail/#all/1a0a66087c500021", evidence: "fact" },
       { date: "Aug 27", sortDate: "2026-08-27", title: "Role qualified", detail: "Creative People introduced and qualified the Eight Sleep opportunity." },
       { date: "Sep 4", sortDate: "2026-09-04", title: "Direct interview", detail: "Thirty-minute conversation with Khoi at 10:30 AM Pacific.", href: "https://mail.google.com/mail/#all/1a05defcd2837d85" },
@@ -506,8 +511,8 @@ export const opportunities: Opportunity[] = [
       { date: "Sep 11", sortDate: "2026-09-11", title: "Rescheduled again", detail: "Alexandra was unavailable, so the conversation moved to September 14 at noon Pacific. Matt accepted and the replacement invitation is active.", href: "https://mail.google.com/mail/#all/1a091a067541382b", evidence: "fact" },
       { date: "Sep 14", sortDate: "2026-09-14", title: "Leadership conversation", detail: "Matt completed the product-design conversation with Alexandra; the next-step decision is pending.", evidence: "fact" },
     ],
-    next: { action: "Meet Alanah and confirm the next stage and decision process.", owner: "Matt / Alanah", due: "Sep 16 · 1–1:30 PM PT", evidence: "fact" },
-    signal: "The conversation with Alexandra is complete after two reschedules; the next-stage decision remains open.",
+    next: { action: "Wait for Khoi’s follow-up materials and the team’s decision; clarify the purpose of the Sep 30 hold before treating it as an interview.", owner: "Eight Sleep", due: "No date", evidence: "unknown" },
+    signal: "Multiple company conversations are complete. A calendar hold exists for September 30, but its purpose is not yet verified.",
     sources: ["Gmail", "Calendar", "Transcript", "Prior chats"], tags: ["consumer", "health", "hardware", "AI"],
   },
   {
@@ -813,7 +818,18 @@ export const opportunities: Opportunity[] = [
   applicationOnly("plaid", "Plaid", "Product Designer", "2026-09-01", "https://mail.google.com/mail/#all/1a05ffce6017eefd", ["fintech", "product design"]),
   applicationOnly("onx", "onX", "Senior Product Designer · Fish", "2026-09-01", "https://mail.google.com/mail/#all/1a05ffa322312046", ["consumer", "outdoors", "senior"]),
   rejectedApplication("sofi", "SoFi", "Staff Product Designer · Home Loans", "2026-09-01", "2026-09-05", "https://mail.google.com/mail/#all/1a07258943d96f18", ["fintech", "staff", "home loans"]),
-  applicationOnly("stripe", "Stripe", "Senior Staff Product Designer · Data & AI", "2026-09-01", "https://mail.google.com/mail/#all/1a05fec7423028ce", ["fintech", "AI", "data", "staff"]),
+  {
+    id: "stripe", company: "Stripe", role: "Product Designer, Global · original application: Senior Staff, Data & AI", status: "scheduled", stage: "screen",
+    lastTouch: "2026-09-16", lastTouchLabel: "Recruiter interview · Sep 28 at 9 AM PT",
+    people: [{ name: "Steph Hjartarson", role: "Technical Recruiter", relationship: "recruiter" }],
+    moments: [
+      { date: "Sep 1", sortDate: "2026-09-01", title: "Applied", detail: "Application submitted for Senior Staff Product Designer, Data & AI.", href: "https://mail.google.com/mail/#all/1a05fec7423028ce", evidence: "fact" },
+      { date: "Sep 16", sortDate: "2026-09-16", title: "Recruiter interview confirmed", detail: "Stripe invited Matt to a 30-minute conversation labeled Product Designer, Global with Steph Hjartarson on September 28.", href: "https://mail.google.com/mail/#all/1a0ab3739ee34b2e", evidence: "fact" },
+    ],
+    next: { action: "Clarify which Stripe role and team the conversation covers, then prepare a concise level and fit narrative.", owner: "Matt / Steph", due: "Sep 28 · 9–9:30 AM PT", evidence: "fact" },
+    signal: "The Stripe application advanced to a confirmed recruiter conversation, but the invitation uses a broader role label than the original receipt.",
+    sources: ["Gmail", "Calendar"], tags: ["fintech", "AI", "data", "staff"],
+  },
   rejectedApplication("aquent-skill", "Aquent · Skill", "Lead Product Designer", "2026-09-01", "2026-09-03", "https://mail.google.com/mail/#all/1a06802e36d0866f", ["lead", "product design"]),
   applicationOnly("apple-business", "Apple", "Product Designer · Apple Business · 200624613", "2026-09-03", "https://mail.google.com/mail/#all/1a06b31e51d82214", ["consumer", "commerce", "product design"]),
   applicationOnly("apple-health", "Apple", "Senior UX Designer · Health · 200626115", "2026-09-03", "https://mail.google.com/mail/#all/1a06b35bcefa8f4c", ["health", "senior", "UX"]),
@@ -863,12 +879,39 @@ export const opportunities: Opportunity[] = [
   applicationOnly("caterpillar-senior-ux-ui-2", "Caterpillar", "Senior UX/UI Designer-2 · R0000392279", "2026-09-10", "https://mail.google.com/mail/#all/1a08e37843b4d0b6", ["industrial", "senior", "UX"]),
   applicationOnly("oura-b2b-ecommerce", "Oura", "Senior Product Designer · B2B eCommerce", "2026-09-10", "https://mail.google.com/mail/#all/1a08e2979138f2b8", ["health", "hardware", "commerce"]),
   applicationOnly("securityscorecard", "SecurityScorecard", "Role not named in receipt", "2026-09-10", "https://mail.google.com/mail/#all/1a08e294e1fea92f", ["security", "enterprise"]),
-  applicationOnly("athennian-senior-product-designer", "Athennian", "Senior Product Designer", "2026-09-10", "https://mail.google.com/mail/#all/1a08e1c0ec08568d", ["legal tech", "senior", "product design"]),
+  {
+    id: "athennian-senior-product-designer", company: "Athennian", role: "Senior Product Designer", status: "closed", stage: "closed",
+    lastTouch: "2026-09-16", lastTouchLabel: "Position closed",
+    people: [],
+    moments: [
+      { date: "Sep 10", sortDate: "2026-09-10", title: "Applied", detail: "Application submitted.", href: "https://mail.google.com/mail/#all/1a08e1c0ec08568d", evidence: "fact" },
+      { date: "Sep 16", sortDate: "2026-09-16", title: "Position closed", detail: "Athennian closed the Senior Product Designer opening. The notice did not provide candidate-specific interview feedback.", href: "https://mail.google.com/mail/#all/1a0ac45d09cf3b03", evidence: "fact" },
+    ],
+    next: { action: "No further action required for this opening.", owner: "Closed", due: "Closed", evidence: "fact" },
+    signal: "The role closed before a human interview was established.",
+    sources: ["Gmail"], tags: ["legal tech", "senior", "product design"],
+  },
   applicationOnly("duckduckgo-senior-product-design-engineer", "DuckDuckGo", "Senior Product Design Engineer", "2026-09-11", "https://mail.google.com/mail/#all/1a092cbcfe981276", ["privacy", "search", "design engineering"]),
   applicationOnly("migaku-head-of-design", "Migaku", "Head of Design", "2026-09-11", "https://mail.google.com/mail/#all/1a092cd7dcdc729a", ["education", "leadership", "consumer"]),
   rejectedApplication("rakuten-ux-director-csd", "Rakuten", "UX Director · Customer Strategy · 1034356-1", "2026-09-11", "2026-09-14", "https://mail.google.com/mail/#all/1a0a325739a874bd", ["commerce", "director", "Japan"]),
   applicationOnly("rover-price-experience", "Rover", "Senior Product Designer · Price Experience", "2026-09-11", "https://mail.google.com/mail/#all/1a09344d234a90c3", ["marketplace", "consumer", "senior"]),
-  applicationOnly("american-airlines-principal-ux", "American Airlines", "Principal Product Designer, UX · 88128", "2026-09-11", "https://mail.google.com/mail/#all/1a09357c457458d2", ["travel", "principal", "UX"]),
+  {
+    id: "american-airlines-principal-ux", company: "American Airlines", role: "Principal Product Designer, UX · 88128", status: "paused", stage: "applied",
+    lastTouch: "2026-09-17", lastTouchLabel: "Talent pool; decision unclear",
+    people: [],
+    moments: [
+      { date: "Sep 11", sortDate: "2026-09-11", title: "Applied", detail: "Application submitted.", href: "https://mail.google.com/mail/#all/1a09357c457458d2", evidence: "fact" },
+      { date: "Sep 17", sortDate: "2026-09-17", title: "Talent-pool notice", detail: "American Airlines said it would retain Matt’s profile in its talent pool. The message did not clearly state whether requisition 88128 remains active, and Matt asked recruiting to clarify.", href: "https://mail.google.com/mail/#all/1a0b0f5b70422181", evidence: "fact" },
+    ],
+    next: { action: "Wait for recruiting to clarify whether this requisition is closed or whether a conversation is still possible.", owner: "American Airlines", due: "No date", evidence: "unknown" },
+    signal: "The application is paused in a talent pool; this is not yet a confirmed interview or explicit rejection.",
+    sources: ["Gmail"], tags: ["travel", "principal", "UX"],
+  },
+  applicationOnly("apple-video-applications-200683983", "Apple", "Senior Product Designer · Video Applications · 200683983", "2026-09-16", "https://mail.google.com/mail/#all/1a0adf0c80eec38e", ["consumer", "video", "senior", "product design"]),
+  applicationOnly("apple-services-international-200683762", "Apple", "Product Designer · Apple Services Design, International · 200683762", "2026-09-17", "https://mail.google.com/mail/#all/1a0b031500f0f5b9", ["consumer", "services", "international", "product design"]),
+  applicationOnly("familiar-machines-principal-ux", "Familiar Machines & Magic", "Principal UX Designer", "2026-09-16", "https://mail.google.com/mail/#all/1a0adb01c1981777", ["AI", "principal", "UX"]),
+  rejectedApplication("bloomberg-quant-analytics-10053258", "Bloomberg", "Senior Interaction Designer · Quant & Analytics · 10053258", "2026-09-11", "2026-09-16", "https://mail.google.com/mail/#all/1a0abdebbd0a438c", ["finance", "interaction design", "senior", "UX"]),
+  rejectedApplication("anduril-arsenalos-product-designer", "Anduril", "Product Designer · ArsenalOS", "2026-06-29", "2026-09-17", "https://mail.google.com/mail/#all/1a0b106237bde1ec", ["defense", "product design", "ArsenalOS"]),
   applicationOnly("vercel-marketplace", "Vercel", "Product Designer · Marketplace", "2026-09-11", "https://mail.google.com/mail/#all/1a093602b12c1457", ["developer tools", "marketplace", "product design"]),
   applicationOnly("neuralink", "Neuralink", "Role not named in receipt", "2026-09-11", "https://mail.google.com/mail/#all/1a093811a7fc52f8", ["neurotechnology", "hardware"]),
   {
