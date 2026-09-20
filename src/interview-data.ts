@@ -108,6 +108,10 @@ function rejectedApplication(
 }
 
 export const opportunities: Opportunity[] = [
+  applicationOnly("whatnot-product-designer", "Whatnot", "Product Designer", "2026-09-19", "https://mail.google.com/mail/#all/1a0bd4219de230bd", ["marketplace", "consumer"]),
+  applicationOnly("figma-growth-monetization", "Figma", "Product Designer · Growth & Monetization", "2026-09-19", "https://mail.google.com/mail/#all/1a0bd400c4e4b1c7", ["design tools", "growth"]),
+  applicationOnly("playstation-connect-sr-ux", "PlayStation", "Sr. UX Designer · Connect", "2026-09-19", "https://mail.google.com/mail/#all/1a0bd3a9a55a2fd0", ["gaming", "senior"]),
+  applicationOnly("archer-staff-ux", "Archer", "Staff UX Designer", "2026-09-19", "https://mail.google.com/mail/#all/1a0bd37d92fe7ddf", ["aviation", "staff"]),
   applicationOnly("starbucks-coffeehouse-excellence", "Starbucks", "Senior Designer · Coffeehouse Excellence", "2026-09-15", "https://mail.google.com/mail/#all/1a0a8285e582946d", ["consumer", "senior"]),
   applicationOnly("starbucks-digital-ux", "Starbucks", "Designer · Digital UX & Design · Seattle", "2026-09-15", "https://mail.google.com/mail/#all/1a0a82f808059a98", ["consumer", "UX"]),
   applicationOnly("solventum-r01133788", "Solventum", "Senior UX/UI Designer · R01133788", "2026-09-15", "https://mail.google.com/mail/#all/1a0a82001f6393f7", ["health", "senior"]),
