@@ -108,6 +108,8 @@ function rejectedApplication(
 }
 
 export const opportunities: Opportunity[] = [
+  applicationOnly("ngrok-september-application", "ngrok", "Role not named in receipt", "2026-09-20", "https://mail.google.com/mail/#all/1a0c1cd936903aee", ["developer tools", "role unverified"]),
+  applicationOnly("notion-product-designer-september", "Notion", "Product Designer · September application", "2026-09-20", "https://mail.google.com/mail/#all/1a0c1cc2d01c7888", ["productivity", "product design"]),
   applicationOnly("whatnot-product-designer", "Whatnot", "Product Designer", "2026-09-19", "https://mail.google.com/mail/#all/1a0bd4219de230bd", ["marketplace", "consumer"]),
   applicationOnly("figma-growth-monetization", "Figma", "Product Designer · Growth & Monetization", "2026-09-19", "https://mail.google.com/mail/#all/1a0bd400c4e4b1c7", ["design tools", "growth"]),
   applicationOnly("playstation-connect-sr-ux", "PlayStation", "Sr. UX Designer · Connect", "2026-09-19", "https://mail.google.com/mail/#all/1a0bd3a9a55a2fd0", ["gaming", "senior"]),
