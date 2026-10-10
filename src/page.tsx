@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Globe, companyFootprint, northAmerica } from "./globe";
 import { useSounds } from "./use-sounds";
 import { refresh } from "./refresh-metadata";
+import { MilestoneBadge, MilestoneJourney } from "./milestone-journey";
 import { opportunities, stageMeta, statusMeta, type Evidence, type Status } from "./interview-data";
 
 function evidenceLabel(value: Evidence) {
@@ -98,7 +99,7 @@ export default function Home() {
           {ordered.length === 0 ? <div className="empty-list">No conversations match those filters.</div> : ordered.map((item) => (
             <button key={item.id} className={`conversation-row ${selected?.id === item.id ? "selected" : ""}`} aria-pressed={selected?.id === item.id} onClick={(event) => { lastSelected.current = event.currentTarget; setSelectedId(item.id); sound.play("select"); }}>
               <i className="status-dot" style={{ backgroundColor: statusMeta[item.status].color }} />
-              <span className="conversation-copy"><strong>{item.company}</strong><small>{item.role}</small></span>
+              <span className="conversation-copy"><strong>{item.company}</strong><small>{item.role}</small><MilestoneBadge milestones={item.milestones} /></span>
               <span className="conversation-state"><strong>{statusMeta[item.status].label}</strong><small className={item.status === "scheduled" ? "schedule-note" : ""}>{item.lastTouchLabel}</small></span>
               <time dateTime={item.lastTouch}>{item.lastTouch.slice(5).replace("-", "/")}</time><span aria-hidden="true">→</span>
             </button>
@@ -107,6 +108,7 @@ export default function Home() {
 
         <aside ref={inspector} className="detail-panel" tabIndex={-1} aria-label={selected ? `${selected.company} conversation details` : "Conversation details"}>
           <div className="inspector-top"><span>{selected ? "Inspecting conversation" : "Interview geography"}</span>{selected && <button onClick={closeInspector}>Close ×</button>}</div>
+          {selected && <MilestoneJourney key={selected.id} milestones={selected.milestones} company={selected.company} />}
           <section className="globe-workspace" aria-label="Interview geography">
             <Globe preset={displayedGlobe} />
             <div className="globe-caption" aria-live="polite"><p className="eyebrow">{selected ? selectedFootprint ? "Company footprint" : "Location unavailable" : "Overview"}</p>

@@ -19,3 +19,14 @@ test('public summaries exclude meeting access codes and email addresses', () => 
   const text = JSON.stringify(opportunities);
   assert.doesNotMatch(text, /passcode\s*[:=]\s*\w+|password\s*[:=]\s*\w+|\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i);
 });
+
+test('public summaries do not expose private source or meeting destinations', () => {
+  const text = JSON.stringify(opportunities);
+  assert.doesNotMatch(text, /mail\.google\.com|calendar\.google\.com|(?:www\.)?google\.com\/calendar|(?:app|notes)\.granola\.ai|meet\.google\.com|zoom\.us\/(?:j|s)\/|chime\.aws|teams\.microsoft|webex\.com|event\?eid|mailto:/i);
+});
+
+test('scheduled opportunities have a current next step', () => {
+  for (const item of opportunities.filter(item => item.status === 'scheduled')) {
+    assert.doesNotMatch(item.next.due, /\b(?:Aug|Sep)\b/, item.id);
+  }
+});
