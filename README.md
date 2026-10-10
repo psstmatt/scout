@@ -24,3 +24,9 @@ The UI includes selection-centered globe rendering with a Canvas fallback, mobil
 Milestone journeys contain only documented events. `contact`, `nda`, `offer-discussion`, `written-offer`, `signed`, and `starting` are distinct; each event is explicitly `complete`, `scheduled`, or `pending`. A meeting RSVP is not employment acceptance, an NDA is not an offer, and pending onboarding is not a confirmed start. Keep the current verified commitment visible while playing historical or upcoming steps.
 
 This is a public site and a public source repository. Refreshes must exclude compensation, private contract terms, raw messages, email/calendar/meeting links, and authentication information. Keep source evidence outside the repository. Preserve uncertain outcomes and conflicting evidence as unconfirmed rather than inferring closure or advancement.
+
+## Pipeline Sankey
+
+Click the toolbar’s **N shown** count to explore the current results. The default scope matches search and status filters; a dialog-only **All opportunities** view does not reset the workspace filters. The diagram partitions each unique opportunity once: total → recorded current stage → current status. It is a current snapshot, not a reconstructed history or conversion funnel. Closed records do not imply a known earlier interview stage, and missing or unrecognized categories remain explicit.
+
+Select a node or flow to inspect its matching records, or use the keyboard-accessible grouped list. Selecting a record opens the existing conversation inspector. Escape closes the Sankey first and returns focus to its trigger; a later Escape can close the inspector. Counts and drilldowns are validated for both full and filtered scopes, including zero-result and unknown-category cases.

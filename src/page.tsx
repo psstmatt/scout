@@ -5,6 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Globe, companyFootprint, northAmerica } from "./globe";
 import { useSounds } from "./use-sounds";
 import { refresh } from "./refresh-metadata";
+import { PipelineSankey } from "./pipeline-sankey";
 import { MilestoneBadge, MilestoneJourney } from "./milestone-journey";
 import { opportunities, stageMeta, statusMeta, type Evidence, type Status } from "./interview-data";
 
@@ -17,6 +18,8 @@ function evidenceLabel(value: Evidence) {
 export default function Home() {
   const sound = useSounds();
   const inspector = useRef<HTMLElement>(null);
+  const totalButton = useRef<HTMLButtonElement>(null);
+  const [sankeyOpen, setSankeyOpen] = useState(false);
   const lastSelected = useRef<HTMLButtonElement | null>(null);
   const [query, setQuery] = useState("");
   const [activeStatuses, setActiveStatuses] = useState<Status[]>([]);
@@ -60,13 +63,29 @@ export default function Home() {
     }
   }, [selectedId]);
   useEffect(() => {
-    if (!selectedId) return;
+    if (!selectedId || sankeyOpen) return;
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") { setSelectedId(""); requestAnimationFrame(() => lastSelected.current?.focus()); }
+      if (event.key === "Escape" && !event.defaultPrevented) { setSelectedId(""); requestAnimationFrame(() => lastSelected.current?.focus()); }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [selectedId]);
+  }, [selectedId, sankeyOpen]);
+
+  function closeSankey() {
+    setSankeyOpen(false);
+    requestAnimationFrame(() => totalButton.current?.focus());
+  }
+  function inspectFromSankey(id: string) {
+    lastSelected.current = totalButton.current;
+    setSankeyOpen(false);
+    setSelectedId(id);
+    sound.play("select");
+    requestAnimationFrame(() => {
+      inspector.current?.scrollTo({ top: 0, behavior: "instant" });
+      inspector.current?.focus({ preventScroll: true });
+      if (window.matchMedia("(max-width: 760px)").matches) inspector.current?.scrollIntoView({ block: "start", behavior: "instant" });
+    });
+  }
 
   return (
     <main className="app-shell">
@@ -91,7 +110,7 @@ export default function Home() {
             return <button key={status} className={`filter-chip ${active ? "active" : ""}`} onClick={() => toggleStatus(status)} aria-pressed={active}><i style={{ backgroundColor: statusMeta[status].color }} />{statusMeta[status].label}</button>;
           })}
         </div>
-        <span className="result-count">{filtered.length} shown</span>
+        <button ref={totalButton} className="result-count" aria-haspopup="dialog" aria-expanded={sankeyOpen} aria-label={`Open pipeline Sankey for ${filtered.length} shown conversations`} onClick={() => { sound.play("select"); setSankeyOpen(true); }}><span>{filtered.length} shown</span></button>
       </section>
 
       <div className={`workspace-grid ${selected ? "inspecting" : ""}`}>
@@ -139,6 +158,7 @@ export default function Home() {
           </>)}
         </aside>
       </div>
+      {sankeyOpen && <PipelineSankey filteredOpportunities={filtered} allOpportunities={opportunities} onClose={closeSankey} onSelectOpportunity={inspectFromSankey} scopeLabel={query || activeStatuses.length ? "Current search and filters" : "All conversations"} />}
     </main>
   );
 }
