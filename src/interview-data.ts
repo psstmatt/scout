@@ -3702,15 +3702,7 @@ export const opportunities: Opportunity[] = [
     "data",
     "staff"
   ],
-  "milestones": [
-    {
-      "kind": "contact",
-      "date": "2026-10-06",
-      "label": "Recruiter screen complete",
-      "detail": "The discussed role was not a match; a possible alternate-team referral remains unconfirmed.",
-      "state": "complete"
-    }
-  ]
+  "milestones": []
 },
   rejectedApplication("aquent-skill", "Aquent · Skill", "Lead Product Designer", "2026-09-01", "2026-09-03", "", ["lead", "product design"]),
   {

@@ -37,4 +37,13 @@ Scout adapts the actual shadcn/ui Radix registry components for Buttons, Input, 
 
 Geography is a partition of the same filtered opportunity records: a documented role city, explicitly remote, or unknown. Company headquarters, recruiter addresses, interview venues and time zones are not location evidence. City markers are approximate and grouped; remote/unknown records are counted but never assigned invented coordinates. Selecting a city or geography group reveals matching opportunities and links back to the existing inspector. Selecting a record outside the filters cannot alter the filtered globe total.
 
-Prototype review deployments are isolated Vercel staging builds from an exact commit. Do not advance `main`, assign the production domain, or deploy the saved canonical version until the user approves release.
+## Development and release
+
+Run `npm ci` and `npm run dev` for local development. Run `npm test` and `npm run build` before release. The tests cover dataset integrity, milestone distinctions, filtered Sankey conservation, role geography, modal/focus behavior, and cross-build component styling.
+
+The October 10, 2026 audit contains 184 role records: 89 closed, 69 application-only, 19 outcome-unknown, two paused, two scheduled, one waiting, one needs action, and one signed. Three networking or non-candidate conversations are retained outside role totals. Application-only does not establish an active recruiting process. Separate roles and reapplications keep distinct outcomes; Stripe Data & AI does not inherit the Global Payments recruiter-screen milestone.
+
+Prototype review deployments use isolated Vercel staging builds from an exact commit. Release only after approval: save/deploy the matching canonical Sites version, update this repository, then publish the exact reviewed commit to the existing Vercel production project. Check the custom-domain assets against that build. Keep the preceding commit and deployment available for rollback; do not change access or sharing as part of release.
+
+This release was approved for production on October 10, 2026. Previous production rollback: commit `f885374cc2593303fbb639d20b9211146684c78f`, Vercel deployment `dpl_4fsWhyp4jfSe13o6LVE8aMw56Yea`.
+

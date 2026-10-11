@@ -38,3 +38,10 @@ test('inspector return focus uses stable visible list rows and overview loads on
   assert.match(source, /<RoleGeography filteredOpportunities=\{filtered\}/);
   assert.match(source, /<Input className="scout-input"/);
 });
+
+ test('Stripe application does not inherit the separate Global Payments screen milestone', () => {
+  const application = interview.opportunities.find(record => record.id === 'stripe');
+  assert.equal(application.status, 'applied');
+  assert.deepEqual(application.milestones, []);
+  assert.equal(interview.opportunities.find(record => record.id === 'stripe-global-payments').status, 'closed');
+});
