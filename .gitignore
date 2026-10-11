@@ -5,3 +5,5 @@ dist/
 *.tsbuildinfo
 .vercel
 .env*
+
+/shared/factory-return/dist/
