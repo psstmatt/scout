@@ -67,7 +67,7 @@ export default function Home() {
   useEffect(() => {
     if (!selectedId || sankeyOpen) return;
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape" && !event.defaultPrevented) { const returnTarget = conversationButtons.current.get(selectedId) ?? totalButton.current; setSelectedId(""); requestAnimationFrame(() => returnTarget?.focus()); }
+      if (event.key === "Escape" && !event.defaultPrevented) { event.preventDefault(); const returnTarget = conversationButtons.current.get(selectedId) ?? totalButton.current; setSelectedId(""); requestAnimationFrame(() => returnTarget?.focus()); }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -128,7 +128,7 @@ export default function Home() {
           ))}
         </section>
 
-        <aside ref={inspector} className="detail-panel" tabIndex={-1} aria-label={selected ? `${selected.company} conversation details` : "Conversation details"}>
+        <aside ref={inspector} data-escape-layer={selected ? "open" : undefined} className="detail-panel" tabIndex={-1} aria-label={selected ? `${selected.company} conversation details` : "Conversation details"}>
           <div className="inspector-top"><span>{selected ? "Inspecting conversation" : "Interview geography"}</span>{selected && <Button variant="scout" size="scout" onClick={closeInspector}>Close ×</Button>}</div>
           {selected && <MilestoneJourney key={selected.id} milestones={selected.milestones} company={selected.company} />}
           <RoleGeography filteredOpportunities={filtered} selectedOpportunityId={selected?.id} onSelectOpportunity={(id) => { setSelectedId(id); sound.play("select"); }} />
