@@ -38,7 +38,7 @@ export type PipelineGraph = {
 };
 
 const stageOrder = ["applied", "screen", "interview", "portfolio", "decision", "closed", "unknown"];
-const statusOrder = ["action", "scheduled", "waiting", "paused", "applied", "closed", "unknown"];
+const statusOrder = ["signed", "action", "scheduled", "waiting", "paused", "applied", "closed", "unknown"];
 const stageColors: Record<string, string> = {
   applied: "#a7b7cb",
   screen: "#bfcaa6",
@@ -103,18 +103,18 @@ export function pipelineMatches(graph: PipelineGraph, selectionId: string = "tot
 }
 
 export type PositionedPipelineNode = PipelineNode & { x: number; y: number; height: number; width: number };
-export type PositionedPipelineLink = PipelineLink & { path: string; thickness: number };
+export type PositionedPipelineLink = PipelineLink & { path: string; centerPath: string; thickness: number };
 
 /** One shared scale for all ribbons and bars preserves exact count proportions. */
 export function layoutPipeline(graph: PipelineGraph) {
-  const scale = graph.total ? 300 / graph.total : 0;
-  const gap = 16;
+  const scale = graph.total ? 240 / graph.total : 0;
+  const gap = 10;
   const minimumSlot = 46;
-  const top = 62;
+  const top = 50;
   const columns = ["total", "stage", "status"] as const;
   const columnNodes = columns.map((kind) => graph.nodes.filter((node) => node.kind === kind));
   const columnHeight = (nodes: PipelineNode[]) => nodes.reduce((sum, node) => sum + Math.max(minimumSlot, node.value * scale), 0) + Math.max(0, nodes.length - 1) * gap;
-  const contentHeight = Math.max(300, ...columnNodes.map(columnHeight));
+  const contentHeight = Math.max(240, ...columnNodes.map(columnHeight));
   const x = [30, 430, 850];
   const nodes: PositionedPipelineNode[] = [];
   columnNodes.forEach((column, index) => {
@@ -141,7 +141,8 @@ export function layoutPipeline(graph: PipelineGraph) {
     sourceOffsets.set(source.id, (sourceOffsets.get(source.id) ?? 0) + thickness);
     targetOffsets.set(target.id, (targetOffsets.get(target.id) ?? 0) + thickness);
     const path = `M ${sourceX},${sourceY} C ${sourceX + curve},${sourceY} ${targetX - curve},${targetY} ${targetX},${targetY} L ${targetX},${targetY + thickness} C ${targetX - curve},${targetY + thickness} ${sourceX + curve},${sourceY + thickness} ${sourceX},${sourceY + thickness} Z`;
-    return { ...link, thickness, path };
+    const centerPath = `M ${sourceX},${sourceY + thickness / 2} C ${sourceX + curve},${sourceY + thickness / 2} ${targetX - curve},${targetY + thickness / 2} ${targetX},${targetY + thickness / 2}`;
+    return { ...link, thickness, path, centerPath };
   });
-  return { width: 1120, height: contentHeight + top + 30, scale, nodes, links };
+  return { width: 1120, height: contentHeight + top + 20, scale, nodes, links };
 }

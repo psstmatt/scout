@@ -344,3 +344,121 @@ button.result-count:hover, button.result-count[aria-expanded="true"] { border-co
   .pipeline-record-arrow { margin-left: auto; }
   .pipeline-records { max-height: 330px; }
 }
+
+/* A compact overview gives the relationships more room than the chrome. */
+.pipeline-header { padding: 19px 28px 17px; }
+.pipeline-header .eyebrow { margin-bottom: 7px; font-size: 10px; }
+.pipeline-header h2 { font-size: clamp(25px, 2.7vw, 32px); }
+.pipeline-body { padding: 17px 28px 22px; }
+.pipeline-intro { margin-bottom: 14px; gap: 20px; }
+.pipeline-total > strong { font-size: 48px; }
+.pipeline-total > div > span { font-size: 15px; }
+.pipeline-total p { margin-top: 4px; }
+.pipeline-description { font-size: 12px; gap: 3px; max-width: 415px; }
+.pipeline-segment button { min-height: 40px; padding: 7px 12px; }
+.pipeline-scope-note { margin: 8px 0 12px; }
+.pipeline-chart-scroll { padding-top: 8px; }
+.pipeline-link-group { cursor: pointer; }
+.pipeline-link-group .pipeline-link { fill-opacity: .27; pointer-events: none; transition: fill-opacity .14s; }
+.pipeline-link-group[data-related="false"] .pipeline-link { fill-opacity: .055; }
+.pipeline-link-group[data-preview="true"] .pipeline-link,
+.pipeline-link-group[data-selected="true"] .pipeline-link { fill-opacity: .62; }
+.pipeline-link-group:focus-visible { outline: none; }
+.pipeline-link-group:focus-visible .pipeline-link { stroke: var(--ink); stroke-width: 1.4; stroke-dasharray: 4 3; }
+.pipeline-link-hit { pointer-events: stroke; }
+.pipeline-context { position: sticky; bottom: -22px; z-index: 1; background: var(--panel-raised); box-shadow: 0 -8px 18px var(--canvas); margin-bottom: 16px; }
+@media (max-width: 760px) {
+  .pipeline-header { padding: 17px 17px 15px; }
+  .pipeline-header h2 { font-size: 26px; }
+  .pipeline-body { padding: 16px 17px 18px; }
+  .pipeline-intro { flex-direction: row; flex-wrap: wrap; gap: 13px; margin-bottom: 13px; }
+  .pipeline-total > strong { font-size: 44px; }
+  .pipeline-description { flex-basis: 100%; }
+  .pipeline-segment button { min-height: 44px; }
+  .pipeline-scope-note { margin-bottom: 10px; }
+  .pipeline-context { bottom: -18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pipeline-link-group .pipeline-link, .pipeline-node, button.result-count { transition: none; }
+}
+
+/* Evidence-backed role locations. All numbers use the current filtered scope. */
+.geography-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 10px; }
+.geography-heading .eyebrow { font-size: 10px; margin-bottom: 8px; }
+.geography-heading h2 { font-size: 23px; letter-spacing: -.045em; font-weight: 400; margin: 0; }
+.geography-heading > span { color: var(--fog); font: 11px var(--mono); white-space: nowrap; }
+.role-geography .globe-frame { width: min(100%, 355px); }
+.geography-counts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
+.geography-counts button { display: flex; flex-direction: column; align-items: flex-start; gap: 9px; min-height: 78px; padding: 12px; background: transparent; border: 0; text-align: left; }
+.geography-counts button + button { border-left: 1px solid var(--line); }
+.geography-counts button > span { color: var(--ash); display: flex; align-items: center; gap: 6px; font-size: 11px; }
+.geography-counts i { font-style: normal; color: #bfcaa6; }
+.geography-counts button[data-kind="remote"] i { color: #a7b7cb; }
+.geography-counts button[data-kind="unknown"] i { color: var(--fog); }
+.geography-counts strong { font: 23px/1 var(--mono); font-weight: 400; }
+.geography-counts button[aria-pressed="true"] { background: rgba(239,166,194,.065); box-shadow: inset 0 -2px var(--signal); }
+.geography-counts button:not(:disabled):hover { background: var(--panel-raised); }
+.geography-counts button:focus-visible { outline-offset: -3px; }
+.geography-counts button:disabled { cursor: default; }
+.geography-counts button:disabled strong { color: var(--fog); }
+.geography-note { margin: 11px 0 16px; font-size: 12px; line-height: 1.65; color: var(--fog); }
+.geography-places { display: flex; flex-wrap: wrap; gap: 6px; }
+.geography-places button { display: inline-flex; align-items: center; gap: 7px; padding: 9px 11px; min-height: 40px; font-size: 12px; background: transparent; border: 1px solid var(--line); border-radius: 4px; color: var(--ash); }
+.geography-places button > span { font: 10px var(--mono); color: var(--fog); }
+.geography-places button[aria-pressed="true"] { color: var(--ink); background: rgba(239,166,194,.065); border-color: color-mix(in srgb, var(--signal) 40%, transparent); }
+.geography-place i { height: 6px; width: 6px; border-radius: 50%; background: #bfcaa6; }
+.geography-place[aria-pressed="true"] i { background: var(--signal); }
+.geography-focus { padding: 15px 0; min-height: 60px; }
+.geography-focus strong { display: block; font-size: 13px; line-height: 1.5; font-weight: 500; }
+.geography-focus p { font-size: 12px; line-height: 1.65; margin: 5px 0 0; color: var(--ash); }
+.geography-focus p:first-child { margin-top: 0; }
+.geography-details { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.geography-details summary { display: flex; justify-content: space-between; align-items: center; gap: 10px; min-height: 44px; font-size: 12px; color: var(--ash); cursor: pointer; list-style: none; }
+.geography-details summary::-webkit-details-marker { display: none; }
+.geography-details summary > span { display: inline-flex; align-items: center; gap: 8px; font: 11px var(--mono); color: var(--fog); }
+.geography-details summary:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+.geography-details[open] summary > span > span:last-child { transform: rotate(90deg); }
+.geography-role-list { list-style: none; padding: 0 3px 4px; margin: 0 -3px; max-height: 218px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.geography-role-list li { border-top: 1px solid var(--line); }
+.geography-role-list button { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 14px; min-height: 58px; text-align: left; border: 0; background: transparent; padding: 11px 6px; }
+.geography-role-list button:hover, .geography-role-list button[aria-pressed="true"] { background: rgba(239,166,194,.065); }
+.geography-role-list button:focus-visible { outline-offset: -2px; }
+.geography-role-list button > span { display: grid; gap: 4px; min-width: 0; }
+.geography-role-list strong { font-size: 13px; font-weight: 500; }
+.geography-role-list small { font-size: 11px; line-height: 1.5; color: var(--fog); }
+.geography-role-list em { font: 10px/1.6 var(--mono); color: var(--fog); text-align: right; font-style: normal; flex: 0 0 80px; }
+.geography-empty { font-size: 12px; color: var(--fog); padding-top: 5px; }
+@media (max-width: 420px) {
+  .geography-counts button { padding: 10px 8px; }
+  .geography-counts button > span { gap: 4px; font-size: 10px; }
+  .role-geography .globe-tools { font-size: 10px; }
+}
+/* shadcn/ui behavior, with Scout's existing visual language in both builds. */
+:where([data-variant="scout"][data-size="scout"]) {
+  display: inline-block; flex-shrink: 1; justify-content: normal; gap: normal;
+  height: auto; padding: 0; border-radius: 0; box-shadow: none;
+  white-space: normal; font-weight: inherit; text-align: inherit; transition: none;
+}
+:where([data-variant="scout"][data-size="scout"]):disabled { pointer-events: none; opacity: .5; }
+:where(.scout-input) { height: auto; border-radius: 0; box-shadow: none; transition: none; }
+.pipeline-overlay { position: fixed; inset: 0; z-index: 1000; background: rgba(8,8,8,.78); backdrop-filter: blur(8px); }
+.pipeline-dialog[data-state="open"] { position: fixed; top: 50%; left: 50%; z-index: 1001; display: flex; flex-direction: column; gap: 0; margin: 0; transform: translate(-50%, -50%); translate: none; outline: none; }
+.pipeline-tabs { display: block; }
+.pipeline-segment[data-slot="tabs-list"] { height: auto; width: auto; }
+.pipeline-segment [data-slot="tabs-trigger"] { flex: initial; height: auto; white-space: nowrap; }
+.pipeline-segment button[data-state="active"] { border-color: var(--line); background: var(--panel-raised); color: var(--ink); }
+.pipeline-tabpanel { margin: 0; outline: none; }
+.pipeline-tabpanel[hidden] { display: none; }
+.pipeline-tabpanel:focus-visible { outline: 2px solid var(--signal); outline-offset: 4px; }
+.scout-tooltip { z-index: 1100; max-width: min(300px, calc(100vw - 32px)); padding: 8px 11px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel-raised); color: var(--ink); box-shadow: 0 6px 24px rgba(0,0,0,.24); font: 11px/1.5 var(--mono); text-wrap: balance; }
+.scout-tooltip svg { width: 12px; height: 6px; transform: none; translate: none; rotate: none; border-radius: 0; background: none; fill: var(--panel-raised); }
+
+.globe-canvas-host { position: relative; width: 100%; aspect-ratio: 1; }
+
+.relationship-archive { margin: 0 0 14px; color: var(--fog); font: 11px/1.6 var(--mono); }
+.relationship-archive summary { cursor: pointer; padding: 5px 0; width: fit-content; }
+.relationship-archive summary:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+.relationship-archive p { margin: 8px 0; }
+.relationship-archive ul { margin: 0; padding: 0 0 8px; list-style: none; display: flex; flex-wrap: wrap; gap: 12px 24px; }
+.relationship-archive li { display: grid; gap: 2px; }
+.relationship-archive strong { color: var(--ash); font-weight: 400; }

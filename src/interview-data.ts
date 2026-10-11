@@ -1,6 +1,6 @@
 import type { Milestone } from "./milestone-data";
 
-export type Status = "action" | "scheduled" | "waiting" | "applied" | "paused" | "closed";
+export type Status = "action" | "scheduled" | "waiting" | "applied" | "paused" | "signed" | "unknown" | "closed";
 export type Stage = "applied" | "screen" | "interview" | "portfolio" | "decision" | "closed";
 export type Evidence = "fact" | "inference" | "unknown";
 
@@ -49,10 +49,12 @@ export type Opportunity = {
 
 export const statusMeta: Record<Status, { label: string; color: string }> = {
   action: { label: "Needs action", color: "#efa6c2" },
+  signed: { label: "Offer signed", color: "#dbc190" },
   paused: { label: "Paused", color: "#beaa84" },
+  unknown: { label: "Outcome unknown", color: "#c0b7a9" },
   scheduled: { label: "Scheduled", color: "#bfcaa6" },
   waiting: { label: "Waiting", color: "#a7b7cb" },
-  applied: { label: "Applied", color: "#b4b8b4" },
+  applied: { label: "Application only", color: "#b4b8b4" },
   closed: { label: "Closed", color: "#dee2de" },
 };
 
@@ -125,7 +127,8 @@ export const opportunities: Opportunity[] = [
       "date": "Sep 20",
       "sortDate": "2026-09-20",
       "title": "Application receipt",
-      "detail": "No human conversation or later decision found in Gmail.",
+      "detail": "Application received.",
+      "evidence": "fact"
     },
     {
       "date": "Sep 28",
@@ -150,11 +153,178 @@ export const opportunities: Opportunity[] = [
     "role unverified"
   ]
 },
-  applicationOnly("notion-product-designer-september", "Notion", "Product Designer · September application", "2026-09-20", "", ["productivity", "product design"]),
-  applicationOnly("whatnot-product-designer", "Whatnot", "Product Designer", "2026-09-19", "", ["marketplace", "consumer"]),
-  applicationOnly("figma-growth-monetization", "Figma", "Product Designer · Growth & Monetization", "2026-09-19", "", ["design tools", "growth"]),
-  applicationOnly("playstation-connect-sr-ux", "PlayStation", "Sr. UX Designer · Connect", "2026-09-19", "", ["gaming", "senior"]),
-  applicationOnly("archer-staff-ux", "Archer", "Staff UX Designer", "2026-09-19", "", ["aviation", "staff"]),
+  {
+  "id": "notion-product-designer-september",
+  "company": "Notion",
+  "role": "Product Designer · September application",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-20",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 20",
+      "sortDate": "2026-09-20",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "productivity",
+    "product design"
+  ]
+},
+  {
+  "id": "whatnot-product-designer",
+  "company": "Whatnot",
+  "role": "Product Designer",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-09-23",
+  "lastTouchLabel": "Application rejected",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 19",
+      "sortDate": "2026-09-19",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Sep 23",
+      "sortDate": "2026-09-23",
+      "title": "Application rejected",
+      "detail": "Whatnot confirmed it would not move forward with this Product Designer application.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "No active next step for this application.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
+  },
+  "signal": "Whatnot confirmed it would not move forward with this Product Designer application.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "marketplace",
+    "consumer"
+  ]
+},
+  {
+  "id": "figma-growth-monetization",
+  "company": "Figma",
+  "role": "Product Designer · Growth & Monetization",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-19",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 19",
+      "sortDate": "2026-09-19",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "design tools",
+    "growth"
+  ]
+},
+  {
+  "id": "playstation-connect-sr-ux",
+  "company": "PlayStation",
+  "role": "Sr. UX Designer · Connect",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-19",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 19",
+      "sortDate": "2026-09-19",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "gaming",
+    "senior"
+  ]
+},
+  {
+  "id": "archer-staff-ux",
+  "company": "Archer",
+  "role": "Staff UX Designer",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-19",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 19",
+      "sortDate": "2026-09-19",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "aviation",
+    "staff"
+  ]
+},
   {
   "id": "starbucks-coffeehouse-excellence",
   "company": "Starbucks",
@@ -169,7 +339,8 @@ export const opportunities: Opportunity[] = [
       "date": "Sep 15",
       "sortDate": "2026-09-15",
       "title": "Application receipt",
-      "detail": "No human conversation or later decision found in Gmail.",
+      "detail": "Application received.",
+      "evidence": "fact"
     },
     {
       "date": "Sep 21",
@@ -194,7 +365,39 @@ export const opportunities: Opportunity[] = [
     "senior"
   ]
 },
-  applicationOnly("starbucks-digital-ux", "Starbucks", "Designer · Digital UX & Design · Seattle", "2026-09-15", "", ["consumer", "UX"]),
+  {
+  "id": "starbucks-digital-ux",
+  "company": "Starbucks",
+  "role": "Designer · Digital UX & Design · Seattle",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-15",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 15",
+      "sortDate": "2026-09-15",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "consumer",
+    "UX"
+  ]
+},
   {
   "id": "solventum-r01133788",
   "company": "Solventum",
@@ -209,7 +412,8 @@ export const opportunities: Opportunity[] = [
       "date": "Sep 15",
       "sortDate": "2026-09-15",
       "title": "Application receipt",
-      "detail": "No human conversation or later decision found in Gmail.",
+      "detail": "Application received.",
+      "evidence": "fact"
     },
     {
       "date": "Sep 27",
@@ -313,7 +517,8 @@ export const opportunities: Opportunity[] = [
       "date": "Sep 13",
       "sortDate": "2026-09-13",
       "title": "Application receipt",
-      "detail": "No human conversation or later decision found in Gmail.",
+      "detail": "Application received.",
+      "evidence": "fact"
     },
     {
       "date": "Sep 27",
@@ -339,10 +544,148 @@ export const opportunities: Opportunity[] = [
     "monetization"
   ]
 },
-  applicationOnly("ibm-senior-designer-131983", "IBM", "Senior Designer · 131983", "2026-09-13", "", ["enterprise", "senior", "design"]),
-  applicationOnly("govwell-role-unconfirmed", "GovWell", "Role not named in receipt", "2026-09-13", "", ["government", "civic tech", "unconfirmed role"]),
-  applicationOnly("seatgeek-senior-ux", "SeatGeek", "Senior UX Designer", "2026-09-13", "", ["marketplace", "senior", "UX"]),
-  applicationOnly("snap-interface-designer", "Snap", "Interface Designer", "2026-09-13", "", ["consumer", "interface design"]),
+  {
+  "id": "ibm-senior-designer-131983",
+  "company": "IBM",
+  "role": "Senior Designer · 131983",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-13",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 13",
+      "sortDate": "2026-09-13",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "enterprise",
+    "senior",
+    "design"
+  ]
+},
+  {
+  "id": "govwell-role-unconfirmed",
+  "company": "GovWell",
+  "role": "Role not named in receipt",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-13",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 13",
+      "sortDate": "2026-09-13",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "government",
+    "civic tech",
+    "unconfirmed role"
+  ]
+},
+  {
+  "id": "seatgeek-senior-ux",
+  "company": "SeatGeek",
+  "role": "Senior UX Designer",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-13",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 13",
+      "sortDate": "2026-09-13",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "marketplace",
+    "senior",
+    "UX"
+  ]
+},
+  {
+  "id": "snap-interface-designer",
+  "company": "Snap",
+  "role": "Interface Designer",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-09-30",
+  "lastTouchLabel": "Role no longer recruiting",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 13",
+      "sortDate": "2026-09-13",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Sep 30",
+      "sortDate": "2026-09-30",
+      "title": "Role no longer recruiting",
+      "detail": "Snap confirmed it is no longer recruiting for the Interface Designer role.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "No active next step for this application.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
+  },
+  "signal": "Snap confirmed it is no longer recruiting for the Interface Designer role.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "consumer",
+    "interface design"
+  ]
+},
   rejectedApplication("tesla-enterprise-250270", "Tesla", "UX Designer, Enterprise · 250270", "2026-08-18", "2026-09-13", "", ["enterprise", "UX"]),
   {
   "id": "atoms-otter-platform-designer",
@@ -540,46 +883,7 @@ export const opportunities: Opportunity[] = [
     "assessment"
   ]
 },
-  {
-  "id": "decimals-ridd-network",
-  "company": "Decimals",
-  "role": "Michael Riddering talent collective · networking",
-  "status": "paused",
-  "stage": "applied",
-  "lastTouch": "2026-09-15",
-  "lastTouchLabel": "Ramp referral made",
-  "people": [
-    {
-      "name": "Michael Riddering",
-      "role": "Talent collective contact",
-      "relationship": "referral"
-    }
-  ],
-  "moments": [
-    {
-      "date": "Sep 13",
-      "sortDate": "2026-09-13",
-      "title": "Invited",
-      "detail": "Michael invited Matt to his talent collective and offered a path to hiring-manager introductions. A signup email followed; completed onboarding is not verified.",
-      "evidence": "fact"
-    }
-  ],
-  "next": {
-    "action": "Revisit if a new relevant introduction appears.",
-    "owner": "Matt",
-    "due": "No current commitment",
-    "evidence": "unknown"
-  },
-  "signal": "Historical networking relationship. The resulting Ramp application is closed; no new referral is verified.",
-  "sources": [
-    "Gmail"
-  ],
-  "tags": [
-    "networking",
-    "referral",
-    "design"
-  ]
-},
+
   { id: "sesame", company: "Sesame", role: "Product Designer", status: "closed", stage: "closed", lastTouch: "2026-09-07", lastTouchLabel: "Application closed", people: [], moments: [{ date: "Sep 7", sortDate: "2026-09-07", title: "Application closed", detail: "The hiring team chose other candidates, citing limited headcount.", evidence: "fact" }], next: { action: "No further action required for this application.", owner: "Closed", due: "Closed", evidence: "fact" }, signal: "The hiring team confirmed the decision; no interview is established in the reviewed sources.", sources: ["Gmail"], tags: ["AI", "product design"] },
   {
   "id": "turo",
@@ -833,17 +1137,22 @@ export const opportunities: Opportunity[] = [
     },
     {
       "name": "Melinda Wang",
-      "role": "Design / team screen",
-      "relationship": "interviewer"
+      "role": "Hiring manager",
+      "relationship": "hiring manager"
     },
     {
       "name": "Derek",
-      "role": "Director; described as main hiring manager",
-      "relationship": "hiring manager"
+      "role": "Director; final-loop interviewer",
+      "relationship": "interviewer"
     },
     {
       "name": "Charmaine Reyes",
       "role": "Senior Recruiting Coordinator",
+      "relationship": "coordinator"
+    },
+    {
+      "name": "Adrian",
+      "role": "Final-loop scheduling coordinator",
       "relationship": "coordinator"
     }
   ],
@@ -864,19 +1173,19 @@ export const opportunities: Opportunity[] = [
       "date": "Aug 6",
       "sortDate": "2026-08-06",
       "title": "Team screen",
-      "detail": "Ambiguous-problem case study with Melinda.",
+      "detail": "Ambiguous-problem case study with Melinda."
     },
     {
       "date": "Aug 20",
       "sortDate": "2026-08-20",
-      "title": "Headcount blocker",
-      "detail": "Maureen said headcount was being finalized with the VP on Aug 21."
+      "title": "Process update pending",
+      "detail": "Recruiting was still confirming the next step."
     },
     {
       "date": "Aug 24",
       "sortDate": "2026-08-24",
-      "title": "Direct diagnosis",
-      "detail": "Matt asked whether Melinda recommended advancing him and whether an approved role exists.",
+      "title": "Status clarification requested",
+      "detail": "Matt asked recruiting to clarify the process and next step."
     },
     {
       "date": "Sep 8",
@@ -1017,7 +1326,7 @@ export const opportunities: Opportunity[] = [
       "date": "Aug 19–20",
       "sortDate": "2026-08-20",
       "title": "Four teams routed",
-      "detail": "Michelle shared four Principal opportunities; Matt approved her stack rank and team outreach.",
+      "detail": "Michelle shared four Principal opportunities; Matt approved her stack rank and team outreach."
     },
     {
       "date": "Aug 24",
@@ -1029,7 +1338,7 @@ export const opportunities: Opportunity[] = [
       "date": "Aug 31",
       "sortDate": "2026-08-31",
       "title": "AWS interest",
-      "detail": "Michelle said the AWS Marketplace team wants Matt to meet hiring manager Nick.",
+      "detail": "Michelle said the AWS Marketplace team wants Matt to meet hiring manager Nick."
     },
     {
       "date": "Sep 1",
@@ -1154,10 +1463,10 @@ export const opportunities: Opportunity[] = [
   "id": "highlight",
   "company": "Highlight",
   "role": "Senior / Principal Product Designer",
-  "status": "paused",
-  "stage": "interview",
+  "status": "unknown",
+  "stage": "portfolio",
   "lastTouch": "2026-08-25",
-  "lastTouchLabel": "Current status unconfirmed",
+  "lastTouchLabel": "Advisor conversation completed; outcome unconfirmed",
   "people": [
     {
       "name": "Sergei Sorokin",
@@ -1191,18 +1500,18 @@ export const opportunities: Opportunity[] = [
     {
       "date": "Aug 25",
       "sortDate": "2026-08-25",
-      "title": "Advisor conversation scheduled",
-      "detail": "A craft and portfolio conversation with Bobby was scheduled. Completion and the later outcome are unconfirmed.",
-      "evidence": "unknown"
+      "title": "Advisor portfolio conversation completed",
+      "detail": "Matt completed the portfolio conversation with Bobby. A later outcome is not confirmed.",
+      "evidence": "fact"
     }
   ],
   "next": {
-    "action": "Current outcome unconfirmed; verify status if revisiting this opportunity.",
+    "action": "Verify the current outcome before treating this as an active process.",
     "owner": "Matt / Recruiting",
     "due": "Unconfirmed",
     "evidence": "unknown"
   },
-  "signal": "A founder conversation and a past advisor-interview booking are recorded. The later meeting completion and outcome are unconfirmed.",
+  "signal": "The August 25 portfolio conversation is complete. A later decision or next round is not confirmed.",
   "sources": [
     "Gmail",
     "Calendar",
@@ -1267,13 +1576,13 @@ export const opportunities: Opportunity[] = [
       "date": "Aug 26",
       "sortDate": "2026-08-26",
       "title": "Advanced",
-      "detail": "Invited to a forty-five-minute video interview with Joshua; availability submitted and confirmation pending.",
+      "detail": "Invited to a forty-five-minute video interview with Joshua; availability submitted and confirmation pending."
     },
     {
       "date": "Sep 4",
       "sortDate": "2026-09-04",
       "title": "Hiring-manager interview",
-      "detail": "Forty-five minutes with Joshua at 6:00 AM Pacific.",
+      "detail": "Forty-five minutes with Joshua at 6:00 AM Pacific."
     },
     {
       "date": "Sep 4",
@@ -1376,10 +1685,10 @@ export const opportunities: Opportunity[] = [
   "id": "rippling",
   "company": "Rippling",
   "role": "Product Design Lead, Design Systems · Pebble",
-  "status": "paused",
-  "stage": "screen",
-  "lastTouch": "2026-08-10",
-  "lastTouchLabel": "Historical process; current status unconfirmed",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-07-14",
+  "lastTouchLabel": "Withdrew from process",
   "people": [
     {
       "name": "Will Rubin",
@@ -1408,24 +1717,18 @@ export const opportunities: Opportunity[] = [
     {
       "date": "Jul 14",
       "sortDate": "2026-07-14",
-      "title": "Matt withdrew",
-      "detail": "Matt said he had accepted another role."
-    },
-    {
-      "date": "Aug 10",
-      "sortDate": "2026-08-10",
-      "title": "Reactivation recorded; unverified",
-      "detail": "Earlier context records a reactivation attempt. The available correspondence does not corroborate this event or a subsequent response.",
-      "evidence": "unknown"
+      "title": "Withdrew from process",
+      "detail": "Matt withdrew from this process. No later reactivation is confirmed.",
+      "evidence": "fact"
     }
   ],
   "next": {
-    "action": "Current outcome unconfirmed; verify status if revisiting this opportunity.",
-    "owner": "Matt / Recruiting",
-    "due": "Unconfirmed",
-    "evidence": "unknown"
+    "action": "No active next step for this application.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
   },
-  "signal": "A July withdrawal is verified. Earlier records describe a later reactivation attempt, but a current response or active interview is unconfirmed.",
+  "signal": "Matt withdrew from this process. No later reactivation is confirmed.",
   "sources": [
     "Calendar",
     "Transcript",
@@ -1501,97 +1804,15 @@ export const opportunities: Opportunity[] = [
     "networking"
   ]
 },
-  {
-  "id": "creative-people",
-  "company": "Creative People",
-  "role": "External recruiter slate · Arena AI and future roles",
-  "status": "paused",
-  "stage": "screen",
-  "lastTouch": "2026-10-05",
-  "lastTouchLabel": "Agency relationship; no new stage confirmed",
-  "people": [
-    {
-      "name": "Rachel Albert",
-      "role": "External recruiter",
-      "relationship": "recruiter"
-    },
-    {
-      "name": "Rachel Feinbloom",
-      "role": "Recruiting contact",
-      "relationship": "recruiter"
-    },
-    {
-      "name": "Ashley Brown",
-      "role": "Arena and Eight Sleep follow-up",
-      "relationship": "recruiter"
-    }
-  ],
-  "moments": [
-    {
-      "date": "Aug 25",
-      "sortDate": "2026-08-25",
-      "title": "Sourced",
-      "detail": "Rachel shared a broad slate of senior design openings.",
-    },
-    {
-      "date": "Aug 26",
-      "sortDate": "2026-08-26",
-      "title": "Slate ranked",
-      "detail": "After the intro call, Matt ranked Applied Intuition first, Arena second, and Eight Sleep third. Rachel will share his background with Applied."
-    },
-    {
-      "date": "Aug 27",
-      "sortDate": "2026-08-27",
-      "title": "Follow-up",
-      "detail": "Thirty minutes with Ashley to qualify the Arena and Eight Sleep openings.",
-    },
-    {
-      "date": "Aug 30",
-      "sortDate": "2026-08-30",
-      "title": "Applied Intuition advanced",
-      "detail": "Rachel reported that the company wants a first-round conversation.",
-    },
-    {
-      "date": "Sep 1",
-      "sortDate": "2026-09-01",
-      "title": "Direct loops live",
-      "detail": "Applied Intuition and Eight Sleep now have company-owned interviews and are tracked separately."
-    },
-    {
-      "date": "Oct 5",
-      "sortDate": "2026-10-05",
-      "title": "Eight Sleep withdrawn",
-      "detail": "Matt informed the company and agency recruiter that he was withdrawing.",
-      "evidence": "fact"
-    }
-  ],
-  "next": {
-    "action": "Revisit only when the recruiter has a concrete new role or update.",
-    "owner": "Recruiting / Matt",
-    "due": "No confirmed date",
-    "evidence": "unknown"
-  },
-  "signal": "The agency relationship remains on file. Eight Sleep is withdrawn; no current new interview is confirmed for the other introductions.",
-  "sources": [
-    "Gmail",
-    "Calendar",
-    "Prior chats"
-  ],
-  "tags": [
-    "external recruiter",
-    "Applied Intuition",
-    "Arena AI",
-    "Eight Sleep"
-  ]
-},
+
   {
   "id": "hinge-health",
   "company": "Hinge Health",
   "role": "Staff Product Designer · GI / Cylinder",
-  "status": "waiting",
+  "status": "unknown",
   "stage": "interview",
   "lastTouch": "2026-09-11",
-  "lastTouchLabel": "Outcome not confirmed",
+  "lastTouchLabel": "Outcome unconfirmed",
   "people": [
     {
       "name": "Danielle Cwirko-Godycki",
@@ -1658,7 +1879,7 @@ export const opportunities: Opportunity[] = [
     }
   ],
   "next": {
-    "action": "Current outcome unconfirmed; verify status if revisiting this opportunity.",
+    "action": "Verify the current outcome before treating this as an active process.",
     "owner": "Matt / Recruiting",
     "due": "Unconfirmed",
     "evidence": "unknown"
@@ -1680,10 +1901,10 @@ export const opportunities: Opportunity[] = [
   "id": "applied-intuition",
   "company": "Applied Intuition",
   "role": "Senior Product Designer opportunity",
-  "status": "waiting",
+  "status": "unknown",
   "stage": "interview",
   "lastTouch": "2026-09-14",
-  "lastTouchLabel": "Follow-up sent; outcome unconfirmed",
+  "lastTouchLabel": "Outcome unconfirmed",
   "people": [
     {
       "name": "Rachel Feinbloom",
@@ -1706,7 +1927,7 @@ export const opportunities: Opportunity[] = [
       "date": "Aug 30",
       "sortDate": "2026-08-30",
       "title": "Advanced",
-      "detail": "The company asked for a first-round conversation after the external recruiter introduction.",
+      "detail": "The company asked for a first-round conversation after the external recruiter introduction."
     },
     {
       "date": "Sep 3",
@@ -1730,7 +1951,7 @@ export const opportunities: Opportunity[] = [
     }
   ],
   "next": {
-    "action": "Current outcome unconfirmed; verify status if revisiting this opportunity.",
+    "action": "Verify the current outcome before treating this as an active process.",
     "owner": "Matt / Recruiting",
     "due": "Unconfirmed",
     "evidence": "unknown"
@@ -1932,10 +2153,10 @@ export const opportunities: Opportunity[] = [
   "id": "walmart",
   "company": "Walmart",
   "role": "Principal UX Designer · Homepage, Navigation & Events",
-  "status": "waiting",
+  "status": "paused",
   "stage": "interview",
   "lastTouch": "2026-09-11",
-  "lastTouchLabel": "Outcome not confirmed",
+  "lastTouchLabel": "Process paused; restart unconfirmed",
   "people": [
     {
       "name": "Chanda Mulchandani",
@@ -1959,7 +2180,7 @@ export const opportunities: Opportunity[] = [
       "date": "Aug 24",
       "sortDate": "2026-08-24",
       "title": "Screening answers",
-      "detail": "Chanda requested and received resume, answers, and relocation openness.",
+      "detail": "Chanda requested and received resume, answers, and relocation openness."
     },
     {
       "date": "Aug 28",
@@ -1987,15 +2208,22 @@ export const opportunities: Opportunity[] = [
       "title": "Follow-up sent",
       "detail": "Matt thanked Chanda and highlighted the role’s balance of craft and organizational leadership. Jonathan offered to look across the organization given current Principal-level hiring constraints.",
       "evidence": "fact"
+    },
+    {
+      "date": "Sep 9",
+      "sortDate": "2026-09-09",
+      "title": "Process paused",
+      "detail": "The conversation confirmed a pause; a restart is not confirmed.",
+      "evidence": "fact"
     }
   ],
   "next": {
-    "action": "Current outcome unconfirmed; verify status if revisiting this opportunity.",
-    "owner": "Matt / Recruiting",
-    "due": "Unconfirmed",
-    "evidence": "unknown"
+    "action": "Wait for a confirmed restart before treating this as an active process.",
+    "owner": "Recruiting",
+    "due": "No confirmed restart",
+    "evidence": "fact"
   },
-  "signal": "The latest verified interview remains the September conversation. No later outcome or new round was found in the refreshed sources.",
+  "signal": "The process is paused. No restart or further interview is confirmed.",
   "sources": [
     "Gmail",
     "Calendar",
@@ -2139,10 +2367,10 @@ export const opportunities: Opportunity[] = [
   "id": "a1",
   "company": "A1",
   "role": "Product Designer",
-  "status": "paused",
+  "status": "unknown",
   "stage": "screen",
-  "lastTouch": "2026-08-25",
-  "lastTouchLabel": "New sourcing message",
+  "lastTouch": "2026-08-26",
+  "lastTouchLabel": "Scheduling contact requested",
   "people": [
     {
       "name": "Candy Chong",
@@ -2155,16 +2383,23 @@ export const opportunities: Opportunity[] = [
       "date": "Aug 25",
       "sortDate": "2026-08-25",
       "title": "Inbound outreach",
-      "detail": "Candy asked whether Matt wants to connect; company and scope need qualification.",
+      "detail": "Candy asked whether Matt wants to connect; company and scope need qualification."
+    },
+    {
+      "date": "Aug 26",
+      "sortDate": "2026-08-26",
+      "title": "Scheduling contact requested",
+      "detail": "The recruiter requested an email address to send a meeting invitation.",
+      "evidence": "fact"
     }
   ],
   "next": {
-    "action": "Current outcome unconfirmed; verify status if revisiting this opportunity.",
+    "action": "Verify the current outcome before treating this as an active process.",
     "owner": "Matt / Recruiting",
     "due": "Unconfirmed",
     "evidence": "unknown"
   },
-  "signal": "Historical recruiter outreach. Current role availability and interest are unconfirmed.",
+  "signal": "The recruiter requested contact details for scheduling. A booked interview or later outcome is not confirmed.",
   "sources": [
     "Gmail",
     "Prior chats"
@@ -2190,10 +2425,10 @@ export const opportunities: Opportunity[] = [
   "id": "netic",
   "company": "Netic.ai",
   "role": "Founding forward-deployed engineer",
-  "status": "paused",
+  "status": "unknown",
   "stage": "screen",
   "lastTouch": "2026-08-09",
-  "lastTouchLabel": "Call with engineering",
+  "lastTouchLabel": "Outcome unconfirmed",
   "people": [
     {
       "name": "Shail Patel",
@@ -2206,7 +2441,7 @@ export const opportunities: Opportunity[] = [
       "date": "Aug 8",
       "sortDate": "2026-08-08",
       "title": "Sourced",
-      "detail": "Shail reached out about a founding FDE opportunity.",
+      "detail": "Shail reached out about a founding FDE opportunity."
     },
     {
       "date": "Aug 9",
@@ -2216,7 +2451,7 @@ export const opportunities: Opportunity[] = [
     }
   ],
   "next": {
-    "action": "Current outcome unconfirmed; verify status if revisiting this opportunity.",
+    "action": "Verify the current outcome before treating this as an active process.",
     "owner": "Matt / Recruiting",
     "due": "Unconfirmed",
     "evidence": "unknown"
@@ -2236,10 +2471,10 @@ export const opportunities: Opportunity[] = [
   "id": "doordash",
   "company": "DoorDash",
   "role": "Product Design team · AI interest",
-  "status": "paused",
+  "status": "unknown",
   "stage": "screen",
   "lastTouch": "2026-01-22",
-  "lastTouchLabel": "Scheduling link received",
+  "lastTouchLabel": "Outcome unconfirmed",
   "people": [
     {
       "name": "Nicole Courtney",
@@ -2252,11 +2487,11 @@ export const opportunities: Opportunity[] = [
       "date": "Jan 21–22",
       "sortDate": "2026-01-22",
       "title": "Reconnection",
-      "detail": "Nicole reconnected and sent a scheduling link; no booking or later email is visible.",
+      "detail": "Nicole reconnected and sent a scheduling link; no booking or later email is visible."
     }
   ],
   "next": {
-    "action": "Current outcome unconfirmed; verify status if revisiting this opportunity.",
+    "action": "Verify the current outcome before treating this as an active process.",
     "owner": "Matt / Recruiting",
     "due": "Unconfirmed",
     "evidence": "unknown"
@@ -2275,10 +2510,10 @@ export const opportunities: Opportunity[] = [
   "id": "summation",
   "company": "Summation",
   "role": "Early Product Designer",
-  "status": "paused",
+  "status": "unknown",
   "stage": "screen",
   "lastTouch": "2026-03-09",
-  "lastTouchLabel": "Recruiter asked about relocation",
+  "lastTouchLabel": "Recruiter reconnection; outcome unconfirmed",
   "people": [
     {
       "name": "Erin Perozzi",
@@ -2301,16 +2536,16 @@ export const opportunities: Opportunity[] = [
       "date": "Mar 9",
       "sortDate": "2026-03-09",
       "title": "Delayed process resurfaced",
-      "detail": "Erin said hiring-manager paternity leave caused the delay and asked whether Matt was still open to moving.",
+      "detail": "The recruiter resurfaced the delayed process and asked whether Matt was still considering a move."
     }
   ],
   "next": {
-    "action": "Current outcome unconfirmed; verify status if revisiting this opportunity.",
+    "action": "Verify the current outcome before treating this as an active process.",
     "owner": "Matt / Recruiting",
     "due": "Unconfirmed",
     "evidence": "unknown"
   },
-  "signal": "Historical recruiter exchange. Current role availability and next stage are unconfirmed.",
+  "signal": "The recruiter reopened the conversation in March. A later interview or current outcome is not confirmed.",
   "sources": [
     "Gmail",
     "Prior chats"
@@ -2341,7 +2576,7 @@ export const opportunities: Opportunity[] = [
       "date": "Jul 6",
       "sortDate": "2026-07-06",
       "title": "Applied and introduced",
-      "detail": "First federal application, announcement 873673300; no response is in Gmail.",
+      "detail": "First federal application, announcement 873673300; no response is in Gmail."
     }
   ],
   "next": {
@@ -2365,10 +2600,10 @@ export const opportunities: Opportunity[] = [
   "id": "coupang",
   "company": "Coupang",
   "role": "Senior Staff / Principal Product Design · Marketplace",
-  "status": "paused",
+  "status": "unknown",
   "stage": "screen",
   "lastTouch": "2026-08-13",
-  "lastTouchLabel": "Location question unanswered in Gmail",
+  "lastTouchLabel": "Outcome unconfirmed",
   "people": [
     {
       "name": "Ginny Kim",
@@ -2381,11 +2616,11 @@ export const opportunities: Opportunity[] = [
       "date": "Aug 13",
       "sortDate": "2026-08-13",
       "title": "Reconnection",
-      "detail": "Ginny welcomed reconnecting and asked whether Matt would consider Korea before scheduling.",
+      "detail": "Ginny welcomed reconnecting and asked whether Matt would consider Korea before scheduling."
     }
   ],
   "next": {
-    "action": "Current outcome unconfirmed; verify status if revisiting this opportunity.",
+    "action": "Verify the current outcome before treating this as an active process.",
     "owner": "Matt / Recruiting",
     "due": "Unconfirmed",
     "evidence": "unknown"
@@ -2406,10 +2641,10 @@ export const opportunities: Opportunity[] = [
   "id": "design-engineer",
   "company": "Mixpanel? · company unverified",
   "role": "Staff Design Engineer",
-  "status": "paused",
+  "status": "unknown",
   "stage": "screen",
   "lastTouch": "2026-08-04",
-  "lastTouchLabel": "Role-fit questions answered",
+  "lastTouchLabel": "Outcome unconfirmed",
   "people": [
     {
       "name": "Connor Fehmel",
@@ -2422,16 +2657,16 @@ export const opportunities: Opportunity[] = [
       "date": "Aug 4",
       "sortDate": "2026-08-04",
       "title": "Qualification exchange",
-      "detail": "Connor requested resume/portfolio and screened for production coding plus components, tokens, and documentation ownership."
+      "detail": "Connor requested resume/portfolio and asked about production coding and design-system ownership. A later response or outcome is not confirmed."
     }
   ],
   "next": {
-    "action": "Current outcome unconfirmed; verify status if revisiting this opportunity.",
+    "action": "Verify the current outcome before treating this as an active process.",
     "owner": "Matt / Recruiting",
     "due": "Unconfirmed",
     "evidence": "unknown"
   },
-  "signal": "Historical role qualification. Employer identity and current next stage remain unconfirmed.",
+  "signal": "Recruiter qualification questions are recorded. Current employer, exact role, and later outcome remain unconfirmed.",
   "sources": [
     "Shared files",
     "Prior chats"
@@ -2512,7 +2747,39 @@ export const opportunities: Opportunity[] = [
     signal: "A deliberate decline with helpful referrals; this is a preserved relationship, not a failed process.",
     sources: ["Gmail"], tags: ["staff", "referral", "relationship"],
   },
-  applicationOnly("openai-people-innovation", "OpenAI", "Product Designer · People Innovation Labs + earlier application", "2026-07-26", "", ["AI", "people products"]),
+  {
+  "id": "openai-people-innovation",
+  "company": "OpenAI",
+  "role": "Product Designer · People Innovation Labs + earlier application",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-07-26",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Jul 26",
+      "sortDate": "2026-07-26",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "AI",
+    "people products"
+  ]
+},
   {
   "id": "tesla",
   "company": "Tesla",
@@ -2595,18 +2862,409 @@ export const opportunities: Opportunity[] = [
     "UI"
   ]
 },
-  applicationOnly("red-bull", "Red Bull", "Sr Product Designer · Digital Products Studio", "2026-07-15", "", ["consumer", "studio"]),
-  applicationOnly("tomo", "Tomo", "Principal Product Designer", "2026-07-07", "", ["principal", "fintech"]),
-  applicationOnly("mistral", "Mistral", "Product Designer", "2026-07-18", "", ["AI"]),
-  applicationOnly("databricks", "Databricks", "Sr Product Designer · AI/BI", "2026-07-18", "", ["AI", "enterprise", "data"]),
-  applicationOnly("netflix", "Netflix", "Senior Product Designer · AI Enablement", "2026-07-31", "", ["AI", "enablement"]),
-  applicationOnly("deepmind", "Google DeepMind", "Role not named in receipt", "2026-07-31", "", ["AI", "research"]),
-  applicationOnly("base-power", "Base Power", "Senior Product Designer · Internal Tools", "2026-08-03", "", ["internal tools", "energy"]),
-  applicationOnly("anthropic", "Anthropic", "Product Designer · People Products", "2026-08-12", "", ["AI", "people products"]),
-  applicationOnly("palantir", "Palantir", "Product Designer", "2026-08-13", "", ["enterprise", "data"]),
-  applicationOnly("nourish", "Nourish", "Staff Product Designer", "2026-08-17", "", ["healthtech", "staff"]),
-  applicationOnly("maven", "Maven Clinic", "Senior Staff Product Designer · Care Delivery", "2026-08-17", "", ["healthtech", "staff"]),
-  applicationOnly("samsung", "Samsung", "Designer II (M) · Interaction Design", "2026-08-17", "", ["hardware", "interaction"]),
+  {
+  "id": "red-bull",
+  "company": "Red Bull",
+  "role": "Sr Product Designer · Digital Products Studio",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-07-15",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Jul 15",
+      "sortDate": "2026-07-15",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "consumer",
+    "studio"
+  ]
+},
+  {
+  "id": "tomo",
+  "company": "Tomo",
+  "role": "Principal Product Designer",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-07-07",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Jul 7",
+      "sortDate": "2026-07-07",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt and a recruiter-message notification are recorded. The message content and current outcome remain unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "principal",
+    "fintech"
+  ]
+},
+  {
+  "id": "mistral",
+  "company": "Mistral",
+  "role": "Product Designer",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-07-18",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Jul 18",
+      "sortDate": "2026-07-18",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "AI"
+  ]
+},
+  {
+  "id": "databricks",
+  "company": "Databricks",
+  "role": "Sr Product Designer · AI/BI",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-07-18",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Jul 18",
+      "sortDate": "2026-07-18",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "AI",
+    "enterprise",
+    "data"
+  ]
+},
+  {
+  "id": "netflix",
+  "company": "Netflix",
+  "role": "Senior Product Designer · AI Enablement",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-07-31",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Jul 31",
+      "sortDate": "2026-07-31",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "AI",
+    "enablement"
+  ]
+},
+  {
+  "id": "deepmind",
+  "company": "Google DeepMind",
+  "role": "Role not named in receipt",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-27",
+  "lastTouchLabel": "Later application receipt; outcome unconfirmed",
+  "people": [],
+  "moments": [
+    {
+      "date": "Jul 31",
+      "sortDate": "2026-07-31",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Aug 27",
+      "sortDate": "2026-08-27",
+      "title": "Additional application receipt",
+      "detail": "A later receipt was found. The current disposition remains unconfirmed.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "A later application receipt is recorded. No subsequent interview or decision is confirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "AI",
+    "research"
+  ]
+},
+  {
+  "id": "base-power",
+  "company": "Base Power",
+  "role": "Senior Product Designer · Internal Tools",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-03",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 3",
+      "sortDate": "2026-08-03",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "internal tools",
+    "energy"
+  ]
+},
+  {
+  "id": "anthropic",
+  "company": "Anthropic",
+  "role": "Product Designer · People Products",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-12",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 12",
+      "sortDate": "2026-08-12",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "AI",
+    "people products"
+  ]
+},
+  {
+  "id": "palantir",
+  "company": "Palantir",
+  "role": "Product Designer",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-13",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 13",
+      "sortDate": "2026-08-13",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "enterprise",
+    "data"
+  ]
+},
+  {
+  "id": "nourish",
+  "company": "Nourish",
+  "role": "Staff Product Designer",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-17",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 17",
+      "sortDate": "2026-08-17",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "healthtech",
+    "staff"
+  ]
+},
+  {
+  "id": "maven",
+  "company": "Maven Clinic",
+  "role": "Senior Staff Product Designer · Care Delivery",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-17",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 17",
+      "sortDate": "2026-08-17",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "healthtech",
+    "staff"
+  ]
+},
+  {
+  "id": "samsung",
+  "company": "Samsung",
+  "role": "Designer II (M) · Interaction Design",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-17",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 17",
+      "sortDate": "2026-08-17",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "hardware",
+    "interaction"
+  ]
+},
   rejectedApplication("coreweave", "CoreWeave", "Product Designer", "2026-08-17", "2026-09-11", "", ["AI infrastructure"]),
   {
   "id": "rei",
@@ -2622,7 +3280,8 @@ export const opportunities: Opportunity[] = [
       "date": "Aug 17",
       "sortDate": "2026-08-17",
       "title": "Application receipt",
-      "detail": "No human conversation or later decision found in Gmail.",
+      "detail": "Application received.",
+      "evidence": "fact"
     },
     {
       "date": "Oct 6",
@@ -2648,78 +3307,391 @@ export const opportunities: Opportunity[] = [
     "Seattle"
   ]
 },
-  applicationOnly("nike", "Nike", "Lead, Digital Product Design", "2026-08-17", "", ["lead", "commerce"]),
-  applicationOnly("bank-of-america", "Bank of America", "Experience Design IV · Product Design", "2026-08-17", "", ["fintech", "enterprise"]),
   {
-    id: "bank-of-america-career-call", company: "Bank of America", role: "Career conversation · role not confirmed", status: "waiting", stage: "screen",
-    lastTouch: "2026-09-15", lastTouchLabel: "Scheduled time passed; outcome unverified",
-    people: [],
-    moments: [
-      { date: "Sep 15", sortDate: "2026-09-15", title: "Calendar date corrected", detail: "The latest calendar places the career call on September 15 at 12:30 PM Pacific. Attendance, role, and outcome remain unverified.", evidence: "unknown" },
-      { date: "Sep 12", sortDate: "2026-09-12", title: "Career call added", detail: "A 30-minute Bank of America career call was added for Monday. The attendee and role are not named, so it is not yet linked to the Experience Design IV application.", evidence: "unknown" },
-      { date: "Sep 14", sortDate: "2026-09-14", title: "Outcome unverified", detail: "The scheduled time passed, but no direct evidence confirms attendance, contact identity, role, or next step.", evidence: "unknown" },
-    ],
-    next: { action: "Confirm whether the call occurred and identify the contact, role, team, and next step before merging it with an application.", owner: "Matt", due: "When known", evidence: "inference" },
-    signal: "The calendar proves only that a call was scheduled; attendance and linkage to the Experience Design IV application remain unverified.",
-    sources: ["Calendar"], tags: ["fintech", "enterprise", "networking", "uncertain role"],
-  },
-  applicationOnly("saronic", "Saronic", "Product Designer · UI/UX", "2026-08-17", "", ["defense", "hardware"]),
-  rejectedApplication("microsoft", "Microsoft", "Member of Technical Staff · Human-Robot-AI Interaction · 200037416", "2026-08-17", "2026-09-18", "", ["robotics", "AI", "research"]),
-  applicationOnly("atoms", "Atoms", "Role not named in receipt", "2026-08-18", "", ["consumer"]),
-  applicationOnly("turbineone", "TurbineOne", "Role not named in receipt", "2026-08-18", "", ["defense", "AI"]),
-  applicationOnly("instacart", "Instacart", "Staff Experience Designer", "2026-08-20", "", ["marketplace", "staff"]),
-  rejectedApplication("nvidia", "NVIDIA", "Senior UX Designer · JR2023633", "2026-08-20", "2026-09-07", "", ["AI", "hardware"]),
-  applicationOnly("google", "Google", "Role not named in receipt", "2026-08-24", "", ["consumer", "AI"]),
-  rejectedApplication("bcg-x", "BCG X", "AI Experience Designer · Japan", "2026-09-01", "2026-09-03", "", ["consulting", "AI", "experience design"]),
-  rejectedApplication("chewy", "Chewy", "Senior Product Designer", "2026-09-01", "2026-09-15", "", ["consumer", "commerce"]),
-  applicationOnly("plaid", "Plaid", "Product Designer", "2026-09-01", "", ["fintech", "product design"]),
-  applicationOnly("onx", "onX", "Senior Product Designer · Fish", "2026-09-01", "", ["consumer", "outdoors", "senior"]),
-  rejectedApplication("sofi", "SoFi", "Staff Product Designer · Home Loans", "2026-09-01", "2026-09-05", "", ["fintech", "staff", "home loans"]),
-  {
-  "id": "stripe",
-  "company": "Stripe",
-  "role": "Product Designer, Global · original application: Senior Staff, Data & AI",
-  "status": "paused",
-  "stage": "screen",
-  "lastTouch": "2026-10-06",
-  "lastTouchLabel": "Screen complete; alternate role unconfirmed",
-  "people": [
-    {
-      "name": "Steph Hjartarson",
-      "role": "Technical Recruiter",
-      "relationship": "recruiter"
-    }
-  ],
+  "id": "nike",
+  "company": "Nike",
+  "role": "Lead, Digital Product Design",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-17",
+  "lastTouchLabel": "Application received",
+  "people": [],
   "moments": [
     {
-      "date": "Sep 1",
-      "sortDate": "2026-09-01",
-      "title": "Applied",
-      "detail": "Application submitted for Senior Staff Product Designer, Data & AI.",
-      "evidence": "fact"
-    },
-    {
-      "date": "Sep 16",
-      "sortDate": "2026-09-16",
-      "title": "Recruiter interview confirmed",
-      "detail": "Stripe invited Matt to a 30-minute conversation labeled Product Designer, Global with Steph Hjartarson on September 28.",
-      "evidence": "fact"
-    },
-    {
-      "date": "Oct 6",
-      "sortDate": "2026-10-06",
-      "title": "Recruiter screen completed",
-      "detail": "The Global-role discussion ended with a location mismatch and a possible referral to the North American recruiting team.",
+      "date": "Aug 17",
+      "sortDate": "2026-08-17",
+      "title": "Application receipt",
+      "detail": "Application received.",
       "evidence": "fact"
     }
   ],
   "next": {
-    "action": "Wait for a suitable-role update from the recruiter.",
-    "owner": "Stripe",
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
     "due": "No date",
     "evidence": "unknown"
   },
-  "signal": "The Global role was not a location match. The recruiter offered to share Matt's profile for a possible North American opportunity; no new interview is confirmed.",
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "lead",
+    "commerce"
+  ]
+},
+  {
+  "id": "bank-of-america",
+  "company": "Bank of America",
+  "role": "Experience Design IV · Product Design",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-17",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 17",
+      "sortDate": "2026-08-17",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "fintech",
+    "enterprise"
+  ]
+},
+  {
+  "id": "bank-of-america-career-call",
+  "company": "Bank of America",
+  "role": "Staff Product Designer · Individual Contributor",
+  "status": "unknown",
+  "stage": "screen",
+  "lastTouch": "2026-09-15",
+  "lastTouchLabel": "Talent screen completed; outcome unconfirmed",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 15",
+      "sortDate": "2026-09-15",
+      "title": "Talent screen completed",
+      "detail": "The Staff Product Designer conversation took place. Recruiting planned to submit materials to the hiring team; no later round or decision is confirmed.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Verify the current outcome before treating this as an active process.",
+    "owner": "Matt / Recruiting",
+    "due": "Unconfirmed",
+    "evidence": "unknown"
+  },
+  "signal": "The September 15 talent screen is complete. A further round or decision is not confirmed; linkage to the separate application record remains unverified.",
+  "sources": [
+    "Gmail",
+    "Calendar",
+    "Granola"
+  ],
+  "tags": [
+    "fintech",
+    "enterprise",
+    "networking",
+    "uncertain role"
+  ]
+},
+  {
+  "id": "saronic",
+  "company": "Saronic",
+  "role": "Product Designer · UI/UX",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-17",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 17",
+      "sortDate": "2026-08-17",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "defense",
+    "hardware"
+  ]
+},
+  rejectedApplication("microsoft", "Microsoft", "Member of Technical Staff · Human-Robot-AI Interaction · 200037416", "2026-08-17", "2026-09-18", "", ["robotics", "AI", "research"]),
+  {
+  "id": "atoms",
+  "company": "Atoms",
+  "role": "Role not named in receipt",
+  "status": "unknown",
+  "stage": "applied",
+  "lastTouch": "2026-08-18",
+  "lastTouchLabel": "Unlinked application receipt",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 18",
+      "sortDate": "2026-08-18",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Identify the role before counting this as a separate active candidacy.",
+    "owner": "Matt",
+    "due": "When known",
+    "evidence": "unknown"
+  },
+  "signal": "An unnamed application receipt is recorded. Its relationship to the separately tracked Atoms / Otter and Lab37 processes is unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "consumer"
+  ]
+},
+  {
+  "id": "turbineone",
+  "company": "TurbineOne",
+  "role": "Role not named in receipt",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-18",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 18",
+      "sortDate": "2026-08-18",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "defense",
+    "AI"
+  ]
+},
+  {
+  "id": "instacart",
+  "company": "Instacart",
+  "role": "Staff Experience Designer",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-15",
+  "lastTouchLabel": "Later application receipt; outcome unconfirmed",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 20",
+      "sortDate": "2026-08-20",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Sep 15",
+      "sortDate": "2026-09-15",
+      "title": "Additional application receipt",
+      "detail": "A later receipt was found. The current disposition remains unconfirmed.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "A later application receipt is recorded. No subsequent interview or decision is confirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "marketplace",
+    "staff"
+  ]
+},
+  rejectedApplication("nvidia", "NVIDIA", "Senior UX Designer · JR2023633", "2026-08-20", "2026-09-07", "", ["AI", "hardware"]),
+  {
+  "id": "google",
+  "company": "Google",
+  "role": "Role not named in receipt",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-27",
+  "lastTouchLabel": "Later application receipt; outcome unconfirmed",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 24",
+      "sortDate": "2026-08-24",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Aug 27",
+      "sortDate": "2026-08-27",
+      "title": "Additional application receipt",
+      "detail": "A later receipt was found. The current disposition remains unconfirmed.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "A later application receipt is recorded. No subsequent interview or decision is confirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "consumer",
+    "AI"
+  ]
+},
+  rejectedApplication("bcg-x", "BCG X", "AI Experience Designer · Japan", "2026-09-01", "2026-09-03", "", ["consulting", "AI", "experience design"]),
+  rejectedApplication("chewy", "Chewy", "Senior Product Designer", "2026-09-01", "2026-09-15", "", ["consumer", "commerce"]),
+  {
+  "id": "plaid",
+  "company": "Plaid",
+  "role": "Product Designer",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-01",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 1",
+      "sortDate": "2026-09-01",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "fintech",
+    "product design"
+  ]
+},
+  {
+  "id": "onx",
+  "company": "onX",
+  "role": "Senior Product Designer · Fish",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-09-04",
+  "lastTouchLabel": "Application rejected",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 1",
+      "sortDate": "2026-09-01",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Sep 4",
+      "sortDate": "2026-09-04",
+      "title": "Application rejected",
+      "detail": "onX confirmed it would not move forward with the Senior Product Designer, Fish application.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "No active next step for this application.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
+  },
+  "signal": "onX confirmed it would not move forward with the Senior Product Designer, Fish application.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "consumer",
+    "outdoors",
+    "senior"
+  ]
+},
+  rejectedApplication("sofi", "SoFi", "Staff Product Designer · Home Loans", "2026-09-01", "2026-09-05", "", ["fintech", "staff", "home loans"]),
+  {
+  "id": "stripe",
+  "company": "Stripe",
+  "role": "Senior Staff Product Designer · Data & AI",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-01",
+  "lastTouchLabel": "Application receipt; outcome unconfirmed",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 1",
+      "sortDate": "2026-09-01",
+      "title": "Application receipt",
+      "detail": "Application received for Senior Staff Product Designer, Data & AI. A later decision for this exact role is not confirmed.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Verify the original application outcome or a distinct North America opportunity if revisiting Stripe.",
+    "owner": "Recruiting",
+    "due": "No confirmed next round",
+    "evidence": "unknown"
+  },
+  "signal": "The Data & AI application is recorded. Its outcome remains unconfirmed; the later Global Payments conversation is tracked separately.",
   "sources": [
     "Gmail",
     "Calendar"
@@ -2741,9 +3713,115 @@ export const opportunities: Opportunity[] = [
   ]
 },
   rejectedApplication("aquent-skill", "Aquent · Skill", "Lead Product Designer", "2026-09-01", "2026-09-03", "", ["lead", "product design"]),
-  applicationOnly("apple-business", "Apple", "Product Designer · Apple Business · 200624613", "2026-09-03", "", ["consumer", "commerce", "product design"]),
-  applicationOnly("apple-health", "Apple", "Senior UX Designer · Health · 200626115", "2026-09-03", "", ["health", "senior", "UX"]),
-  applicationOnly("vanguard", "Vanguard", "Senior UX Product Designer · Advisor", "2026-09-04", "", ["fintech", "senior", "UX"]),
+  {
+  "id": "apple-business",
+  "company": "Apple",
+  "role": "Product Designer · Apple Business · 200624613",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-03",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 3",
+      "sortDate": "2026-09-03",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "consumer",
+    "commerce",
+    "product design"
+  ]
+},
+  {
+  "id": "apple-health",
+  "company": "Apple",
+  "role": "Senior UX Designer · Health · 200626115",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-03",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 3",
+      "sortDate": "2026-09-03",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "health",
+    "senior",
+    "UX"
+  ]
+},
+  {
+  "id": "vanguard",
+  "company": "Vanguard",
+  "role": "Senior UX Product Designer · Advisor",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-10-01",
+  "lastTouchLabel": "Application rejected",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 4",
+      "sortDate": "2026-09-04",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Oct 1",
+      "sortDate": "2026-10-01",
+      "title": "Application rejected",
+      "detail": "Vanguard confirmed it would not move forward with the Senior UX Product Designer, Advisor Technology application.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "No active next step for this application.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
+  },
+  "signal": "Vanguard confirmed it would not move forward with the Senior UX Product Designer, Advisor Technology application.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "fintech",
+    "senior",
+    "UX"
+  ]
+},
   {
   "id": "outreach",
   "company": "Outreach",
@@ -2758,7 +3836,8 @@ export const opportunities: Opportunity[] = [
       "date": "Sep 8",
       "sortDate": "2026-09-08",
       "title": "Application receipt",
-      "detail": "No human conversation or later decision found in Gmail.",
+      "detail": "Application received.",
+      "evidence": "fact"
     },
     {
       "date": "Oct 2",
@@ -2784,10 +3863,108 @@ export const opportunities: Opportunity[] = [
     "product design"
   ]
 },
-  applicationOnly("brex", "Brex", "Role not named in receipt", "2026-09-08", "", ["fintech", "product design"]),
+  {
+  "id": "brex",
+  "company": "Brex",
+  "role": "Role not named in receipt",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-08",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 8",
+      "sortDate": "2026-09-08",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "fintech",
+    "product design"
+  ]
+},
   rejectedApplication("ai2-ai-for-the-planet", "Ai2", "Lead Product Designer · AI for the Planet", "2026-09-08", "2026-09-10", "", ["AI", "lead", "climate"]),
-  applicationOnly("ge-healthcare-senior-staff", "GE HealthCare", "Senior Staff UX Designer", "2026-09-08", "", ["healthtech", "staff", "UX"]),
-  applicationOnly("daimler-chec", "Daimler Truck", "Senior UX Designer / Scrum Master · CHEC · DT-18976", "2026-09-08", "", ["automotive", "senior", "UX"]),
+  {
+  "id": "ge-healthcare-senior-staff",
+  "company": "GE HealthCare",
+  "role": "Senior Staff UX Designer",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-08",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 8",
+      "sortDate": "2026-09-08",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "healthtech",
+    "staff",
+    "UX"
+  ]
+},
+  {
+  "id": "daimler-chec",
+  "company": "Daimler Truck",
+  "role": "Senior UX Designer / Scrum Master · CHEC · DT-18976",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-08",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 8",
+      "sortDate": "2026-09-08",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "automotive",
+    "senior",
+    "UX"
+  ]
+},
   {
     id: "apex-octopus", company: "Apex Technology, Inc.", role: "UX Designer · Octopus", status: "closed", stage: "closed", lastTouch: "2026-09-18", lastTouchLabel: "Role filled",
     people: [], moments: [
@@ -2796,17 +3973,50 @@ export const opportunities: Opportunity[] = [
     ], next: { action: "No action for this filled opening.", owner: "Closed", due: "Closed", evidence: "fact" },
     signal: "The opening filled without a recorded human interview.", sources: ["Gmail"], tags: ["technology", "UX"],
   },
-  applicationOnly("zip-ai-agents-chat", "Zip", "Staff Product Designer · AI Agents & Chat", "2026-09-08", "", ["AI", "staff", "enterprise"]),
+  {
+  "id": "zip-ai-agents-chat",
+  "company": "Zip",
+  "role": "Staff Product Designer · AI Agents & Chat",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-08",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 8",
+      "sortDate": "2026-09-08",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Wait for a human response; check the candidate portal if the role becomes a priority.",
+    "owner": "Recruiting",
+    "due": "No date",
+    "evidence": "unknown"
+  },
+  "signal": "Application receipt only. There is no evidence yet of recruiter review, hiring-manager interest, or a committed next step.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "AI",
+    "staff",
+    "enterprise"
+  ]
+},
   rejectedApplication("1mind", "1mind", "Senior Product Designer", "2026-08-31", "2026-09-09", "", ["AI", "senior", "product design"]),
   rejectedApplication("amazon-hr-experience", "Amazon", "Sr UX Designer · HR Experience Technology · 10496459", "2026-08-10", "2026-09-09", "", ["enterprise", "HR tech", "senior", "UX"]),
   {
   "id": "anduril-space",
   "company": "Anduril",
   "role": "Senior Product Designer · Space",
-  "status": "paused",
+  "status": "unknown",
   "stage": "applied",
   "lastTouch": "2026-09-08",
-  "lastTouchLabel": "Separate path; current status unconfirmed",
+  "lastTouchLabel": "Outcome unconfirmed",
   "people": [
     {
       "name": "Maureen McCormick",
@@ -2831,9 +4041,9 @@ export const opportunities: Opportunity[] = [
     }
   ],
   "next": {
-    "action": "Verify the exact role mapping only if recruiting provides a distinct Space-team update.",
-    "owner": "Anduril",
-    "due": "No confirmed date",
+    "action": "Verify the current outcome before treating this as an active process.",
+    "owner": "Matt / Recruiting",
+    "due": "Unconfirmed",
     "evidence": "unknown"
   },
   "signal": "Historical Space-team exploration. No distinct current interview is verified; the active Anduril final-loop process is tracked separately.",
@@ -2853,14 +4063,15 @@ export const opportunities: Opportunity[] = [
   "status": "applied",
   "stage": "applied",
   "lastTouch": "2026-09-27",
-  "lastTouchLabel": "Application review acknowledgment",
+  "lastTouchLabel": "Application received",
   "people": [],
   "moments": [
     {
       "date": "Sep 6",
       "sortDate": "2026-09-06",
       "title": "Application receipt",
-      "detail": "No human conversation or later decision found in Gmail.",
+      "detail": "Application received.",
+      "evidence": "fact"
     },
     {
       "date": "Sep 27",
@@ -2871,12 +4082,12 @@ export const opportunities: Opportunity[] = [
     }
   ],
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Pinterest",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
-  "signal": "Pinterest acknowledged that applications are being reviewed. No recruiter conversation or advancement is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "sources": [
     "Gmail"
   ],
@@ -2890,10 +4101,10 @@ export const opportunities: Opportunity[] = [
   "id": "grove-collaborative",
   "company": "Grove Collaborative",
   "role": "Principal UX Designer",
-  "status": "paused",
+  "status": "unknown",
   "stage": "screen",
   "lastTouch": "2026-09-08",
-  "lastTouchLabel": "Current status unconfirmed",
+  "lastTouchLabel": "Recruiter conversation completed",
   "people": [
     {
       "name": "Alex Selby",
@@ -2906,34 +4117,28 @@ export const opportunities: Opportunity[] = [
       "date": "Sep 4",
       "sortDate": "2026-09-04",
       "title": "Recruiter invitation",
-      "detail": "Talent acquisition invited a thirty-minute conversation after reviewing Matt’s résumé.",
+      "detail": "Talent acquisition invited a thirty-minute conversation.",
       "evidence": "fact"
     },
     {
       "date": "Sep 8",
       "sortDate": "2026-09-08",
-      "title": "Recruiter interview",
-      "detail": "Thirty-minute virtual interview at 12:30 PM Pacific.",
-      "evidence": "fact"
-    },
-    {
-      "date": "Sep 8",
-      "sortDate": "2026-09-08",
-      "title": "Calendar invitation canceled",
-      "detail": "The September 8 invite was canceled. No replacement meeting or hiring decision is confirmed in the reviewed sources.",
+      "title": "Recruiter conversation completed",
+      "detail": "Meeting notes and the follow-up confirm the conversation took place. A later outcome is unconfirmed.",
       "evidence": "fact"
     }
   ],
   "next": {
-    "action": "Current outcome unconfirmed; verify status if revisiting this opportunity.",
+    "action": "Confirm the latest outcome if revisiting this opportunity.",
     "owner": "Matt / Recruiting",
-    "due": "Unconfirmed",
+    "due": "No confirmed next step",
     "evidence": "unknown"
   },
-  "signal": "A September recruiter conversation and follow-up are recorded; a later decision is not verified.",
+  "signal": "The recruiter conversation took place. A later decision or next round is unconfirmed.",
   "sources": [
     "Gmail",
-    "Calendar"
+    "Calendar",
+    "Granola"
   ],
   "tags": [
     "consumer",
@@ -2942,27 +4147,278 @@ export const opportunities: Opportunity[] = [
     "recruiter screen"
   ]
 },
+
   {
-    id: "atlas-gate", company: "Atlas Gate", role: "Art commission", status: "waiting", stage: "screen",
-    lastTouch: "2026-09-03", lastTouchLabel: "Commission interview completed",
-    people: [{ name: "David Branson", role: "Commission contact", relationship: "interviewer" }],
-    moments: [
-      { date: "Aug 31", sortDate: "2026-08-31", title: "Interview scheduled", detail: "A forty-minute commission conversation and shared interview document were arranged.", evidence: "fact" },
-      { date: "Sep 3", sortDate: "2026-09-03", title: "Commission interview", detail: "The scheduled art-commission conversation took place at 9:00 AM Pacific.", evidence: "inference" },
-    ],
-    next: { action: "Wait for the commission decision or requested follow-up materials.", owner: "Atlas Gate", due: "No date", evidence: "unknown" },
-    signal: "A live commission interview is complete; no written decision or next step is visible yet.",
-    sources: ["Gmail", "Calendar"], tags: ["commission", "art", "contract"],
+  "id": "salesforce-qualified-ai",
+  "company": "Salesforce",
+  "role": "Lead Product Designer (LMTS) · Qualified AI Products",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-01",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 1",
+      "sortDate": "2026-09-01",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
   },
-  applicationOnly("salesforce-qualified-ai", "Salesforce", "Lead Product Designer (LMTS) · Qualified AI Products", "2026-09-01", "", ["AI", "lead", "enterprise"]),
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "AI",
+    "lead",
+    "enterprise"
+  ]
+},
   rejectedApplication("salesforce-agentexchange", "Salesforce", "Principal UI/UX · AgentExchange · JR352642", "2026-09-01", "2026-09-11", "", ["AI", "principal", "enterprise"]),
-  applicationOnly("jpl-ui-designer-iii", "NASA Jet Propulsion Laboratory", "User Interface Designer III · R5760", "2026-09-10", "", ["space", "science", "UI"]),
-  applicationOnly("anthropic-evals-prompts", "Anthropic", "Product Designer · Evals & Prompts", "2026-09-10", "", ["AI", "evals", "product design"]),
-  applicationOnly("reactor-senior-product-designer", "Reactor", "Senior Product Designer", "2026-09-10", "", ["senior", "product design"]),
-  applicationOnly("home-depot-enterprise-staff", "The Home Depot", "Enterprise Staff UX Designer · Req192600", "2026-09-10", "", ["enterprise", "staff", "commerce"]),
-  applicationOnly("caterpillar-senior-ux-ui-2", "Caterpillar", "Senior UX/UI Designer-2 · R0000392279", "2026-09-10", "", ["industrial", "senior", "UX"]),
-  applicationOnly("oura-b2b-ecommerce", "Oura", "Senior Product Designer · B2B eCommerce", "2026-09-10", "", ["health", "hardware", "commerce"]),
-  applicationOnly("securityscorecard", "SecurityScorecard", "Role not named in receipt", "2026-09-10", "", ["security", "enterprise"]),
+  {
+  "id": "jpl-ui-designer-iii",
+  "company": "NASA Jet Propulsion Laboratory",
+  "role": "User Interface Designer III · R5760",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-10",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 10",
+      "sortDate": "2026-09-10",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "space",
+    "science",
+    "UI"
+  ]
+},
+  {
+  "id": "anthropic-evals-prompts",
+  "company": "Anthropic",
+  "role": "Product Designer · Evals & Prompts",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-10",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 10",
+      "sortDate": "2026-09-10",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "AI",
+    "evals",
+    "product design"
+  ]
+},
+  {
+  "id": "reactor-senior-product-designer",
+  "company": "Reactor",
+  "role": "Senior Product Designer",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-10",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 10",
+      "sortDate": "2026-09-10",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "senior",
+    "product design"
+  ]
+},
+  {
+  "id": "home-depot-enterprise-staff",
+  "company": "The Home Depot",
+  "role": "Enterprise Staff UX Designer · Req192600",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-10",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 10",
+      "sortDate": "2026-09-10",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "enterprise",
+    "staff",
+    "commerce"
+  ]
+},
+  {
+  "id": "caterpillar-senior-ux-ui-2",
+  "company": "Caterpillar",
+  "role": "Senior UX/UI Designer-2 · R0000392279",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-10",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 10",
+      "sortDate": "2026-09-10",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "industrial",
+    "senior",
+    "UX"
+  ]
+},
+  {
+  "id": "oura-b2b-ecommerce",
+  "company": "Oura",
+  "role": "Senior Product Designer · B2B eCommerce",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-10",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 10",
+      "sortDate": "2026-09-10",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "health",
+    "hardware",
+    "commerce"
+  ]
+},
+  {
+  "id": "securityscorecard",
+  "company": "SecurityScorecard",
+  "role": "Role not named in receipt",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-10",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 10",
+      "sortDate": "2026-09-10",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "security",
+    "enterprise"
+  ]
+},
   {
     id: "athennian-senior-product-designer", company: "Athennian", role: "Senior Product Designer", status: "closed", stage: "closed",
     lastTouch: "2026-09-16", lastTouchLabel: "Position closed",
@@ -2990,7 +4446,8 @@ export const opportunities: Opportunity[] = [
       "date": "Sep 11",
       "sortDate": "2026-09-11",
       "title": "Application receipt",
-      "detail": "No human conversation or later decision found in Gmail.",
+      "detail": "Application received.",
+      "evidence": "fact"
     },
     {
       "date": "Oct 5",
@@ -3017,24 +4474,86 @@ export const opportunities: Opportunity[] = [
   ]
 },
   rejectedApplication("rakuten-ux-director-csd", "Rakuten", "UX Director · Customer Strategy · 1034356-1", "2026-09-11", "2026-09-14", "", ["commerce", "director", "Japan"]),
-  applicationOnly("rover-price-experience", "Rover", "Senior Product Designer · Price Experience", "2026-09-11", "", ["marketplace", "consumer", "senior"]),
   {
-    id: "american-airlines-principal-ux", company: "American Airlines", role: "Principal Product Designer, UX · 88128", status: "paused", stage: "applied",
-    lastTouch: "2026-09-17", lastTouchLabel: "Talent pool; decision unclear",
-    people: [],
-    moments: [
-      { date: "Sep 11", sortDate: "2026-09-11", title: "Applied", detail: "Application submitted.", evidence: "fact" },
-      { date: "Sep 17", sortDate: "2026-09-17", title: "Talent-pool notice", detail: "American Airlines said it would retain Matt’s profile in its talent pool. The message did not clearly state whether requisition 88128 remains active, and Matt asked recruiting to clarify.", evidence: "fact" },
-    ],
-    next: { action: "Wait for recruiting to clarify whether this requisition is closed or whether a conversation is still possible.", owner: "American Airlines", due: "No date", evidence: "unknown" },
-    signal: "The application is paused in a talent pool; this is not yet a confirmed interview or explicit rejection.",
-    sources: ["Gmail"], tags: ["travel", "principal", "UX"],
+  "id": "rover-price-experience",
+  "company": "Rover",
+  "role": "Senior Product Designer · Price Experience",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-11",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 11",
+      "sortDate": "2026-09-11",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
   },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "marketplace",
+    "consumer",
+    "senior"
+  ]
+},
+  {
+  "id": "american-airlines-principal-ux",
+  "company": "American Airlines",
+  "role": "Principal Product Designer, UX · 88128",
+  "status": "unknown",
+  "stage": "applied",
+  "lastTouch": "2026-09-17",
+  "lastTouchLabel": "Talent pool; decision unclear",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 11",
+      "sortDate": "2026-09-11",
+      "title": "Applied",
+      "detail": "Application submitted.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Sep 17",
+      "sortDate": "2026-09-17",
+      "title": "Talent-pool notice",
+      "detail": "American Airlines said it would retain Matt’s profile in its talent pool. The message did not clearly state whether requisition 88128 remains active, and Matt asked recruiting to clarify.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Confirm the latest outcome if revisiting this opportunity.",
+    "owner": "Matt / Recruiting",
+    "due": "No confirmed next step",
+    "evidence": "unknown"
+  },
+  "signal": "A talent-pool notice did not clarify the outcome of this requisition. A later recruiting decision is unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "travel",
+    "principal",
+    "UX"
+  ]
+},
   {
   "id": "apple-video-applications-200683983",
   "company": "Apple",
   "role": "Senior Product Designer · Video Applications · 200683983",
-  "status": "waiting",
+  "status": "unknown",
   "stage": "interview",
   "lastTouch": "2026-09-25",
   "lastTouchLabel": "Hiring-manager interview completed",
@@ -3060,13 +4579,21 @@ export const opportunities: Opportunity[] = [
       "date": "Sep 16",
       "sortDate": "2026-09-16",
       "title": "Application receipt",
-      "detail": "No human conversation or later decision found in Gmail.",
+      "detail": "Application received.",
+      "evidence": "fact"
     },
     {
       "date": "Sep 21",
       "sortDate": "2026-09-21",
       "title": "Automated application update",
       "detail": "An automated message said the application would not move forward.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Sep 21",
+      "sortDate": "2026-09-21",
+      "title": "Direct recruiter outreach",
+      "detail": "A recruiter contacted Matt about this same requisition after the automated update.",
       "evidence": "fact"
     },
     {
@@ -3085,14 +4612,16 @@ export const opportunities: Opportunity[] = [
     }
   ],
   "next": {
-    "action": "Wait for the recruiter to confirm the outcome or next round.",
-    "owner": "Apple",
-    "due": "No confirmed next round",
+    "action": "Confirm the latest outcome if revisiting this opportunity.",
+    "owner": "Matt / Recruiting",
+    "due": "No confirmed next step",
     "evidence": "unknown"
   },
   "signal": "A human recruiter conversation and completed interview followed an earlier automated rejection. The latest outcome and any further round are unconfirmed.",
   "sources": [
-    "Gmail"
+    "Gmail",
+    "Calendar",
+    "Granola"
   ],
   "tags": [
     "consumer",
@@ -3110,12 +4639,144 @@ export const opportunities: Opportunity[] = [
     }
   ]
 },
-  applicationOnly("apple-services-international-200683762", "Apple", "Product Designer · Apple Services Design, International · 200683762", "2026-09-17", "", ["consumer", "services", "international", "product design"]),
-  applicationOnly("familiar-machines-principal-ux", "Familiar Machines & Magic", "Principal UX Designer", "2026-09-16", "", ["AI", "principal", "UX"]),
+  {
+  "id": "apple-services-international-200683762",
+  "company": "Apple",
+  "role": "Product Designer · Apple Services Design, International · 200683762",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-17",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 17",
+      "sortDate": "2026-09-17",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "consumer",
+    "services",
+    "international",
+    "product design"
+  ]
+},
+  {
+  "id": "familiar-machines-principal-ux",
+  "company": "Familiar Machines & Magic",
+  "role": "Principal UX Designer",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-16",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 16",
+      "sortDate": "2026-09-16",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "AI",
+    "principal",
+    "UX"
+  ]
+},
   rejectedApplication("bloomberg-quant-analytics-10053258", "Bloomberg", "Senior Interaction Designer · Quant & Analytics · 10053258", "2026-09-11", "2026-09-16", "", ["finance", "interaction design", "senior", "UX"]),
   rejectedApplication("anduril-arsenalos-product-designer", "Anduril", "Product Designer · ArsenalOS", "2026-06-29", "2026-09-17", "", ["defense", "product design", "ArsenalOS"]),
-  applicationOnly("vercel-marketplace", "Vercel", "Product Designer · Marketplace", "2026-09-11", "", ["developer tools", "marketplace", "product design"]),
-  applicationOnly("neuralink", "Neuralink", "Role not named in receipt", "2026-09-11", "", ["neurotechnology", "hardware"]),
+  {
+  "id": "vercel-marketplace",
+  "company": "Vercel",
+  "role": "Product Designer · Marketplace",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-11",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 11",
+      "sortDate": "2026-09-11",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "developer tools",
+    "marketplace",
+    "product design"
+  ]
+},
+  {
+  "id": "neuralink",
+  "company": "Neuralink",
+  "role": "Role not named in receipt",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-09-11",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Sep 11",
+      "sortDate": "2026-09-11",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "neurotechnology",
+    "hardware"
+  ]
+},
   {
   "id": "netjets",
   "company": "NetJets",
@@ -3249,35 +4910,235 @@ export const opportunities: Opportunity[] = [
     signal: "The loop closed after a recruiter screen that had surfaced director interest but no approved 2026 headcount.",
     sources: ["Gmail", "Calendar", "Prior chats"], tags: ["robotics", "staff", "HRI", "safety-critical"],
   },
-  applicationOnly("rivian", "Rivian", "Lead Product Designer · Design System Frameworks", "2026-08-24", "", ["automotive", "design systems", "lead"]),
+  {
+  "id": "rivian",
+  "company": "Rivian",
+  "role": "Lead Product Designer · Design System Frameworks",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-24",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 24",
+      "sortDate": "2026-08-24",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "automotive",
+    "design systems",
+    "lead"
+  ]
+},
   rejectedApplication("gm-advanced-ux", "General Motors", "Senior Designer, Advanced UX", "2026-08-24", "2026-08-25", "", ["automotive", "advanced UX"]),
-  applicationOnly("gm-in-vehicle", "General Motors", "In-Vehicle Designer · JR-202615347", "2026-08-24", "", ["automotive", "in-vehicle"]),
-  applicationOnly("gm-ux-insight", "General Motors", "Advanced UX Insight Designer · JR-202613990", "2026-08-24", "", ["automotive", "research"]),
-  applicationOnly("shield-ai", "Shield AI", "Senior Product Designer · R4854", "2026-08-25", "", ["defense", "AI"]),
   {
-    id: "paypal", company: "PayPal", role: "Principal Experience Designer + Staff Risk Intelligence", status: "applied", stage: "applied",
-    lastTouch: "2026-08-17", lastTouchLabel: "One role open; one rejected",
-    people: [],
-    moments: [
-      { date: "Aug 10", sortDate: "2026-08-10", title: "Two applications", detail: "Applied to Principal Experience Designer and Staff Experience Designer, Risk Intelligence Platform." },
-      { date: "Aug 17", sortDate: "2026-08-17", title: "Staff role rejected", detail: "The Risk Intelligence application closed; no rejection was found for Principal Experience Designer.", evidence: "fact", },
-    ],
-    next: { action: "Treat only the Principal Experience Designer application as open; wait for human contact.", owner: "Recruiting", due: "No date", evidence: "fact" },
-    signal: "Mixed company status: one closed application and one receipt-only application.",
-    sources: ["Gmail"], tags: ["fintech", "principal", "risk"],
+  "id": "gm-in-vehicle",
+  "company": "General Motors",
+  "role": "In-Vehicle Designer · JR-202615347",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-09-24",
+  "lastTouchLabel": "Role canceled",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 24",
+      "sortDate": "2026-08-24",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Sep 24",
+      "sortDate": "2026-09-24",
+      "title": "Role canceled",
+      "detail": "General Motors confirmed that this requisition was canceled.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "No active next step for this application.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
   },
+  "signal": "General Motors confirmed that this requisition was canceled.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "automotive",
+    "in-vehicle"
+  ]
+},
   {
-    id: "nintendo", company: "Nintendo", role: "New role under review + Contract Associate Game Designer", status: "applied", stage: "applied",
-    lastTouch: "2026-08-24", lastTouchLabel: "New application under review",
-    people: [],
-    moments: [
-      { date: "Aug 14", sortDate: "2026-08-14", title: "Sr UX Writer rejected", detail: "An earlier application closed." },
-      { date: "Aug 24", sortDate: "2026-08-24", title: "Mixed update", detail: "Contract Associate Game Designer was rejected, while a separate new receipt says under review.", },
-    ],
-    next: { action: "Treat the Aug 24 receipt as a separate open application; verify the exact role in the portal.", owner: "Matt", due: "When useful", evidence: "inference" },
-    signal: "The new receipt is likely a different application, not a reversal of either rejection.",
-    sources: ["Gmail"], tags: ["gaming", "mixed status"],
+  "id": "gm-ux-insight",
+  "company": "General Motors",
+  "role": "Advanced UX Insight Designer · JR-202613990",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-08-27",
+  "lastTouchLabel": "Application rejected",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 24",
+      "sortDate": "2026-08-24",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Aug 27",
+      "sortDate": "2026-08-27",
+      "title": "Application rejected",
+      "detail": "General Motors confirmed it would not proceed with this application.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "No active next step for this application.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
   },
+  "signal": "General Motors confirmed it would not proceed with this application.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "automotive",
+    "research"
+  ]
+},
+  {
+  "id": "shield-ai",
+  "company": "Shield AI",
+  "role": "Senior Product Designer · R4854",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-08-27",
+  "lastTouchLabel": "Application rejected",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 25",
+      "sortDate": "2026-08-25",
+      "title": "Application receipt",
+      "detail": "Application received.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Aug 27",
+      "sortDate": "2026-08-27",
+      "title": "Application rejected",
+      "detail": "Shield AI confirmed it would not proceed with this application.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "No active next step for this application.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
+  },
+  "signal": "Shield AI confirmed it would not proceed with this application.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "defense",
+    "AI"
+  ]
+},
+  {
+  "id": "paypal",
+  "company": "PayPal",
+  "role": "Principal Experience Designer · R0132580",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-08-31",
+  "lastTouchLabel": "Role no longer hiring",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 10",
+      "sortDate": "2026-08-10",
+      "title": "Application received",
+      "detail": "Application received for Principal Experience Designer.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Aug 31",
+      "sortDate": "2026-08-31",
+      "title": "Role no longer hiring",
+      "detail": "PayPal confirmed it was no longer hiring for this requisition.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "No active next step for this application.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
+  },
+  "signal": "PayPal confirmed it was no longer hiring for this requisition.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "fintech",
+    "principal"
+  ]
+},
+  {
+  "id": "nintendo",
+  "company": "Nintendo",
+  "role": "Sr UX Writer · August 24 application",
+  "status": "applied",
+  "stage": "applied",
+  "lastTouch": "2026-08-24",
+  "lastTouchLabel": "Application received",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 24",
+      "sortDate": "2026-08-24",
+      "title": "Application received",
+      "detail": "Nintendo acknowledged this Sr UX Writer application after an earlier application had closed.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
+    "evidence": "unknown"
+  },
+  "signal": "A new Sr UX Writer application receipt is confirmed for August 24. Its outcome is unconfirmed.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "gaming",
+    "UX writing",
+    "application"
+  ]
+},
   rejectedApplication("notion", "Notion", "Product Designer", "2026-06-21", "2026-07-03", "", ["productivity"]),
   rejectedApplication("accenture", "Accenture", "Digital Product Design Senior Manager", "2026-06-29", "2026-07-07", "", ["consulting", "senior manager"]),
   {
@@ -3303,7 +5164,7 @@ export const opportunities: Opportunity[] = [
   "id": "apfm",
   "company": "A Place for Mom",
   "role": "Lead Product Designer · Family Experience",
-  "status": "waiting",
+  "status": "signed",
   "stage": "decision",
   "lastTouch": "2026-10-09",
   "lastTouchLabel": "Offer signed; onboarding pending",
@@ -3331,7 +5192,8 @@ export const opportunities: Opportunity[] = [
     "offer signed"
   ],
   "sources": [
-    "Gmail"
+    "Gmail",
+    "Granola"
   ],
   "moments": [
     {
@@ -3462,7 +5324,8 @@ export const opportunities: Opportunity[] = [
     "assignment"
   ],
   "sources": [
-    "Gmail"
+    "Gmail",
+    "Granola"
   ],
   "moments": [
     {
@@ -3478,15 +5341,15 @@ export const opportunities: Opportunity[] = [
   "id": "fuse-energy",
   "company": "Fuse Energy",
   "role": "Design opportunity · exact title unconfirmed",
-  "status": "paused",
+  "status": "unknown",
   "stage": "screen",
   "lastTouch": "2026-10-08",
   "lastTouchLabel": "Intro call canceled",
   "signal": "Matt canceled the scheduled introductory interview. A replacement meeting or explicit process withdrawal is not confirmed.",
   "next": {
-    "action": "No active interview is scheduled; revisit only if still pursuing.",
-    "owner": "Matt",
-    "due": "No date",
+    "action": "Confirm the latest outcome if revisiting this opportunity.",
+    "owner": "Matt / Recruiting",
+    "due": "No confirmed next step",
     "evidence": "unknown"
   },
   "people": [
@@ -3550,15 +5413,15 @@ export const opportunities: Opportunity[] = [
   "id": "hubscale-principal-product-designer",
   "company": "Hubscale · company unconfirmed",
   "role": "Principal Product Designer",
-  "status": "waiting",
+  "status": "unknown",
   "stage": "screen",
   "lastTouch": "2026-10-05",
   "lastTouchLabel": "Updated résumé received",
   "signal": "The recruiter confirmed receipt of the revised résumé after sharing the portfolio. A company interview is not yet confirmed.",
   "next": {
-    "action": "Wait for the recruiter to confirm the client response and next step.",
-    "owner": "Fred / Recruiting",
-    "due": "No date",
+    "action": "Confirm the latest outcome if revisiting this opportunity.",
+    "owner": "Matt / Recruiting",
+    "due": "No confirmed next step",
     "evidence": "unknown"
   },
   "people": [
@@ -3586,15 +5449,15 @@ export const opportunities: Opportunity[] = [
   "id": "calm-principal-product-designer",
   "company": "Calm",
   "role": "Principal Product Designer",
-  "status": "waiting",
+  "status": "unknown",
   "stage": "screen",
   "lastTouch": "2026-09-23",
   "lastTouchLabel": "Recruiter conversation completed",
   "signal": "A recruiter conversation is recorded. Subsequent advancement and the latest outcome are unconfirmed.",
   "next": {
-    "action": "Confirm the latest recruiter outcome if continuing to pursue.",
-    "owner": "Recruiting / Matt",
-    "due": "No confirmed date",
+    "action": "Confirm the latest outcome if revisiting this opportunity.",
+    "owner": "Matt / Recruiting",
+    "due": "No confirmed next step",
     "evidence": "unknown"
   },
   "people": [
@@ -3606,7 +5469,8 @@ export const opportunities: Opportunity[] = [
   ],
   "tags": [],
   "sources": [
-    "Gmail"
+    "Gmail",
+    "Granola"
   ],
   "moments": [
     {
@@ -3622,16 +5486,16 @@ export const opportunities: Opportunity[] = [
   "id": "gsa-senior-ai-software-engineer",
   "company": "General Services Administration",
   "role": "Senior AI Software Engineer · GS-14",
-  "status": "waiting",
+  "status": "unknown",
   "stage": "interview",
   "lastTouch": "2026-10-06",
   "lastTouchLabel": "Digital interview received",
   "signal": "GSA confirmed receipt of the digital interview and said a representative would contact Matt about next steps.",
   "next": {
-    "action": "Wait for GSA's next-step response.",
-    "owner": "GSA",
-    "due": "No date",
-    "evidence": "fact"
+    "action": "Confirm the latest outcome if revisiting this opportunity.",
+    "owner": "Matt / Recruiting",
+    "due": "No confirmed next step",
+    "evidence": "unknown"
   },
   "people": [],
   "tags": [],
@@ -3656,11 +5520,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-10-07",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -3686,11 +5550,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-10-05",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -3716,11 +5580,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-10-05",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -3746,11 +5610,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-10-04",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -3776,11 +5640,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-10-03",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -3806,11 +5670,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-10-02",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -3836,11 +5700,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-10-01",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -3866,11 +5730,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-10-01",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -3896,11 +5760,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-10-01",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -3926,11 +5790,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-09-30",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -3956,11 +5820,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-09-30",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -3986,11 +5850,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-09-29",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -4016,11 +5880,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-09-28",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -4046,11 +5910,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-09-28",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -4076,11 +5940,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-09-27",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -4106,11 +5970,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-09-23",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -4136,11 +6000,11 @@ export const opportunities: Opportunity[] = [
   "stage": "applied",
   "lastTouch": "2026-09-23",
   "lastTouchLabel": "Application received",
-  "signal": "Application receipt confirmed. No later interview or decision is verified.",
+  "signal": "Application received. Later human progression and the current outcome are unconfirmed.",
   "next": {
-    "action": "Wait for a recruiting response.",
-    "owner": "Recruiting",
-    "due": "No date",
+    "action": "Check the candidate portal if revisiting this application.",
+    "owner": "Matt",
+    "due": "No committed next step",
     "evidence": "unknown"
   },
   "people": [],
@@ -4428,4 +6292,359 @@ export const opportunities: Opportunity[] = [
     }
   ]
 },
+
+{
+  "id": "stripe-global-payments",
+  "company": "Stripe",
+  "role": "Product Designer · Global Payments",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-10-06",
+  "lastTouchLabel": "Closed after role-fit discussion",
+  "people": [
+    {
+      "name": "Steph Hjartarson",
+      "role": "Recruiter",
+      "relationship": "recruiter"
+    }
+  ],
+  "moments": [
+    {
+      "date": "Sep 16",
+      "sortDate": "2026-09-16",
+      "title": "Recruiter conversation invited",
+      "detail": "Invited to discuss a Product Designer, Global opportunity.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Oct 6",
+      "sortDate": "2026-10-06",
+      "title": "Role-fit discussion completed",
+      "detail": "The conversation concluded without further steps for this opening.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "No active next step for this opening.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
+  },
+  "signal": "This opening did not align on role and location. Other Stripe applications remain separate.",
+  "sources": [
+    "Gmail",
+    "Calendar",
+    "Granola"
+  ],
+  "tags": [
+    "payments",
+    "role fit",
+    "Dublin",
+    "Barcelona"
+  ]
+},
+{
+  "id": "paypal-staff-risk-intelligence",
+  "company": "PayPal",
+  "role": "Staff Experience Designer · Risk Intelligence Platform · R0132102",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-08-17",
+  "lastTouchLabel": "Role no longer hiring",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 10",
+      "sortDate": "2026-08-10",
+      "title": "Application received",
+      "detail": "Application received for Staff Experience Designer, Risk Intelligence Platform.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Aug 17",
+      "sortDate": "2026-08-17",
+      "title": "Role no longer hiring",
+      "detail": "PayPal confirmed it was no longer hiring for this requisition.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "No active next step for this application.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
+  },
+  "signal": "PayPal confirmed it was no longer hiring for this requisition.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "fintech",
+    "staff",
+    "risk"
+  ]
+},
+{
+  "id": "nintendo-sr-ux-writer-august-10",
+  "company": "Nintendo",
+  "role": "Sr UX Writer · August 10 application",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-08-14",
+  "lastTouchLabel": "Application rejected",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 10",
+      "sortDate": "2026-08-10",
+      "title": "Application received",
+      "detail": "Application received.",
+      "evidence": "fact"
+    },
+    {
+      "date": "Aug 14",
+      "sortDate": "2026-08-14",
+      "title": "Application rejected",
+      "detail": "Nintendo confirmed it would not proceed with this application.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "No active next step for this application.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
+  },
+  "signal": "Nintendo confirmed it would not proceed with this application.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "gaming",
+    "application closed"
+  ]
+},
+{
+  "id": "nintendo-contract-associate-game-designer",
+  "company": "Nintendo",
+  "role": "CONTRACT - Associate Game Designer (NST)",
+  "status": "closed",
+  "stage": "closed",
+  "lastTouch": "2026-08-24",
+  "lastTouchLabel": "Application rejected",
+  "people": [],
+  "moments": [
+    {
+      "date": "Aug 24",
+      "sortDate": "2026-08-24",
+      "title": "Application rejected",
+      "detail": "Nintendo confirmed it would not proceed with this application.",
+      "evidence": "fact"
+    }
+  ],
+  "next": {
+    "action": "No active next step for this application.",
+    "owner": "Closed",
+    "due": "Closed",
+    "evidence": "fact"
+  },
+  "signal": "Nintendo confirmed it would not proceed with this application.",
+  "sources": [
+    "Gmail"
+  ],
+  "tags": [
+    "gaming",
+    "application closed"
+  ]
+},
+];
+
+
+// Non-candidate relationships retained outside role totals.
+export const relationshipArchive: Opportunity[] = [
+  {
+    "id": "decimals-ridd-network",
+    "company": "Decimals",
+    "role": "Michael Riddering talent collective · networking",
+    "status": "unknown",
+    "stage": "applied",
+    "lastTouch": "2026-10-01",
+    "lastTouchLabel": "Talent-network introductions",
+    "people": [
+      {
+        "name": "Michael Riddering",
+        "role": "Talent collective contact",
+        "relationship": "referral"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Sep 13",
+        "sortDate": "2026-09-13",
+        "title": "Talent network invitation",
+        "detail": "Invited to the talent network.",
+        "evidence": "fact"
+      },
+      {
+        "date": "Sep 15",
+        "sortDate": "2026-09-15",
+        "title": "Introduction made",
+        "detail": "An introduction connected Matt with Ramp recruiting.",
+        "evidence": "fact"
+      },
+      {
+        "date": "Sep 23",
+        "sortDate": "2026-09-23",
+        "title": "Introduction made",
+        "detail": "An introduction connected Matt with Arcads.",
+        "evidence": "fact"
+      },
+      {
+        "date": "Oct 1",
+        "sortDate": "2026-10-01",
+        "title": "New opportunity notification",
+        "detail": "A further opportunity was offered for review; the employer and role are not named in the notification.",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "Revisit when there is a concrete role or introduction.",
+      "owner": "Matt / Recruiting",
+      "due": "No confirmed role",
+      "evidence": "unknown"
+    },
+    "signal": "Talent-network membership and subsequent introductions are confirmed. This is a relationship record; individual company processes are tracked separately.",
+    "sources": [
+      "Gmail"
+    ],
+    "tags": [
+      "networking",
+      "referral",
+      "design"
+    ]
+  },
+  {
+    "id": "creative-people",
+    "company": "Creative People",
+    "role": "External recruiter slate · Arena AI and future roles",
+    "status": "unknown",
+    "stage": "screen",
+    "lastTouch": "2026-10-05",
+    "lastTouchLabel": "Agency relationship; no new stage confirmed",
+    "people": [
+      {
+        "name": "Rachel Albert",
+        "role": "External recruiter",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Rachel Feinbloom",
+        "role": "Recruiting contact",
+        "relationship": "recruiter"
+      },
+      {
+        "name": "Ashley Brown",
+        "role": "Arena and Eight Sleep follow-up",
+        "relationship": "recruiter"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Aug 25",
+        "sortDate": "2026-08-25",
+        "title": "Sourced",
+        "detail": "Rachel shared a broad slate of senior design openings."
+      },
+      {
+        "date": "Aug 26",
+        "sortDate": "2026-08-26",
+        "title": "Slate ranked",
+        "detail": "After the intro call, Matt ranked Applied Intuition first, Arena second, and Eight Sleep third. Rachel will share his background with Applied."
+      },
+      {
+        "date": "Aug 27",
+        "sortDate": "2026-08-27",
+        "title": "Follow-up",
+        "detail": "Thirty minutes with Ashley to qualify the Arena and Eight Sleep openings."
+      },
+      {
+        "date": "Aug 30",
+        "sortDate": "2026-08-30",
+        "title": "Applied Intuition advanced",
+        "detail": "Rachel reported that the company wants a first-round conversation."
+      },
+      {
+        "date": "Sep 1",
+        "sortDate": "2026-09-01",
+        "title": "Direct loops live",
+        "detail": "Applied Intuition and Eight Sleep now have company-owned interviews and are tracked separately."
+      },
+      {
+        "date": "Oct 5",
+        "sortDate": "2026-10-05",
+        "title": "Eight Sleep withdrawn",
+        "detail": "Matt informed the company and agency recruiter that he was withdrawing.",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "Revisit when there is a concrete role or introduction.",
+      "owner": "Matt / Recruiting",
+      "due": "No confirmed role",
+      "evidence": "unknown"
+    },
+    "signal": "Recruiting relationship retained for reference; specific employer opportunities are tracked separately.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Prior chats"
+    ],
+    "tags": [
+      "external recruiter",
+      "Applied Intuition",
+      "Arena AI",
+      "Eight Sleep"
+    ]
+  },
+  {
+    "id": "atlas-gate",
+    "company": "Atlas Gate",
+    "role": "Artist commission · project relationship",
+    "status": "unknown",
+    "stage": "screen",
+    "lastTouch": "2026-09-03",
+    "lastTouchLabel": "Commission planning conversation",
+    "people": [
+      {
+        "name": "David Branson",
+        "role": "Project collaborator",
+        "relationship": "interviewer"
+      }
+    ],
+    "moments": [
+      {
+        "date": "Sep 3",
+        "sortDate": "2026-09-03",
+        "title": "Artist commission discussed",
+        "detail": "Matt and David discussed commissioning an artist for their game project.",
+        "evidence": "fact"
+      }
+    ],
+    "next": {
+      "action": "Retain as project relationship history.",
+      "owner": "Matt / Collaborators",
+      "due": "Outside hiring pipeline",
+      "evidence": "fact"
+    },
+    "signal": "Project collaboration and artist commissioning, rather than a job candidacy.",
+    "sources": [
+      "Gmail",
+      "Calendar",
+      "Granola"
+    ],
+    "tags": [
+      "project relationship",
+      "art commission"
+    ]
+  }
 ];

@@ -30,3 +30,11 @@ This is a public site and a public source repository. Refreshes must exclude com
 Click the toolbar’s **N shown** count to explore the current results. The default scope matches search and status filters; a dialog-only **All opportunities** view does not reset the workspace filters. The diagram partitions each unique opportunity once: total → recorded current stage → current status. It is a current snapshot, not a reconstructed history or conversion funnel. Closed records do not imply a known earlier interview stage, and missing or unrecognized categories remain explicit.
 
 Select a node or flow to inspect its matching records, or use the keyboard-accessible grouped list. Selecting a record opens the existing conversation inspector. Escape closes the Sankey first and returns focus to its trigger; a later Escape can close the inspector. Counts and drilldowns are validated for both full and filtered scopes, including zero-result and unknown-category cases.
+
+## Component foundation and role geography
+
+Scout adapts the actual shadcn/ui Radix registry components for Buttons, Input, Tabs, Tooltip and Dialog, with provenance and MIT license in `src/ui/`. Scout-specific CSS preserves the existing visual language in the Vite mirror; Radix provides modal focus management, keyboard tabs and tooltip behavior. The Sankey still uses its own count-conserving SVG layout.
+
+Geography is a partition of the same filtered opportunity records: a documented role city, explicitly remote, or unknown. Company headquarters, recruiter addresses, interview venues and time zones are not location evidence. City markers are approximate and grouped; remote/unknown records are counted but never assigned invented coordinates. Selecting a city or geography group reveals matching opportunities and links back to the existing inspector. Selecting a record outside the filters cannot alter the filtered globe total.
+
+Prototype review deployments are isolated Vercel staging builds from an exact commit. Do not advance `main`, assign the production domain, or deploy the saved canonical version until the user approves release.
